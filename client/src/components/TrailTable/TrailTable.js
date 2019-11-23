@@ -6,7 +6,7 @@ export default class TrailTable extends React.Component {
   state = {
     sortType: {
       up: {
-        class: 'default',
+        class: 'sort-up',
         fn: (a, b) => a.distance - b.distance
       },
       down: {
@@ -133,43 +133,46 @@ export default class TrailTable extends React.Component {
     };
 
     return (
-      <div className={styles.tablewrapper}>
-        {this.state.tableData.length > 0 && (
-          <table className='text-left'>
-            <thead>
-              <tr>
-                <th>Trail Name</th>
-                <th>
-                  Distance
-                  <button onClick={this.onSortChange}>
-                    <i
-                      className={`fas fa-${sortTypeNetWorth[currentSort].class}`}
-                    />
-                  </button>
-                </th>
-                <th>
-                  Water Sources Per 10 Miles
-                  <button onClick={this.onSortChangeCock}>
-                    <i
-                      className={`fas fa-${sortTypeCock[currentSort].class}`}
-                    />
-                  </button>
-                </th>
-              </tr>
-            </thead>
-            <tbody>
-              {[...this.state.tableData]
-                .sort(sortType[currentSort].fn)
-                .map(p => (
-                  <tr className={styles.td}>
-                    <td>{p.name}</td>
-                    <td>{p.distance}mi</td>
-                    <td>{p.waterSources}</td>
-                  </tr>
-                ))}
-            </tbody>
-          </table>
-        )}
+      <div className={styles.compWrapper}>
+        <h1>Compare Thru-Hikes</h1>
+        <div className={styles.tablewrapper}>
+          {this.state.tableData.length > 0 && (
+            <table className='text-left'>
+              <thead>
+                <tr>
+                  <th> 🌲 Trail Name</th>
+                  <th>
+                    🥾 Distance
+                    <button onClick={this.onSortChange}>
+                      <i
+                        className={`fas fa-${sortTypeNetWorth[currentSort].class}`}
+                      />
+                    </button>
+                  </th>
+                  <th>
+                    🚰 Water Sources Per 10 Miles
+                    <button onClick={this.onSortChangeCock}>
+                      <i
+                        className={`fas fa-${sortTypeCock[currentSort].class}`}
+                      />
+                    </button>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {[...this.state.tableData]
+                  .sort(sortType[currentSort].fn)
+                  .map(p => (
+                    <tr className={styles.td}>
+                      <td>{p.name}</td>
+                      <td>{p.distance}mi</td>
+                      <td>{p.waterSources}</td>
+                    </tr>
+                  ))}
+              </tbody>
+            </table>
+          )}
+        </div>
       </div>
     );
   }

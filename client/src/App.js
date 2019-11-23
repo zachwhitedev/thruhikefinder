@@ -1,7 +1,6 @@
 import React from 'react';
 import TrailTable from './components/TrailTable/TrailTable';
 import './App.css';
-import TrailTable from './components/TrailTable/TrailTable';
 
 function App() {
   return (

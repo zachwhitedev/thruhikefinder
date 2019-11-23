@@ -1,98 +1,169 @@
-import React, {Component} from 'react';
+import React from 'react';
+import styles from './TrailTable.module.css';
 
-
-const tableData = [
-	{
-		name: 'Amancio Ortega',
-		net_worth: 62.7
-	}, {
-		name: 'Bernard Arnault',
-		net_worth: 76,
-	}, {
-		name: 'Bill Gates',
-		net_worth: 96.5,
-	}, {
-		name: 'Carlos Sim Helu',
-		net_worth: 64
-	}, {
-		name: 'Jeff Bezos',
-		net_worth: 131
-	}, {
-		name: 'Larry Ellison',
-		net_worth: 58
-	}, {
-		name: 'Larry Page',
-		net_worth: 50.8
-	}, {
-		name: 'Mark Zuckerberg',
-		net_worth: 62.3
-	}, {
-		name: 'Michael Bloomberg',
-		net_worth: 55.5
-	}, {
-		name: 'Warren Buffet',
-		net_worth: 82.5
-	}
-];
-const sortTypes = {
-	up: {
-		class: 'sort-up',
-		fn: (a, b) => a.net_worth - b.net_worth
-	},
-	down: {
-		class: 'sort-down',
-		fn: (a, b) => b.net_worth - a.net_worth
-	},
-	default: {
-		class: 'sort',
-		fn: (a, b) => a
-	}
-}
-
-class TrailTable extends Component {
+export default class TrailTable extends React.Component {
+	// declaring the default state
 	state = {
-		currentSort: 'default'
-	}
-	
-	onSortChange = () => {
-		const { currentSort } = this.state;
+        sortType: {
+            up: {
+                class: 'sort-up',
+                fn: (a, b) => a.distance - b.distance
+            },
+            down: {
+                class: 'sort-down',
+                fn: (a, b) => b.distance - a.distance
+            },
+            default: {
+                class: 'sort-down',
+                fn: (a, b) => a.distance - b.distance
+            }
+        },
+		currentSort: 'default',     
+        tableData: [
+            {
+                name: 'Pacific Crest Trail',
+                distance: 2652,
+                waterSources: 3
+            },
+            {
+                name: 'Continental Divide Trail',
+                distance: 3120,
+                waterSources: 4
+            },
+            {
+                name: 'Appalachian Trail',
+                distance: 2140,
+                waterSources: 6
+            },
+            {
+                name: 'Long Trail (VT)',
+                distance: 215,
+                waterSources: 7
+            }
+        ]
+        
+    };
+        // method called every time the sort button is clicked
+        // it will change the currentSort value to the next one
+        onSortChange = () => {
+            this.setState({
+                sortType: {
+                    up: {
+                        class: 'sort-up',
+                        fn: (a, b) => a.distance - b.distance
+                    },
+                    down: {
+                        class: 'sort-down',
+                        fn: (a, b) => b.distance - a.distance
+                    },
+                    default: {
+                        class: 'sort-down',
+                        fn: (a, b) => a.distance - b.distance
+                    }
+                }
+            })
+            
+            const { currentSort } = this.state;
 		let nextSort;
-		
-		if(currentSort === 'down') nextSort = 'up';
-		else if(currentSort === 'up') nextSort = 'default';
-		else if(currentSort === 'default') nextSort = 'down';
-		
+
+		if (currentSort === 'down') nextSort = 'up';
+		else nextSort = 'down';
+
 		this.setState({
 			currentSort: nextSort
-		})
-	}
-	
+		});
+    };
+        onSortChangeCock = () => {
+            this.setState({
+                sortType: {
+                    up: {
+                        class: 'sort-up',
+                        fn: (a, b) => a.waterSources - b.waterSources
+                    },
+                    down: {
+                        class: 'sort-down',
+                        fn: (a, b) => b.waterSources - a.waterSources
+                    },
+                    default: {
+                        class: 'sort-down',
+                        fn: (a, b) => a.waterSources - b.waterSources
+                    }
+                }
+            });
+            
+            const { currentSort } = this.state;
+		let nextSort;
+
+		if (currentSort === 'down') nextSort = 'up';
+		else nextSort = 'down';
+
+		this.setState({
+			currentSort: nextSort
+		});
+    };
+
 	render() {
-		const { currentSort } = this.state;
-		
+        const { currentSort, sortType } = this.state;
+        const sortTypeNetWorth = {
+            up: {
+                class: 'sort-up',
+                fn: (a, b) => a.distance - b.distance
+            },
+            down: {
+                class: 'sort-down',
+                fn: (a, b) => b.distance - a.distance
+            },
+            default: {
+                class: 'sort-down',
+                fn: (a, b) => a.distance - b.distance
+            }
+        };
+        const sortTypeCock = {
+            up: {
+                class: 'sort-up',
+                fn: (a, b) => a.waterSources - b.waterSources
+            },
+            down: {
+                class: 'sort-down',
+                fn: (a, b) => b.waterSources - a.waterSources
+            },
+            default: {
+                class: 'sort-down',
+                fn: (a, b) => a.waterSources - b.waterSources
+            }
+        };
+
 		return (
-			<table className="text-left">
-				<thead>
-					<tr>
-						<th>Name</th>
-						<th>
-							Net Worth
-							<button onClick={this.onSortChange}>
-								<i className={`fas fa-${sortTypes[currentSort].class}`}></i>
-							</button>
-						</th>
-					</tr>
-				</thead>
-				<tbody>
+			this.state.tableData.length > 0 && (
+				<table className='text-left'>
+					<thead>
 						<tr>
-							<td>Name</td>
-							<td>$80bn</td>
+							<th>Trail Name</th>
+							<th>
+								Distance
+								<button onClick={this.onSortChange}>
+									<i className={`fas fa-${sortTypeNetWorth[currentSort].class}`} />
+								</button>
+							</th>
+							<th>
+								Water Sources Per 10 Miles
+								<button onClick={this.onSortChangeCock}>
+									<i className={`fas fa-${sortTypeCock[currentSort].class}`} />
+								</button>
+							</th>
 						</tr>
-				</tbody>
-			</table>
-		)
+					</thead>
+					<tbody>
+						{[...this.state.tableData].sort(sortType[currentSort].fn).map(p => (
+							<tr className={styles.td}>
+								<td>{p.name}</td>
+								<td>{p.distance}mi</td>
+                                <td>{p.waterSources}</td>
+							</tr>
+						))}
+					</tbody>
+				</table>
+			)
+		);
 	}
 }
-
-
-export default TrailTable;

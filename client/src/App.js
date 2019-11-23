@@ -1,11 +1,11 @@
 import React from 'react';
-import TrailTable from './components/TrailTable/TrailTable';
 import './App.css';
+import MainDashboard from './containers/MainDashboard';
 
 function App() {
   return (
     <div className="App">
-      <TrailTable />
+      <MainDashboard />
     </div>
   );
 }

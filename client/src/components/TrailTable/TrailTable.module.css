@@ -1,8 +1,30 @@
+
+
 .td {
-    text-align: right;
+    text-align: left;
     background: rgb(235, 255, 161);
+}
+
+td:nth-child(3){
+    text-align: center;
 }
 
 th {
     background: rgb(147, 255, 147);
+    margin-right: 5px;
+}
+
+table {
+    width: 500px;
+}
+
+.tablewrapper {
+    border: 1px solid black;
+    width: 500px;
+    margin: 0 auto;
+}
+
+i {
+    width: 10px;
+    height: auto;
 }

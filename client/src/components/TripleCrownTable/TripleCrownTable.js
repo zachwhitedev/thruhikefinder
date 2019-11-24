@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './TrailTable.module.css';
+import styles from './TripleCrownTable.module.css';
 
-export default class TrailTable extends React.Component {
+export default class TripleCrownTable extends React.Component {
   // declaring the default state
   state = {
     sortType: {
@@ -21,25 +21,23 @@ export default class TrailTable extends React.Component {
     currentSort: 'default',
     tableData: [
       {
-        name: 'Pacific Crest Trail 👑',
+        name: 'Pacific Crest Trail',
         distance: 2652,
-        waterSources: 3
+        elpermile: 119,
+        region: 'West'
       },
       {
-        name: 'Continental Divide Trail 👑',
-        distance: 3120,
-        waterSources: 4
+        name: 'Continental Divide Trail',
+        distance: 3100,
+        elpermile: 129,
+        region: 'Southwest/West'
       },
       {
-        name: 'Appalachian Trail 👑',
-        distance: 2140,
-        waterSources: 6
+        name: 'Appalachian Trail',
+        distance: 2189,
+        elpermile: 235,
+        region: 'East'
       },
-      {
-        name: 'Long Trail (VT)',
-        distance: 215,
-        waterSources: 7
-      }
     ]
   };
   // method called every time the sort button is clicked
@@ -77,15 +75,15 @@ export default class TrailTable extends React.Component {
       sortType: {
         up: {
           class: 'sort-down',
-          fn: (a, b) => a.waterSources - b.waterSources
+          fn: (a, b) => a.elpermile - b.elpermile
         },
         down: {
           class: 'sort-up',
-          fn: (a, b) => b.waterSources - a.waterSources
+          fn: (a, b) => b.elpermile - a.elpermile
         },
         default: {
           class: 'sort-down',
-          fn: (a, b) => a.waterSources - b.waterSources
+          fn: (a, b) => a.elpermile - b.elpermile
         }
       }
     });
@@ -120,27 +118,28 @@ export default class TrailTable extends React.Component {
     const sortTypeCock = {
       up: {
         class: 'sort-up',
-        fn: (a, b) => a.waterSources - b.waterSources
+        fn: (a, b) => a.elpermile - b.elpermile
       },
       down: {
         class: 'sort-down',
-        fn: (a, b) => b.waterSources - a.waterSources
+        fn: (a, b) => b.elpermile - a.elpermile
       },
       default: {
         class: 'sort-down',
-        fn: (a, b) => a.waterSources - b.waterSources
+        fn: (a, b) => a.elpermile - b.elpermile
       }
     };
 
     return (
-      <div className={styles.compWrapper}>
-        <h2>All Thru-Hikes</h2>
-        <div className={styles.tablewrapper}>
+      <div className={styles.compWrapperCrown}>
+        <h2>Triple Crown Trails</h2>
+        <div className={styles.tablewrappercrown}>
           {this.state.tableData.length > 0 && (
             <table className='text-left'>
               <thead>
-                <tr className={styles.th}>
+                <tr>
                   <th> 🌲 Trail Name</th>
+                  <th> 🗺️ Region</th>
                   <th>
                     🥾 Distance
                     <button onClick={this.onSortChange}>
@@ -150,7 +149,7 @@ export default class TrailTable extends React.Component {
                     </button>
                   </th>
                   <th>
-                    🚰 Water Sources Per 10 Miles
+                  ⛰️ Elevation Per Mile
                     <button onClick={this.onSortChangeCock}>
                       <i
                         className={`fas fa-${sortTypeCock[currentSort].class}`}
@@ -163,10 +162,11 @@ export default class TrailTable extends React.Component {
                 {[...this.state.tableData]
                   .sort(sortType[currentSort].fn)
                   .map(p => (
-                    <tr className={styles.tr}>
+                    <tr className={styles.tdcrown}>
                       <td>{p.name}</td>
-                      <td>{p.distance}mi</td>
-                      <td>{p.waterSources}</td>
+                      <td>{p.region}</td>
+                      <td>{p.distance} mi.</td>
+                      <td>{p.elpermile} ft.</td>
                     </tr>
                   ))}
               </tbody>

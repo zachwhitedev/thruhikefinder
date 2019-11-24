@@ -67,15 +67,3 @@ i {
     text-align: center;
     font-family: 'Roboto', sans-serif;
 }
-
-@media(max-width: 1100px){
-    table {
-        width: 100%;
-        font-family: 'Roboto', sans-serif;
-    }
-    .tablewrappercrown {
-        width: 100%;
-        margin: 0 auto;
-    }
-
-}

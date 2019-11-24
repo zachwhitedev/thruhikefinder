@@ -1,13 +1,13 @@
 import React from 'react';
-import TrailTable from './components/TrailTable/TrailTable';
-import './App.css';
+import ReactDOM from 'react-dom';
+import './index.css';
+import * as serviceWorker from './serviceWorker';
+import MainDashboard from './containers/MainDashboard/MainDashboard';
 
-function App() {
+export default function App(){
   return (
-    <div className="App">
-      <TrailTable />
-    </div>
-  );
+        <div>
+          <MainDashboard />
+        </div>
+    )
 }
-
-export default App;

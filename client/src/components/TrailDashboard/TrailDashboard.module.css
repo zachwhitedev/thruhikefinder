@@ -1,0 +1,74 @@
+.topHalfContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.trailImageContainer {
+  flex: 1;
+  text-align: center;
+  background: rgb(255, 236, 213);
+}
+
+.trailImageContainer > img {
+  max-height: 600px;
+}
+
+
+.bottomHalfContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+/*//////////////////////////////// media queries below ///////////////////////// */
+
+@media (max-width: 610px) {
+  .header {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .topHalfContainer {
+    display: block;
+  }
+
+  .trailImageContainer {
+    flex: 1;
+    text-align: center;
+    background: rgb(255, 236, 213);
+  }
+
+  .trailImageContainer > img {
+    max-height: 300px;
+  }
+
+  .bottomHalfContainer {
+    display: flex;
+  }
+
+}
+
+@media (max-width: 575px) {
+  .header {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .topHalfContainer {
+    display: block;
+  }
+
+  .trailImageContainer {
+    flex: 1;
+    text-align: center;
+    background: rgb(255, 236, 213);
+  }
+
+  .trailImageContainer > img {
+    max-height: 300px;
+  }
+
+  .bottomHalfContainer {
+    display: block;
+  }
+
+}

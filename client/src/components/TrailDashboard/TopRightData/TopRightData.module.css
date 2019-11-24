@@ -1,0 +1,20 @@
+.topRightDataContainer {
+    flex: 1;
+}
+
+.topHalf {
+    background: rgb(255, 193, 193);
+    padding: 10px;
+}
+
+.bottomHalf {
+    background: rgb(226, 255, 181);
+    height: 90%;
+    padding: 10px;
+}
+
+@media(max-width: 605px){
+    .bottomHalf {
+        height: auto;
+    }
+}

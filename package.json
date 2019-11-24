@@ -2,8 +2,10 @@
   "name": "thruhikefinder",
   "version": "1.0.0",
   "description": "To run the project, clone it and run:",
+  "main": "server.js",
   "scripts": {
-    "start": "npm start --prefix client"
+    "start": "node server.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "repository": {
     "type": "git",
@@ -14,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/zachwhitedev/thruhikefinder/issues"
   },
-  "homepage": "https://github.com/zachwhitedev/thruhikefinder#readme"
+  "homepage": "https://github.com/zachwhitedev/thruhikefinder#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }

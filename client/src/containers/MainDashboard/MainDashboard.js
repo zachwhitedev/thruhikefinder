@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import styles from './MainDashboard.module.css';
+import TrailTable from '../../components/TrailTable/TrailTable';
 import TrailDashboard from '../../components/TrailDashboard/TrailDashboard';
 
 function MainDashboard(props) {
@@ -16,7 +17,7 @@ function MainDashboard(props) {
         <h1>{headerTitle}</h1>
         <select onChange={trailSelect}>
           <option value='Choose a trail...' selected='selected'>Select a trail</option>
-          <option value='PCT'>Pacific Crest Trail 🏔️</option>
+          <option value='Pacific Crest Trail'>Pacific Crest Trail 🏔️</option>
           <option value='Appalachian Trail'>Appalachian Trail 🏔️</option>
           <option value='Continental Divide Trail'>
             Continental Divide Trail 🏔️
@@ -24,7 +25,8 @@ function MainDashboard(props) {
           <option value='John Muir Trail'>John Muir Trail</option>
         </select>
       </div>
-      {headerTitle == 'PCT' && <TrailDashboard />}
+      {headerTitle == 'Pacific Crest Trail' && <TrailDashboard />}
+      {headerTitle == 'Choose a trail...' && <TrailTable />}
     </div>
   );
 }

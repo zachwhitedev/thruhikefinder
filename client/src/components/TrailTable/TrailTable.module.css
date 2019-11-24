@@ -47,3 +47,7 @@ i {
     text-align: center;
     font-family: 'Roboto', sans-serif;
 }
+
+.compWrapper {
+    background: white;
+}

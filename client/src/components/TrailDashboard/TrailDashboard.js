@@ -6,7 +6,28 @@ export default function TrailDashboard() {
 
   return (
     <div className={styles.wrapper}>
-      <h1>PCT</h1>
+      <div className={styles.map}><img src={pctmap}/></div>
+      <div>
+        <h2>Quick Facts</h2>
+
+      </div>
+
+      
+      <div>
+        <h2>
+          Summary
+          </h2>
+      </div>
+      
+      <div>
+        <h1>
+        Gear Recommendation
+        </h1>
+      </div>
+      
+      <div>
+        <h1>Fun Section</h1>
+      </div>
     </div>
   );
 }

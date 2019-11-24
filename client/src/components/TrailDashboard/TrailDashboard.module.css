@@ -60,7 +60,6 @@
   .trailImageContainer {
     flex: 1;
     text-align: center;
-    background: rgb(255, 236, 213);
   }
 
   .trailImageContainer > img {

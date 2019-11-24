@@ -6,9 +6,6 @@
   "scripts": {
     "start": "npm start --prefix client"
   },
-  "engines": {
-    "node": "13.1.0"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/zachwhitedev/thruhikefinder.git"
@@ -18,8 +15,5 @@
   "bugs": {
     "url": "https://github.com/zachwhitedev/thruhikefinder/issues"
   },
-  "homepage": "https://github.com/zachwhitedev/thruhikefinder#readme",
-  "dependencies": {
-    "node": "^13.1.0"
-  }
+  "homepage": "https://github.com/zachwhitedev/thruhikefinder#readme"
 }

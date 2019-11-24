@@ -2,7 +2,6 @@
   "name": "thruhikefinder",
   "version": "1.0.0",
   "description": "To run the project, clone it and run:",
-  "main": "index.js",
   "scripts": {
     "start": "npm start --prefix client"
   },

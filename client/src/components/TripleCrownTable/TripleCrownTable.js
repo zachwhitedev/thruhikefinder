@@ -23,20 +23,26 @@ export default class TripleCrownTable extends React.Component {
       {
         name: 'Pacific Crest Trail',
         distance: 2652,
+        totalstates: 3,
         elpermile: 119,
-        region: 'West'
+        region: 'West',
+        highpoint: 'Forester Pass (13,153 ft.)'
       },
       {
         name: 'Continental Divide Trail',
         distance: 3100,
+        totalstates: 5,
         elpermile: 129,
-        region: 'Southwest/West'
+        region: 'Southwest/West',
+        highpoint: 'Gray\'s Peak (14,278 ft.)'
       },
       {
         name: 'Appalachian Trail',
         distance: 2189,
+        totalstates: 14,
         elpermile: 235,
-        region: 'East'
+        region: 'East',
+        highpoint: 'Clingman\'s Dome (6,643 ft.)'
       },
     ]
   };
@@ -149,12 +155,18 @@ export default class TripleCrownTable extends React.Component {
                     </button>
                   </th>
                   <th>
+                      # of States Entered
+                  </th>
+                  <th>
                   ⛰️ Elevation Per Mile
                     <button onClick={this.onSortChangeCock}>
                       <i
                         className={`fas fa-${sortTypeCock[currentSort].class}`}
                       />
                     </button>
+                  </th>
+                  <th>
+                      Highest Point
                   </th>
                 </tr>
               </thead>
@@ -166,7 +178,9 @@ export default class TripleCrownTable extends React.Component {
                       <td>{p.name}</td>
                       <td>{p.region}</td>
                       <td>{p.distance} mi.</td>
+                      <td>{p.totalstates}</td>
                       <td>{p.elpermile} ft.</td>
+                      <td>{p.highpoint}</td>
                     </tr>
                   ))}
               </tbody>

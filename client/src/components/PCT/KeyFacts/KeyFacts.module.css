@@ -1,0 +1,26 @@
+.keyFacts {
+  font-family: 'Roboto', sans-serif;
+}
+
+.keyFacts > ul {
+  font-size: 18pt;
+  font-family: 'Roboto', sans-serif;
+}
+
+.myTable {
+  width: 350px;
+  margin: 0 auto;
+}
+
+td:nth-child(1){
+  font-weight: bold;
+}
+
+@media(max-width: 400px){
+  .myTable {
+      max-width: 300px;
+  }
+}
+
+
+

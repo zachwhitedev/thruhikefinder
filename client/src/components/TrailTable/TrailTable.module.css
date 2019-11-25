@@ -1,5 +1,4 @@
 
-
 .td {
     text-align: left;
     background: rgb(210, 255, 252);
@@ -25,7 +24,6 @@ td:nth-child(2){
 }
 
 table {
-    width: 100vw;
     font-family: 'Roboto', sans-serif;
     border-collapse: collapse;
 }
@@ -38,11 +36,6 @@ td, th {
     border: 1px solid black;
 }
 
-.tablewrapper {
-    width: 100vw;
-    margin: 0 auto;
-}
-
 i {
     width: 10px;
     height: auto;
@@ -51,8 +44,4 @@ i {
 .compWrapper > h2 {
     text-align: center;
     font-family: 'Roboto', sans-serif;
-}
-
-.compWrapper {
-    width: 100vw;
 }

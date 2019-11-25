@@ -22,6 +22,10 @@
     grid-auto-rows: minmax(80px, auto);
   }
 
+  .wrapper > div {
+    border-radius: 0;
+  }
+
   .map > img {
     max-height: 400px;
   }

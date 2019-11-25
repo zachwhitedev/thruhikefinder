@@ -10,9 +10,20 @@
 
 .header > select {
   text-align: center;
-  height: 20px;
+  padding: 12px;
+  height: 28px;
   margin-bottom: 10px;
   background: rgb(176, 255, 176);
   font-weight: bold;
   text-align-last: center;
+}
+
+@media(max-width: 400px){
+  .container {
+    display: grid;
+  }
+
+  .header {
+    margin-bottom: 8px;
+  }
 }

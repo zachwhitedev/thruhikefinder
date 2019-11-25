@@ -26,3 +26,13 @@
     max-height: 400px;
   }
 }
+
+@media(max-width: 400px){
+  .wrapper {
+  grid-template-columns: 1fr;
+  margin: 0;
+  grid-auto-rows: minmax(60px, auto);
+  }
+
+}
+

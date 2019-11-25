@@ -1,33 +1,24 @@
 import React from 'react';
+import TrailImage from './TrailImage/TrailImage';
+import TrailSummary from './TrailSummary/TrailSummary';
+import KeyFacts from './KeyFacts/KeyFacts';
+import GearRec from './GearRec/GearRec';
+import FunSection from './FunSection/FunSection';
+import InDepthStats from './InDepthStats/InDepthStats';
+import EndCard from './EndCard/EndCard';
 import styles from './TrailDashboard.module.css';
-import pctmap from '../../assets/img/pctmap.jpg';
 
 export default function TrailDashboard() {
-
+  
   return (
     <div className={styles.wrapper}>
-      <div className={styles.map}><img src={pctmap}/></div>
-      <div>
-        <h2>Quick Facts</h2>
-
-      </div>
-
-      
-      <div>
-        <h2>
-          Summary
-          </h2>
-      </div>
-      
-      <div>
-        <h1>
-        Gear Recommendation
-        </h1>
-      </div>
-      
-      <div>
-        <h1>Fun Section</h1>
-      </div>
+      <TrailImage />
+      <KeyFacts />
+      <TrailSummary />
+      <GearRec />
+      <FunSection />
+      <InDepthStats />
+      <EndCard />
     </div>
   );
 }

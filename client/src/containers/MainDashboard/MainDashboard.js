@@ -6,7 +6,7 @@ import AT from '../../components/AT/AT';
 import TripleCrownTable from '../../components/TripleCrownTable/TripleCrownTable';
 
 function MainDashboard(props) {
-  const [headerTitle, setHeaderTitle] = useState('Pacific Crest Trail');
+  const [headerTitle, setHeaderTitle] = useState('Choose a trail...');
 
   const trailSelect = e => {
     setHeaderTitle(e.target.value);

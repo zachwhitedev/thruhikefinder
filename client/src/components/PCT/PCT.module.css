@@ -34,5 +34,10 @@
   grid-auto-rows: minmax(60px, auto);
   }
 
+  .wrapper > div {
+    border-radius: 0;
+
+  }
+
 }
 

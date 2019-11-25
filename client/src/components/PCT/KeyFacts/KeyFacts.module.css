@@ -16,5 +16,11 @@ td:nth-child(1){
   font-weight: bold;
 }
 
+@media(max-width: 400px){
+  .myTable {
+      max-width: 300px;
+  }
+}
+
 
 

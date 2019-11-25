@@ -34,7 +34,7 @@ export default class TripleCrownTable extends React.Component {
         totalstates: 5,
         elpermile: 129,
         region: 'Southwest/West',
-        highpoint: 'Gray\'s Peak (14,278 ft.)'
+        highpoint: "Gray's Peak (14,278 ft.)"
       },
       {
         name: 'Appalachian Trail',
@@ -42,8 +42,8 @@ export default class TripleCrownTable extends React.Component {
         totalstates: 14,
         elpermile: 235,
         region: 'East',
-        highpoint: 'Clingman\'s Dome (6,643 ft.)'
-      },
+        highpoint: "Clingman's Dome (6,643 ft.)"
+      }
     ]
   };
   // method called every time the sort button is clicked
@@ -154,20 +154,16 @@ export default class TripleCrownTable extends React.Component {
                       />
                     </button>
                   </th>
+                  <th># of States Entered</th>
                   <th>
-                      # of States Entered
-                  </th>
-                  <th>
-                  ⛰️ Elevation Per Mile
+                    ⛰️ Elevation Per Mile
                     <button onClick={this.onSortChangeCock}>
                       <i
                         className={`fas fa-${sortTypeCock[currentSort].class}`}
                       />
                     </button>
                   </th>
-                  <th>
-                      Highest Point
-                  </th>
+                  <th>Highest Point</th>
                 </tr>
               </thead>
               <tbody>

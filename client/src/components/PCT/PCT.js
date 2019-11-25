@@ -15,9 +15,9 @@ export default function PCT() {
       <TrailImage />
       <KeyFacts />
       <TrailSummary />
-      <GearRec />
-      <FunSection />
       <InDepthStats />
+      <FunSection />
+      <GearRec />
       <EndCard />
     </div>
   );

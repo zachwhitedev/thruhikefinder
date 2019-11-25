@@ -24,6 +24,7 @@ td:nth-child(2){
 }
 
 table {
+    width: 100vw;
     font-family: 'Roboto', sans-serif;
     border-collapse: collapse;
 }

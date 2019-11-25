@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import styles from './MainDashboard.module.css';
 import TrailTable from '../../components/TrailTable/TrailTable';
-import TrailDashboard from '../../components/TrailDashboard/TrailDashboard';
+import PCT from '../../components/PCT/PCT';
+import AT from '../../components/AT/AT';
 import TripleCrownTable from '../../components/TripleCrownTable/TripleCrownTable';
 
 function MainDashboard(props) {
@@ -26,7 +27,8 @@ function MainDashboard(props) {
           <option value='John Muir Trail'>John Muir Trail</option>
         </select>
       </div>
-      {headerTitle == 'Pacific Crest Trail' && <TrailDashboard />}
+      {headerTitle == 'Pacific Crest Trail' && <PCT />}
+      {headerTitle == 'Appalachian Trail' && <AT />}
       {headerTitle == 'Choose a trail...' && <TripleCrownTable />}
       {headerTitle == 'Choose a trail...' && <TrailTable />}
     </div>

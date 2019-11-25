@@ -6,9 +6,9 @@ import GearRec from './GearRec/GearRec';
 import FunSection from './FunSection/FunSection';
 import InDepthStats from './InDepthStats/InDepthStats';
 import EndCard from './EndCard/EndCard';
-import styles from './TrailDashboard.module.css';
+import styles from './AT.module.css';
 
-export default function TrailDashboard() {
+export default function AT() {
   
   return (
     <div className={styles.wrapper}>

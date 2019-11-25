@@ -53,11 +53,6 @@ table {
     font-family: 'Roboto', sans-serif;
 }
 
-.tablewrappercrown {
-    width: 100vw;
-    margin: 0 auto;
-}
-
 i {
     width: 10px;
     height: auto;
@@ -68,6 +63,9 @@ i {
     font-family: 'Roboto', sans-serif;
 }
 
-.compWrapperCrown {
-    width: 100vw;
+@media(max-width: 470px){
+    .compWrapperCrown {
+        display: none;
+    }   
+
 }

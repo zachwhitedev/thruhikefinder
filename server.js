@@ -2,6 +2,8 @@ const express= require('express');
 const app = express();
 const path = require('path');
 
+app.use(require('prerender-node'));
+
 const PORT = process.env.PORT || 5000;
 
 if(process.env.NODE_ENV === 'production'){

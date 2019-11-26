@@ -143,7 +143,7 @@ export default class TrailTable extends React.Component {
                   <th> 🌲 Trail Name</th>
                   <th>
                     🥾 Distance
-                    <button onClick={this.onSortChange}>
+                    <button onClick={this.onSortChange} aria-label='sort by distance'>
                       <i
                         className={`fas fa-${sortTypeNetWorth[currentSort].class}`}
                       />
@@ -151,7 +151,7 @@ export default class TrailTable extends React.Component {
                   </th>
                   <th>
                     🚰 Water Sources Per 10 Miles
-                    <button onClick={this.onSortChangeCock}>
+                    <button onClick={this.onSortChangeCock} aria-label='sort by water'>
                       <i
                         className={`fas fa-${sortTypeCock[currentSort].class}`}
                       />

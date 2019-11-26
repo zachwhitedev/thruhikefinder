@@ -148,7 +148,7 @@ export default class TripleCrownTable extends React.Component {
                   <th> 🗺️ Region</th>
                   <th>
                     🥾 Distance
-                    <button onClick={this.onSortChange}>
+                    <button onClick={this.onSortChange} aria-label='sort by distance'>
                       <i
                         className={`fas fa-${sortTypeNetWorth[currentSort].class}`}
                       />
@@ -157,7 +157,7 @@ export default class TripleCrownTable extends React.Component {
                   <th># of States Entered</th>
                   <th>
                     ⛰️ Elevation Per Mile
-                    <button onClick={this.onSortChangeCock}>
+                    <button onClick={this.onSortChangeCock} aria-label='sort by elevation per mile'>
                       <i
                         className={`fas fa-${sortTypeCock[currentSort].class}`}
                       />

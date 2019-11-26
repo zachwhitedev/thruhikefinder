@@ -31,11 +31,11 @@ function MainDashboard(props) {
         open={showSideDrawer} />
       <div className={styles.header}>
         <h1 id={styles.headerPrompt}>{headerTitle}</h1>
-        <select onChange={trailSelect}>
-          <option value='Choose a trail...' selected='selected'>Compare all trails...</option>
-          <option value='Pacific Crest Trail'>Pacific Crest Trail 👑</option>
-          <option value='Appalachian Trail'>Appalachian Trail 👑</option>
-          <option value='Continental Divide Trail'>
+        <select onChange={trailSelect} name='select a trail'>
+          <option value='Choose a trail...' label='Compare all trails...' selected='selected'>Compare all trails...</option>
+          <option value='Pacific Crest Trail' label='Pacific Crest Trail'>Pacific Crest Trail 👑</option>
+          <option value='Appalachian Trail' label='Appalachian Trail'>Appalachian Trail 👑</option>
+          <option value='Continental Divide Trail' label='Continental Divide Trail'>
             Continental Divide Trail 👑
           </option>
           <option value='John Muir Trail'>John Muir Trail</option>

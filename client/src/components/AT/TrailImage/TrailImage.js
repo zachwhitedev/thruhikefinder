@@ -5,7 +5,7 @@ import styles from './TrailImage.module.css'
 export default function TrailImage(){
     return (
         <div className={styles.map}>
-        <img src={atmap} />
+        <img src={atmap} alt='Appalachian Trail Map'/>
       </div>
     )
 }

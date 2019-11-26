@@ -13,7 +13,7 @@ export default function GearRec() {
       <div className={styles.tentDiv}>
         <h5>Nemo Hornet</h5>
         <a href={tentlink}>
-          <img src={tentimage} />
+          <img src={tentimage} alt='tent for hikers' />
         </a>
 
         <a id={styles.tentButton} href={tentlink} target='_blank'>

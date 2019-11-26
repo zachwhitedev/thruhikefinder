@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/zachwhitedev/thruhikefinder#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "express-static-gzip": "^2.0.5"
   }
 }

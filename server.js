@@ -2,6 +2,12 @@ const express= require('express');
 const app = express();
 const path = require('path');
 
+app.use(
+    expressStaticGzip(path.join(__dirname, 'build'), {
+    enableBrotli: true, // only if you have brotli files too
+    }),
+);
+
 const PORT = process.env.PORT || 5000;
 
 if(process.env.NODE_ENV === 'production'){

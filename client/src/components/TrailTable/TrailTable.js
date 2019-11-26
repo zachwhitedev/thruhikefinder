@@ -27,17 +27,17 @@ export default class TrailTable extends React.Component {
       },
       {
         name: 'Continental Divide Trail 👑',
-        distance: 3120,
+        distance: 3100,
         waterSources: 4
       },
       {
         name: 'Appalachian Trail 👑',
-        distance: 2140,
+        distance: 2189,
         waterSources: 6
       },
       {
         name: 'Long Trail (VT)',
-        distance: 215,
+        distance: 273,
         waterSources: 7
       }
     ]

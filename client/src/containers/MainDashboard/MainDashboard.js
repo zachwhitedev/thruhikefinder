@@ -3,6 +3,7 @@ import styles from './MainDashboard.module.css';
 import TrailTable from '../../components/TrailTable/TrailTable';
 import PCT from '../../components/PCT/PCT';
 import AT from '../../components/AT/AT';
+import CDT from '../../components/CDT/CDT';
 import TripleCrownTable from '../../components/TripleCrownTable/TripleCrownTable';
 import Toolbar from '../../components/Navigation/Toolbar';
 import SideDrawer from '../../components/Navigation/SideDrawer/SideDrawer';
@@ -43,6 +44,7 @@ function MainDashboard(props) {
       </div>
       {headerTitle == 'Pacific Crest Trail' && <PCT />}
       {headerTitle == 'Appalachian Trail' && <AT />}
+      {headerTitle == 'Continental Divide Trail' && <CDT />}
       {headerTitle == 'Choose a trail...' && <TripleCrownTable />}
       {headerTitle == 'Choose a trail...' && <TrailTable />}
     </div>

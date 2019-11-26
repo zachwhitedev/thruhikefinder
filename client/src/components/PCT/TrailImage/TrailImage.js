@@ -5,7 +5,7 @@ import styles from './TrailImage.module.css'
 export default function TrailImage(){
     return (
         <div className={styles.map}>
-        <img src={pctmap} />
+        <img src={pctmap} alt='Pacific Crest Trail map'/>
       </div>
     )
 }

@@ -4,7 +4,6 @@ const path = require('path');
 
 app.use(
     expressStaticGzip(path.join(__dirname, 'build'), {
-    enableBrotli: true, // only if you have brotli files too
     }),
 );
 

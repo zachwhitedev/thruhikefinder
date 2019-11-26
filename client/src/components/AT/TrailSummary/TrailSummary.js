@@ -16,8 +16,7 @@ export default function TrailSummary(){
         <p>
           In completing the trail, you will have crossed through the desert of
           Southern California, the grandiose Sierra Nevada mountain range, and
-          the wilderness of the Cascades in Northern Washington. Oregon can suck
-          my balls.
+          the wilderness of the Cascades in Northern Washington.
         </p>
       </div>
     )

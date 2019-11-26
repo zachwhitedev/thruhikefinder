@@ -18,9 +18,14 @@
     height: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 .Logo {
     font-family: 'Odibee Sans', cursive;
     font-size: 36px;
+    color: white;
 }
 
 @media (max-width: 499px) {

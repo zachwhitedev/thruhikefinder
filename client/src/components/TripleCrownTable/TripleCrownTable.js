@@ -139,7 +139,7 @@ export default class TripleCrownTable extends React.Component {
     return (
       <div className={styles.compWrapperCrown}>
         <h2>Triple Crown Trails</h2>
-        <div className={styles.tablewrappercrown}>
+        <div className={styles.tableWrapperCrown}>
           {this.state.tableData.length > 0 && (
             <table className='text-left'>
               <thead>

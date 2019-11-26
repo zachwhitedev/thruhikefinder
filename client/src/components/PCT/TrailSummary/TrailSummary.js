@@ -6,17 +6,10 @@ export default function TrailSummary(){
         <div className={styles.container}>
         <h2>Summary</h2>
         <p>
-          The Pacific Crest Trail is a 2,652 mile continous footpath that runs
-          the length of the west coast of the United States. It starts at
-          the Mexican border in Southern California, and cross three states to
-          where it ends at the Canadian border in Washington. The trail is known
-          for its breath-taking views, varied terrain, and continuosly changing
-          climate and landscapes.
+          The Pacific Crest Trail is a 2,652 mile continuous footpath that traverses the length of the West Coast of the United States. It runs from the Mexican border in Southern California and cross three states to where its other end at the Canadian border in Washington state. The trail is known for its breathtaking views, varied terrain, and continuously changing climate and landscapes.
         </p>
         <p>
-          In completing the trail, you will have crossed through the desert of
-          Southern California, the grandiose Sierra Nevada mountain range, and
-          the wilderness of the Cascades in Northern Washington.
+          Hiking the entire trail, one crosses the desert of Southern California, the entire length of the Sierra Nevada mountain range and the majority of the John Muir Trail, Yosemite National Park, Crater Lake National Park and the volcanic landscapes of Oregon, and experiences the remote wilderness of the North Cascades in Northern Washington.
         </p>
       </div>
     )

@@ -9,9 +9,10 @@
 }
 
 .header > select {
+  font-size: 20px;
   text-align: center;
   padding: 12px;
-  height: 28px;
+  height: 40px;
   margin-bottom: 10px;
   background: rgb(206, 255, 206);
   font-weight: bold;

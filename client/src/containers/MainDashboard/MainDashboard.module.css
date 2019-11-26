@@ -18,6 +18,11 @@
   text-align-last: center;
 }
 
+#headerPrompt {
+  margin-top: 40px;
+  padding-top: 40px;
+}
+
 @media(max-width: 400px){
   .container {
     display: grid;

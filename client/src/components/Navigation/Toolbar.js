@@ -5,9 +5,11 @@ import DrawerToggle from '../Navigation/SideDrawer/DrawerToggle/DrawerToggle'
 
 const toolbar = (props) => (
     <header className={styles.Toolbar}>
-        <div className={styles.Logo}>
-            THRU HIKE DATA
-        </div>
+        <a href='/'>
+            <div className={styles.Logo}>
+                THRU HIKE DATA
+            </div>
+        </a>
         <DrawerToggle clicked={props.drawerToggleClicked} />
     </header>
 )

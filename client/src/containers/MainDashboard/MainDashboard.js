@@ -30,7 +30,7 @@ function MainDashboard(props) {
         closed={sideDrawerClosedHandler} 
         open={showSideDrawer} />
       <div className={styles.header}>
-        <h1>{headerTitle}</h1>
+        <h1 id={styles.headerPrompt}>{headerTitle}</h1>
         <select onChange={trailSelect}>
           <option value='Choose a trail...' selected='selected'>Compare all trails...</option>
           <option value='Pacific Crest Trail'>Pacific Crest Trail 👑</option>

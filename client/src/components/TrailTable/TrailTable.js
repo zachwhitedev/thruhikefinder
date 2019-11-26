@@ -135,7 +135,7 @@ export default class TrailTable extends React.Component {
     return (
       <div className={styles.compWrapper}>
         <h2>All Thru-Hikes</h2>
-        <div className={styles.tablewrapper}>
+        <div className={styles.tableWrapper}>
           {this.state.tableData.length > 0 && (
             <table className='text-left'>
               <thead>

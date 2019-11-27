@@ -163,7 +163,7 @@ export default class TrailTable extends React.Component {
       {
         name: 'Florida Trail',
         year: 'N/A',
-        distance: 1000,
+        distance: 1300,
         totalstates: 1,
         elevationPerMile: 'N/A',
         region: 'N/A',

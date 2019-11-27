@@ -23,25 +23,163 @@ export default class TrailTable extends React.Component {
       {
         name: 'Pacific Crest Trail 👑',
         distance: 2652,
-        waterSources: 3
+        totalstates: 'N/A',
+        elevationPerMile: 'N/A',
+        region: 'N/A',
+        highPoint: 'N/A',
+        avgTemp: 'N/A',
+        rainfall: 'N/A',
+        predictedResupplies: 'N/A',
+        avgResupplies: 'N/A',
+        political: 'N/A'
       },
       {
         name: 'Continental Divide Trail 👑',
         distance: 3100,
-        waterSources: 4
+        totalstates: 'N/A',
+        elevationPerMile: 'N/A',
+        region: 'N/A',
+        highPoint: 'N/A',
+        avgTemp: 'N/A',
+        rainfall: 'N/A',
+        predictedResupplies: 'N/A',
+        avgResupplies: 'N/A',
+        political: 'N/A'
       },
       {
         name: 'Appalachian Trail 👑',
         distance: 2189,
-        waterSources: 6
+        totalstates: 'N/A',
+        elevationPerMile: 'N/A',
+        region: 'N/A',
+        highPoint: 'N/A',
+        avgTemp: 'N/A',
+        rainfall: 'N/A',
+        predictedResupplies: 'N/A',
+        avgResupplies: 'N/A',
+        political: 'N/A'
       },
       {
         name: 'Long Trail (VT)',
         distance: 273,
-        waterSources: 7
+        totalstates: 'N/A',
+        elevationPerMile: 'N/A',
+        region: 'N/A',
+        highPoint: 'N/A',
+        avgTemp: 'N/A',
+        rainfall: 'N/A',
+        predictedResupplies: 'N/A',
+        avgResupplies: 'N/A',
+        political: 'N/A'
+      },
+      {
+        name: 'John Muir Trail',
+        distance: 211,
+        totalstates: 1,
+        elevationPerMile: 'N/A',
+        region: 'N/A',
+        highPoint: 'N/A',
+        avgTemp: 'N/A',
+        rainfall: 'N/A',
+        predictedResupplies: 'N/A',
+        avgResupplies: 'N/A',
+        political: 'N/A'
+      },
+      {
+        name: 'Arizona Trail',
+        distance: 790,
+        totalstates: 1,
+        elevationPerMile: 'N/A',
+        region: 'N/A',
+        highPoint: 'N/A',
+        avgTemp: 'N/A',
+        rainfall: 'N/A',
+        predictedResupplies: 'N/A',
+        avgResupplies: 'N/A',
+        political: 'N/A'
+      },
+      {
+        name: 'Colorado Trail',
+        distance: 483,
+        totalstates: 1,
+        elevationPerMile: 'N/A',
+        region: 'N/A',
+        highPoint: 'N/A',
+        avgTemp: 'N/A',
+        rainfall: 'N/A',
+        predictedResupplies: 'N/A',
+        avgResupplies: 'N/A',
+        political: 'N/A'
+      },
+      {
+        name: 'Pacific Northwest Trail',
+        distance: 1200,
+        totalstates: 3,
+        elevationPerMile: 'N/A',
+        region: 'N/A',
+        highPoint: 'N/A',
+        avgTemp: 'N/A',
+        rainfall: 'N/A',
+        predictedResupplies: 'N/A',
+        avgResupplies: 'N/A',
+        political: 'N/A'
+      },
+      {
+        name: 'Hayduke Trail',
+        distance: 812,
+        totalstates: 2,
+        elevationPerMile: 'N/A',
+        region: 'N/A',
+        highPoint: 'N/A',
+        avgTemp: 'N/A',
+        rainfall: 'N/A',
+        predictedResupplies: 'N/A',
+        avgResupplies: 'N/A',
+        political: 'N/A'
+      },
+      {
+        name: 'Oregon Desert Trail',
+        distance: 750,
+        totalstates: 1,
+        elevationPerMile: 'N/A',
+        region: 'N/A',
+        highPoint: 'N/A',
+        avgTemp: 'N/A',
+        rainfall: 'N/A',
+        predictedResupplies: 'N/A',
+        avgResupplies: 'N/A',
+        political: 'N/A'
+      },
+      {
+        name: 'Florida Trail',
+        distance: 1000,
+        totalstates: 1,
+        elevationPerMile: 'N/A',
+        region: 'N/A',
+        highPoint: 'N/A',
+        avgTemp: 'N/A',
+        rainfall: 'N/A',
+        predictedResupplies: 'N/A',
+        avgResupplies: 'N/A',
+        political: 'N/A'
+      },
+      {
+        name: 'Ozark Trail',
+        distance: 350,
+        totalstates: 1,
+        elevationPerMile: 'N/A',
+        region: 'N/A',
+        highPoint: 'N/A',
+        avgTemp: 'N/A',
+        rainfall: 'N/A',
+        predictedResupplies: 'N/A',
+        avgResupplies: 'N/A',
+        political: 'N/A'
       }
     ]
   };
+
+
   // method called every time the sort button is clicked
   // it will change the currentSort value to the next one
   onSortChange = () => {
@@ -72,34 +210,35 @@ export default class TrailTable extends React.Component {
       currentSort: nextSort
     });
   };
-  onSortChangeCock = () => {
-    this.setState({
-      sortType: {
-        up: {
-          class: 'sort-down',
-          fn: (a, b) => a.waterSources - b.waterSources
-        },
-        down: {
-          class: 'sort-up',
-          fn: (a, b) => b.waterSources - a.waterSources
-        },
-        default: {
-          class: 'sort-down',
-          fn: (a, b) => a.waterSources - b.waterSources
-        }
-      }
-    });
 
-    const { currentSort } = this.state;
-    let nextSort;
+  // onSortChangeCock = () => {
+  //   this.setState({
+  //     sortType: {
+  //       up: {
+  //         class: 'sort-down',
+  //         fn: (a, b) => a.waterSources - b.waterSources
+  //       },
+  //       down: {
+  //         class: 'sort-up',
+  //         fn: (a, b) => b.waterSources - a.waterSources
+  //       },
+  //       default: {
+  //         class: 'sort-down',
+  //         fn: (a, b) => a.waterSources - b.waterSources
+  //       }
+  //     }
+  //   });
 
-    if (currentSort === 'down') nextSort = 'up';
-    else nextSort = 'down';
+  //   const { currentSort } = this.state;
+  //   let nextSort;
 
-    this.setState({
-      currentSort: nextSort
-    });
-  };
+  //   if (currentSort === 'down') nextSort = 'up';
+  //   else nextSort = 'down';
+
+  //   this.setState({
+  //     currentSort: nextSort
+  //   });
+  // };
 
   render() {
     const { currentSort, sortType } = this.state;
@@ -141,6 +280,7 @@ export default class TrailTable extends React.Component {
               <thead>
                 <tr className={styles.th}>
                   <th> 🌲 Trail Name</th>
+                  <th>Region</th>
                   <th>
                     🥾 Distance
                     <button onClick={this.onSortChange} aria-label='sort by distance'>
@@ -149,14 +289,24 @@ export default class TrailTable extends React.Component {
                       />
                     </button>
                   </th>
+                  <th># of States Entered</th>
+                  <th>Elev. Per Mile</th>
+                  <th>Highest Point</th>
                   <th>
-                    🚰 Water Sources Per 10 Miles
-                    <button onClick={this.onSortChangeCock} aria-label='sort by water'>
-                      <i
-                        className={`fas fa-${sortTypeCock[currentSort].class}`}
-                      />
-                    </button>
+                    Avg. Temp (H/L)
                   </th>
+                  <th>
+                    Avg. Rainfall (in.)
+                  </th>
+                  <th>Predicted # of Resupplies</th>
+                  <th>
+                    Avg. Distance Between Resupplies
+                  </th>
+                  <th>
+                    Political Breakdown (% D/R)
+                  </th>
+
+                  
                 </tr>
               </thead>
               <tbody>
@@ -165,8 +315,16 @@ export default class TrailTable extends React.Component {
                   .map(p => (
                     <tr className={styles.tr}>
                       <td>{p.name}</td>
+                      <td>{p.region}</td>
                       <td>{p.distance}mi</td>
-                      <td>{p.waterSources}</td>
+                      <td>{p.totalstates}</td>
+                      <td>{p.elevationPerMile}</td>
+                      <td>{p.highPoint}</td>
+                      <td>{p.avgTemp}</td>
+                      <td>{p.rainfall}</td>
+                      <td>{p.predictedResupplies}</td>
+                      <td>{p.avgResupplies}</td>
+                      <td>{p.political}</td>
                     </tr>
                   ))}
               </tbody>

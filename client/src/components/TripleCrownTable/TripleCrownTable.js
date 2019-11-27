@@ -24,25 +24,46 @@ export default class TripleCrownTable extends React.Component {
         name: 'Pacific Crest Trail',
         distance: 2652,
         totalstates: 3,
-        elpermile: 119,
+        elevationPerMile: 119,
         region: 'West',
-        highpoint: 'Forester Pass (13,153 ft.)'
+        highpoint: 'Forester Pass (13,153 ft.)',
+        avgTemp: 'N/A',
+        rainfall: 'N/A',
+        avgResupplies: 'N/A',
+        noWater: 'N/A',
+        political: 'N/A',
+        longBetweenResupplies: 'N/A',
+        avgDistanceBetweenResupplies: 'N/A'
       },
       {
         name: 'Continental Divide Trail',
         distance: 3100,
         totalstates: 5,
-        elpermile: 129,
+        elevationPerMile: 129,
         region: 'Southwest/West',
-        highpoint: "Gray's Peak (14,278 ft.)"
+        highpoint: "Gray's Peak (14,278 ft.)",
+        avgTemp: 'N/A',
+        rainfall: 'N/A',
+        avgResupplies: 'N/A',
+        noWater: 'N/A',
+        political: 'N/A',
+        longBetweenResupplies: 'N/A',
+        avgDistanceBetweenResupplies: 'N/A'
       },
       {
         name: 'Appalachian Trail',
         distance: 2189,
         totalstates: 14,
-        elpermile: 235,
+        elevationPerMile: 235,
         region: 'East',
-        highpoint: "Clingman's Dome (6,643 ft.)"
+        highpoint: "Clingman's Dome (6,643 ft.)",
+        avgTemp: 'N/A',
+        rainfall: 'N/A',
+        avgResupplies: 'N/A',
+        noWater: 'N/A',
+        political: 'N/A',
+        longBetweenResupplies: 'N/A',
+        avgDistanceBetweenResupplies: 'N/A'
       }
     ]
   };
@@ -164,6 +185,25 @@ export default class TripleCrownTable extends React.Component {
                     </button>
                   </th>
                   <th>Highest Point</th>
+                  <th>
+                    Avg. Temp (H/L)
+                  </th>
+                  <th>
+                    Avg. Rainfall (in.)
+                  </th>
+                  <th>Predicted # of Resupplies</th>
+                  <th>Avg. Distance Between Water Sources</th>
+                  <th>
+                    Longest Stretch of No Water
+                  </th>
+                  <th>
+                    Avg. Distance Between Resupplies
+                  </th>
+                  <th>Longest Distance Between Resupplies</th>
+                  <th>
+                    Political Breakdown (% D/R)
+                  </th>
+
                 </tr>
               </thead>
               <tbody>
@@ -175,8 +215,16 @@ export default class TripleCrownTable extends React.Component {
                       <td>{p.region}</td>
                       <td>{p.distance} mi.</td>
                       <td>{p.totalstates}</td>
-                      <td>{p.elpermile} ft.</td>
+                      <td>{p.elevationPerMile} ft.</td>
                       <td>{p.highpoint}</td>
+                      <td>{p.avgTemp}</td>
+                      <td>{p.rainfall}</td>
+                      <td>{p.predictedResupplies}</td>
+                      <td>{p.avgDistanceBetweenResupplies}</td>
+                      <td>{p.noWater}</td>
+                      <td>{p.avgResupplies}</td>
+                      <td>{p.longBetweenResupplies}</td>
+                      <td>{p.political}</td>
                     </tr>
                   ))}
               </tbody>

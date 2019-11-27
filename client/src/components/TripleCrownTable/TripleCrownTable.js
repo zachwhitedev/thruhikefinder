@@ -30,6 +30,7 @@ export default class TripleCrownTable extends React.Component {
         highpoint: 'Forester Pass (13,153 ft.)',
         avgTemp: 'N/A',
         rainfall: 'N/A',
+        predictedResupplies: 'N/A',
         avgResupplies: 'N/A',
         noWater: 'N/A',
         political: 'N/A',
@@ -46,6 +47,7 @@ export default class TripleCrownTable extends React.Component {
         highpoint: "Gray's Peak (14,278 ft.)",
         avgTemp: 'N/A',
         rainfall: 'N/A',
+        predictedResupplies: 'N/A',
         avgResupplies: 'N/A',
         noWater: 'N/A',
         political: 'N/A',
@@ -62,6 +64,7 @@ export default class TripleCrownTable extends React.Component {
         highpoint: "Clingman's Dome (6,643 ft.)",
         avgTemp: 'N/A',
         rainfall: 'N/A',
+        predictedResupplies: 'N/A',
         avgResupplies: 'N/A',
         noWater: 'N/A',
         political: 'N/A',
@@ -196,14 +199,14 @@ export default class TripleCrownTable extends React.Component {
                     Avg. Rainfall (in.)
                   </th>
                   <th>Predicted # of Resupplies</th>
-                  <th>Avg. Distance Between Water Sources</th>
-                  <th>
-                    Longest Stretch of No Water
-                  </th>
                   <th>
                     Avg. Distance Between Resupplies
                   </th>
                   <th>Longest Distance Between Resupplies</th>
+                  <th>Avg. Distance Between Water Sources</th>
+                  <th>
+                    Longest Stretch of No Water
+                  </th>
                   <th>
                     Political Breakdown (% D/R)
                   </th>
@@ -225,10 +228,10 @@ export default class TripleCrownTable extends React.Component {
                       <td>{p.avgTemp}</td>
                       <td>{p.rainfall}</td>
                       <td>{p.predictedResupplies}</td>
-                      <td>{p.avgDistanceBetweenResupplies}</td>
-                      <td>{p.noWater}</td>
                       <td>{p.avgResupplies}</td>
                       <td>{p.longBetweenResupplies}</td>
+                      <td>{p.avgDistanceBetweenResupplies}</td>
+                      <td>{p.noWater}</td>
                       <td>{p.political}</td>
                     </tr>
                   ))}

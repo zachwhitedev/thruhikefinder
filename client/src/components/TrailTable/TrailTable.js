@@ -22,7 +22,7 @@ export default class TrailTable extends React.Component {
     tableData: [
       {
         name: 'Pacific Crest Trail 👑',
-        year: 'N/A',
+        year: 1968,
         distance: 2652,
         totalstates: 'N/A',
         elevationPerMile: 'N/A',
@@ -36,7 +36,7 @@ export default class TrailTable extends React.Component {
       },
       {
         name: 'Continental Divide Trail 👑',
-        year: 'N/A',
+        year: 1978,
         distance: 3100,
         totalstates: 'N/A',
         elevationPerMile: 'N/A',
@@ -50,7 +50,7 @@ export default class TrailTable extends React.Component {
       },
       {
         name: 'Appalachian Trail 👑',
-        year: 'N/A',
+        year: 1923,
         distance: 2189,
         totalstates: 'N/A',
         elevationPerMile: 'N/A',
@@ -64,7 +64,7 @@ export default class TrailTable extends React.Component {
       },
       {
         name: 'Long Trail (VT)',
-        year: 'N/A',
+        year: 1910,
         distance: 273,
         totalstates: 'N/A',
         elevationPerMile: 'N/A',
@@ -78,7 +78,7 @@ export default class TrailTable extends React.Component {
       },
       {
         name: 'John Muir Trail',
-        year: 'N/A',
+        year: 1915,
         distance: 211,
         totalstates: 1,
         elevationPerMile: 'N/A',
@@ -92,7 +92,7 @@ export default class TrailTable extends React.Component {
       },
       {
         name: 'Arizona Trail',
-        year: 'N/A',
+        year: 2009,
         distance: 790,
         totalstates: 1,
         elevationPerMile: 'N/A',
@@ -106,7 +106,7 @@ export default class TrailTable extends React.Component {
       },
       {
         name: 'Colorado Trail',
-        year: 'N/A',
+        year: 1987,
         distance: 483,
         totalstates: 1,
         elevationPerMile: 'N/A',
@@ -120,7 +120,7 @@ export default class TrailTable extends React.Component {
       },
       {
         name: 'Pacific Northwest Trail',
-        year: 'N/A',
+        year: 1977,
         distance: 1200,
         totalstates: 3,
         elevationPerMile: 'N/A',
@@ -134,7 +134,7 @@ export default class TrailTable extends React.Component {
       },
       {
         name: 'Hayduke Trail',
-        year: 'N/A',
+        year: 2005,
         distance: 812,
         totalstates: 2,
         elevationPerMile: 'N/A',
@@ -148,7 +148,7 @@ export default class TrailTable extends React.Component {
       },
       {
         name: 'Oregon Desert Trail',
-        year: 'N/A',
+        year: 2011,
         distance: 750,
         totalstates: 1,
         elevationPerMile: 'N/A',
@@ -162,7 +162,7 @@ export default class TrailTable extends React.Component {
       },
       {
         name: 'Florida Trail',
-        year: 'N/A',
+        year: 1966,
         distance: 1300,
         totalstates: 1,
         elevationPerMile: 'N/A',
@@ -176,7 +176,7 @@ export default class TrailTable extends React.Component {
       },
       {
         name: 'Ozark Trail',
-        year: 'N/A',
+        year: 1981,
         distance: 350,
         totalstates: 1,
         elevationPerMile: 'N/A',

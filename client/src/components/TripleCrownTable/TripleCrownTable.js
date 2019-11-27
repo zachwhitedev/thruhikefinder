@@ -22,7 +22,7 @@ export default class TripleCrownTable extends React.Component {
     tableData: [
       {
         name: 'Pacific Crest Trail',
-        year: 'N/A',
+        year: 1968,
         distance: 2652,
         totalstates: 3,
         elevationPerMile: 119,
@@ -39,7 +39,7 @@ export default class TripleCrownTable extends React.Component {
       },
       {
         name: 'Continental Divide Trail',
-        year: 'N/A',
+        year: 1978,
         distance: 3100,
         totalstates: 5,
         elevationPerMile: 129,
@@ -56,7 +56,7 @@ export default class TripleCrownTable extends React.Component {
       },
       {
         name: 'Appalachian Trail',
-        year: 'N/A',
+        year: 1923,
         distance: 2189,
         totalstates: 14,
         elevationPerMile: 235,

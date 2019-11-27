@@ -22,6 +22,7 @@ export default class TrailTable extends React.Component {
     tableData: [
       {
         name: 'Pacific Crest Trail 👑',
+        year: 'N/A',
         distance: 2652,
         totalstates: 'N/A',
         elevationPerMile: 'N/A',
@@ -35,6 +36,7 @@ export default class TrailTable extends React.Component {
       },
       {
         name: 'Continental Divide Trail 👑',
+        year: 'N/A',
         distance: 3100,
         totalstates: 'N/A',
         elevationPerMile: 'N/A',
@@ -48,6 +50,7 @@ export default class TrailTable extends React.Component {
       },
       {
         name: 'Appalachian Trail 👑',
+        year: 'N/A',
         distance: 2189,
         totalstates: 'N/A',
         elevationPerMile: 'N/A',
@@ -61,6 +64,7 @@ export default class TrailTable extends React.Component {
       },
       {
         name: 'Long Trail (VT)',
+        year: 'N/A',
         distance: 273,
         totalstates: 'N/A',
         elevationPerMile: 'N/A',
@@ -74,6 +78,7 @@ export default class TrailTable extends React.Component {
       },
       {
         name: 'John Muir Trail',
+        year: 'N/A',
         distance: 211,
         totalstates: 1,
         elevationPerMile: 'N/A',
@@ -87,6 +92,7 @@ export default class TrailTable extends React.Component {
       },
       {
         name: 'Arizona Trail',
+        year: 'N/A',
         distance: 790,
         totalstates: 1,
         elevationPerMile: 'N/A',
@@ -100,6 +106,7 @@ export default class TrailTable extends React.Component {
       },
       {
         name: 'Colorado Trail',
+        year: 'N/A',
         distance: 483,
         totalstates: 1,
         elevationPerMile: 'N/A',
@@ -113,6 +120,7 @@ export default class TrailTable extends React.Component {
       },
       {
         name: 'Pacific Northwest Trail',
+        year: 'N/A',
         distance: 1200,
         totalstates: 3,
         elevationPerMile: 'N/A',
@@ -126,6 +134,7 @@ export default class TrailTable extends React.Component {
       },
       {
         name: 'Hayduke Trail',
+        year: 'N/A',
         distance: 812,
         totalstates: 2,
         elevationPerMile: 'N/A',
@@ -139,6 +148,7 @@ export default class TrailTable extends React.Component {
       },
       {
         name: 'Oregon Desert Trail',
+        year: 'N/A',
         distance: 750,
         totalstates: 1,
         elevationPerMile: 'N/A',
@@ -152,6 +162,7 @@ export default class TrailTable extends React.Component {
       },
       {
         name: 'Florida Trail',
+        year: 'N/A',
         distance: 1000,
         totalstates: 1,
         elevationPerMile: 'N/A',
@@ -165,6 +176,7 @@ export default class TrailTable extends React.Component {
       },
       {
         name: 'Ozark Trail',
+        year: 'N/A',
         distance: 350,
         totalstates: 1,
         elevationPerMile: 'N/A',
@@ -178,7 +190,6 @@ export default class TrailTable extends React.Component {
       }
     ]
   };
-
 
   // method called every time the sort button is clicked
   // it will change the currentSort value to the next one
@@ -280,10 +291,14 @@ export default class TrailTable extends React.Component {
               <thead>
                 <tr className={styles.th}>
                   <th> 🌲 Trail Name</th>
+                  <th>Year Established</th>
                   <th>Region</th>
                   <th>
                     🥾 Distance
-                    <button onClick={this.onSortChange} aria-label='sort by distance'>
+                    <button
+                      onClick={this.onSortChange}
+                      aria-label='sort by distance'
+                    >
                       <i
                         className={`fas fa-${sortTypeNetWorth[currentSort].class}`}
                       />
@@ -292,21 +307,11 @@ export default class TrailTable extends React.Component {
                   <th># of States Entered</th>
                   <th>Elev. Per Mile</th>
                   <th>Highest Point</th>
-                  <th>
-                    Avg. Temp (H/L)
-                  </th>
-                  <th>
-                    Avg. Rainfall (in.)
-                  </th>
+                  <th>Avg. Temp (H/L)</th>
+                  <th>Avg. Rainfall (in.)</th>
                   <th>Predicted # of Resupplies</th>
-                  <th>
-                    Avg. Distance Between Resupplies
-                  </th>
-                  <th>
-                    Political Breakdown (% D/R)
-                  </th>
-
-                  
+                  <th>Avg. Distance Between Resupplies</th>
+                  <th>Political Breakdown (% D/R)</th>
                 </tr>
               </thead>
               <tbody>
@@ -315,6 +320,7 @@ export default class TrailTable extends React.Component {
                   .map(p => (
                     <tr className={styles.tr}>
                       <td>{p.name}</td>
+                      <td>{p.year}</td>
                       <td>{p.region}</td>
                       <td>{p.distance}mi</td>
                       <td>{p.totalstates}</td>

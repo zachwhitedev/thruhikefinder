@@ -22,6 +22,7 @@ export default class TripleCrownTable extends React.Component {
     tableData: [
       {
         name: 'Pacific Crest Trail',
+        year: 'N/A',
         distance: 2652,
         totalstates: 3,
         elevationPerMile: 119,
@@ -37,6 +38,7 @@ export default class TripleCrownTable extends React.Component {
       },
       {
         name: 'Continental Divide Trail',
+        year: 'N/A',
         distance: 3100,
         totalstates: 5,
         elevationPerMile: 129,
@@ -52,6 +54,7 @@ export default class TripleCrownTable extends React.Component {
       },
       {
         name: 'Appalachian Trail',
+        year: 'N/A',
         distance: 2189,
         totalstates: 14,
         elevationPerMile: 235,
@@ -166,6 +169,7 @@ export default class TripleCrownTable extends React.Component {
               <thead>
                 <tr>
                   <th> 🌲 Trail Name</th>
+                  <th>Year Established</th>
                   <th> 🗺️ Region</th>
                   <th>
                     🥾 Distance
@@ -212,6 +216,7 @@ export default class TripleCrownTable extends React.Component {
                   .map(p => (
                     <tr className={styles.tdcrown}>
                       <td>{p.name}</td>
+                      <td>{p.year}</td>
                       <td>{p.region}</td>
                       <td>{p.distance} mi.</td>
                       <td>{p.totalstates}</td>

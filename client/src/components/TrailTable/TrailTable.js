@@ -21,29 +21,29 @@ export default class TrailTable extends React.Component {
     currentSort: 'default',
     tableData: [
       {
-        name: 'Pacific Crest Trail 👑',
+        name: 'Pacific Crest Trail',
         year: 1968,
         distance: 2652,
         totalstates: 3,
-        daysToFinish: 'N/A',
-        elevationPerMile: 'N/A',
-        region: 'N/A',
-        highPoint: 'N/A',
+        daysToFinish: 150,
+        elevationPerMile: 184,
+        region: 'West',
+        highPoint: 'Forester Pass (13,153 ft.)',
         avgTemp: 'N/A',
         rainfall: 'N/A',
-        predictedResupplies: 'N/A',
-        avgResupplies: 'N/A',
+        predictedResupplies: 26,
+        avgResupplies: 102,
         political: 'N/A'
       },
       {
-        name: 'Continental Divide Trail 👑',
+        name: 'Continental Divide Trail',
         year: 1978,
         distance: 3100,
         totalstates: 5,
-        daysToFinish: 'N/A',
-        elevationPerMile: 'N/A',
-        region: 'N/A',
-        highPoint: 'N/A',
+        daysToFinish: 170,
+        elevationPerMile: 172,
+        region: 'Southwest/West',
+        highPoint: 'Grays Peak (14,278 ft.)',
         avgTemp: 'N/A',
         rainfall: 'N/A',
         predictedResupplies: 'N/A',
@@ -51,14 +51,14 @@ export default class TrailTable extends React.Component {
         political: 'N/A'
       },
       {
-        name: 'Appalachian Trail 👑',
+        name: 'Appalachian Trail',
         year: 1923,
         distance: 2189,
-        totalstates: 'N/A',
-        daysToFinish: 'N/A',
-        elevationPerMile: 'N/A',
-        region: 'N/A',
-        highPoint: 'N/A',
+        totalstates: 14,
+        daysToFinish: 165,
+        elevationPerMile: 212,
+        region: 'East',
+        highPoint: 'Clingman\'s Dome (6,643 ft.)',
         avgTemp: 'N/A',
         rainfall: 'N/A',
         predictedResupplies: 'N/A',
@@ -70,10 +70,10 @@ export default class TrailTable extends React.Component {
         year: 1910,
         distance: 273,
         totalstates: 1,
-        daysToFinish: 'N/A',
-        elevationPerMile: 'N/A',
-        region: 'N/A',
-        highPoint: 'N/A',
+        daysToFinish: 20,
+        elevationPerMile: 239,
+        region: 'Northeast',
+        highPoint: 'Mt. Mansfield (4,395 ft.)',
         avgTemp: 'N/A',
         rainfall: 'N/A',
         predictedResupplies: 'N/A',
@@ -85,10 +85,10 @@ export default class TrailTable extends React.Component {
         year: 1915,
         distance: 211,
         totalstates: 1,
-        daysToFinish: 'N/A',
-        elevationPerMile: 'N/A',
-        region: 'N/A',
-        highPoint: 'N/A',
+        daysToFinish: 20,
+        elevationPerMile: 221,
+        region: 'West',
+        highPoint: 'Mt. Whitney (14,505 ft.)',
         avgTemp: 'N/A',
         rainfall: 'N/A',
         predictedResupplies: 'N/A',
@@ -100,10 +100,10 @@ export default class TrailTable extends React.Component {
         year: 2009,
         distance: 790,
         totalstates: 1,
-        daysToFinish: 'N/A',
+        daysToFinish: 40,
         elevationPerMile: 'N/A',
-        region: 'N/A',
-        highPoint: 'N/A',
+        region: 'Southwest',
+        highPoint: 'Kaibab Plateau (9,148 ft.)',
         avgTemp: 'N/A',
         rainfall: 'N/A',
         predictedResupplies: 'N/A',
@@ -115,10 +115,10 @@ export default class TrailTable extends React.Component {
         year: 1987,
         distance: 483,
         totalstates: 1,
-        daysToFinish: 'N/A',
-        elevationPerMile: 'N/A',
-        region: 'N/A',
-        highPoint: 'N/A',
+        daysToFinish: 30,
+        elevationPerMile: 185,
+        region: 'West',
+        highPoint: 'Jarosa Mesa (13,271 ft.)',
         avgTemp: 'N/A',
         rainfall: 'N/A',
         predictedResupplies: 'N/A',
@@ -130,10 +130,10 @@ export default class TrailTable extends React.Component {
         year: 1977,
         distance: 1200,
         totalstates: 3,
-        daysToFinish: 'N/A',
-        elevationPerMile: 'N/A',
-        region: 'N/A',
-        highPoint: 'N/A',
+        daysToFinish: 60,
+        elevationPerMile: 171,
+        region: 'West',
+        highPoint: 'Cathedral Pass (7,800 ft.)',
         avgTemp: 'N/A',
         rainfall: 'N/A',
         predictedResupplies: 'N/A',
@@ -145,10 +145,10 @@ export default class TrailTable extends React.Component {
         year: 2005,
         distance: 812,
         totalstates: 2,
-        daysToFinish: 'N/A',
-        elevationPerMile: 'N/A',
-        region: 'N/A',
-        highPoint: 'N/A',
+        daysToFinish: 45,
+        elevationPerMile: 125,
+        region: 'Southwest',
+        highPoint: 'Mt. Ellen (11,419 ft.)',
         avgTemp: 'N/A',
         rainfall: 'N/A',
         predictedResupplies: 'N/A',
@@ -160,9 +160,9 @@ export default class TrailTable extends React.Component {
         year: 2011,
         distance: 750,
         totalstates: 1,
-        daysToFinish: 'N/A',
-        elevationPerMile: 'N/A',
-        region: 'N/A',
+        daysToFinish: 40,
+        elevationPerMile: 91,
+        region: 'West',
         highPoint: 'N/A',
         avgTemp: 'N/A',
         rainfall: 'N/A',
@@ -175,10 +175,10 @@ export default class TrailTable extends React.Component {
         year: 1966,
         distance: 1300,
         totalstates: 1,
-        daysToFinish: 'N/A',
-        elevationPerMile: 'N/A',
-        region: 'N/A',
-        highPoint: 'N/A',
+        daysToFinish: 70,
+        elevationPerMile: '< 80',
+        region: 'Southeast',
+        highPoint: 'N/A (270 ft.)',
         avgTemp: 'N/A',
         rainfall: 'N/A',
         predictedResupplies: 'N/A',
@@ -190,10 +190,10 @@ export default class TrailTable extends React.Component {
         year: 1981,
         distance: 350,
         totalstates: 1,
-        daysToFinish: 'N/A',
+        daysToFinish: 25,
         elevationPerMile: 'N/A',
-        region: 'N/A',
-        highPoint: 'N/A',
+        region: 'Midwest',
+        highPoint: 'Taum Sauk (1,772 ft.)',
         avgTemp: 'N/A',
         rainfall: 'N/A',
         predictedResupplies: 'N/A',
@@ -302,11 +302,11 @@ export default class TrailTable extends React.Component {
             <table className='text-left'>
               <thead>
                 <tr className={styles.th}>
-                  <th> 🌲 Trail Name</th>
+                  <th>Trail Name</th>
                   <th>Year Established</th>
                   <th>Region</th>
                   <th>
-                    🥾 Distance
+                    Distance (mi)
                     <button
                       onClick={this.onSortChange}
                       aria-label='sort by distance'
@@ -316,14 +316,14 @@ export default class TrailTable extends React.Component {
                       />
                     </button>
                   </th>
-                  <th># of States Entered</th>
-                  <th># Days to Finish</th>
-                  <th>Elev. Per Mile</th>
+                  <th># States Entered</th>
+                  <th>Approx. Days to Finish</th>
+                  <th>Elev. Gain/Mile (ft)</th>
                   <th>Highest Point</th>
                   <th>Avg. Temp (H/L)</th>
-                  <th>Avg. Rainfall (in.)</th>
-                  <th>Predicted # of Resupplies</th>
-                  <th>Avg. Distance Between Resupplies</th>
+                  <th>Avg. Rainfall (in)</th>
+                  <th>Predicted # Resupplies</th>
+                  <th>Avg. Dist. Between Resupplies (mi)</th>
                   <th>Political Breakdown (% D/R)</th>
                 </tr>
               </thead>
@@ -335,7 +335,7 @@ export default class TrailTable extends React.Component {
                       <td>{p.name}</td>
                       <td>{p.year}</td>
                       <td>{p.region}</td>
-                      <td>{p.distance}mi</td>
+                      <td>{p.distance}</td>
                       <td>{p.totalstates}</td>
                       <td>{p.daysToFinish}</td>
                       <td>{p.elevationPerMile}</td>

@@ -25,6 +25,7 @@ export default class TripleCrownTable extends React.Component {
         year: 1968,
         distance: 2652,
         totalstates: 3,
+        daysToFinish: 'N/A',
         elevationPerMile: 119,
         region: 'West',
         highpoint: 'Forester Pass (13,153 ft.)',
@@ -42,6 +43,7 @@ export default class TripleCrownTable extends React.Component {
         year: 1978,
         distance: 3100,
         totalstates: 5,
+        daysToFinish: 'N/A',
         elevationPerMile: 129,
         region: 'Southwest/West',
         highpoint: "Gray's Peak (14,278 ft.)",
@@ -59,6 +61,7 @@ export default class TripleCrownTable extends React.Component {
         year: 1923,
         distance: 2189,
         totalstates: 14,
+        daysToFinish: 'N/A',
         elevationPerMile: 235,
         region: 'East',
         highpoint: "Clingman's Dome (6,643 ft.)",
@@ -183,6 +186,7 @@ export default class TripleCrownTable extends React.Component {
                     </button>
                   </th>
                   <th># of States Entered</th>
+                  <th># Days to Finish</th>
                   <th>
                     ⛰️ Elevation Per Mile
                     <button onClick={this.onSortChangeCock} aria-label='sort by elevation per mile'>
@@ -223,6 +227,7 @@ export default class TripleCrownTable extends React.Component {
                       <td>{p.region}</td>
                       <td>{p.distance} mi.</td>
                       <td>{p.totalstates}</td>
+                      <td>{p.daysToFinish}</td>
                       <td>{p.elevationPerMile} ft.</td>
                       <td>{p.highpoint}</td>
                       <td>{p.avgTemp}</td>

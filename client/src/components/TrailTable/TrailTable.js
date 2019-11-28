@@ -222,34 +222,34 @@ export default class TrailTable extends React.Component {
     });
   };
 
-  // onSortChangeCock = () => {
-  //   this.setState({
-  //     sortType: {
-  //       up: {
-  //         class: 'sort-down',
-  //         fn: (a, b) => a.waterSources - b.waterSources
-  //       },
-  //       down: {
-  //         class: 'sort-up',
-  //         fn: (a, b) => b.waterSources - a.waterSources
-  //       },
-  //       default: {
-  //         class: 'sort-down',
-  //         fn: (a, b) => a.waterSources - b.waterSources
-  //       }
-  //     }
-  //   });
+  onSortChangeCock = () => {
+    this.setState({
+      sortType: {
+        up: {
+          class: 'sort-down',
+          fn: (a, b) => a.waterSources - b.waterSources
+        },
+        down: {
+          class: 'sort-up',
+          fn: (a, b) => b.waterSources - a.waterSources
+        },
+        default: {
+          class: 'sort-down',
+          fn: (a, b) => a.waterSources - b.waterSources
+        }
+      }
+    });
 
-  //   const { currentSort } = this.state;
-  //   let nextSort;
+    const { currentSort } = this.state;
+    let nextSort;
 
-  //   if (currentSort === 'down') nextSort = 'up';
-  //   else nextSort = 'down';
+    if (currentSort === 'down') nextSort = 'up';
+    else nextSort = 'down';
 
-  //   this.setState({
-  //     currentSort: nextSort
-  //   });
-  // };
+    this.setState({
+      currentSort: nextSort
+    });
+  };
 
   render() {
     const { currentSort, sortType } = this.state;

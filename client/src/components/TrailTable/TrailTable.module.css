@@ -3,17 +3,23 @@
     margin-right: 40px;
 } */
 
+.compWrapper {
+    background: white;
+    width: 900px;
+    margin: 20px auto 60px auto;
+}
+
 .td {
     text-align: left;
-    background: rgb(210, 255, 252);
+    background: rgb(255, 210, 210)
 }
 
 .tr:nth-child(odd){
-    background: rgb(211, 255, 240);
+    background: rgb(255, 255, 255);
 }
 
 .tr:nth-child(even){
-    background: rgb(165, 216, 255);
+    background: rgb(197, 255, 195);
 }
 
 
@@ -28,7 +34,6 @@ td:nth-child(2){
 }
 
 table {
-    width: 100vw;
     font-family: 'Roboto', sans-serif;
     border-collapse: collapse;
 }
@@ -39,6 +44,7 @@ table {
 
 td, th {
     border: 1px solid black;
+    font-size: 10pt;
 }
 
 i {
@@ -49,4 +55,41 @@ i {
 .compWrapper > h2 {
     text-align: center;
     font-family: 'Roboto', sans-serif;
+}
+
+@media(max-width: 902px){
+    .compWrapper {
+        background: white;
+        width: 700px;
+        margin: 20px auto 60px auto;
+        overflow-x: scroll;
+    }
+}
+@media(max-width: 702px){
+    .compWrapper {
+        background: white;
+        border: 2px solid green;
+        width: 500px;
+        height: 400px;
+        margin: 20px auto 60px auto;
+        overflow-x: scroll;
+        overflow-y: scroll;
+  }
+}
+
+@media(max-width: 502px){
+    .compWrapper {
+        background: rgb(255, 255, 255);
+        width: 410px;
+        margin: 20px auto 60px auto;
+        overflow-x: scroll;
+    }
+}
+@media(max-width: 412px){
+    .compWrapper {
+        background: rgb(255, 255, 255);
+        width: 310px;
+        margin: 20px auto 60px auto;
+        overflow-x: scroll;
+    }
 }

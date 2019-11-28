@@ -21,59 +21,59 @@ export default class TripleCrownTable extends React.Component {
     currentSort: 'default',
     tableData: [
       {
+        name: 'Appalachian Trail',
+        year: 1923,
+        region: 'East',
+        distance: 2189,
+        totalstates: 14,
+        daysToFinish: 165,
+        elevationPerMile: 212,
+        highpoint: 'Clingman\'s Dome (6,643 ft.)',
+        avgTemp: 'N/A',
+        rainfall: 'N/A',
+        avgDistBetweenWaterSources: 'N/A',
+        noWater: 'N/A',
+        predictedResupplies: 'N/A',
+        avgDistBetweenResupplies: 'N/A',
+        longBetweenResupplies: 100,
+        political: 'N/A',
+      },
+      {
         name: 'Pacific Crest Trail',
         year: 1968,
+        region: 'West',
         distance: 2652,
         totalstates: 3,
-        daysToFinish: 'N/A',
-        elevationPerMile: 119,
-        region: 'West',
+        daysToFinish: 150,
+        elevationPerMile: 184,
         highpoint: 'Forester Pass (13,153 ft.)',
         avgTemp: 'N/A',
         rainfall: 'N/A',
-        predictedResupplies: 'N/A',
-        avgResupplies: 'N/A',
-        noWater: 'N/A',
+        avgDistBetweenWaterSources: 'N/A',
+        noWater: 42,
+        predictedResupplies: 26,
+        avgDistBetweenResupplies: 102,
+        longBetweenResupplies: 154,
         political: 'N/A',
-        longBetweenResupplies: 'N/A',
-        avgDistanceBetweenResupplies: 'N/A'
       },
       {
         name: 'Continental Divide Trail',
         year: 1978,
+        region: 'Southwest/West',
         distance: 3100,
         totalstates: 5,
-        daysToFinish: 'N/A',
-        elevationPerMile: 129,
-        region: 'Southwest/West',
-        highpoint: "Gray's Peak (14,278 ft.)",
+        daysToFinish: 170,
+        elevationPerMile: 172,
+        highpoint: 'Grays Peak (14,278 ft.)',
         avgTemp: 'N/A',
         rainfall: 'N/A',
-        predictedResupplies: 'N/A',
-        avgResupplies: 'N/A',
+        avgDistBetweenWaterSources: 'N/A',
         noWater: 'N/A',
-        political: 'N/A',
+        predictedResupplies: 'N/A',
+        avgDistBetweenResupplies: 'N/A',
         longBetweenResupplies: 'N/A',
-        avgDistanceBetweenResupplies: 'N/A'
+        political: 'N/A',
       },
-      {
-        name: 'Appalachian Trail',
-        year: 1923,
-        distance: 2189,
-        totalstates: 14,
-        daysToFinish: 'N/A',
-        elevationPerMile: 235,
-        region: 'East',
-        highpoint: "Clingman's Dome (6,643 ft.)",
-        avgTemp: 'N/A',
-        rainfall: 'N/A',
-        predictedResupplies: 'N/A',
-        avgResupplies: 'N/A',
-        noWater: 'N/A',
-        political: 'N/A',
-        longBetweenResupplies: 'N/A',
-        avgDistanceBetweenResupplies: 'N/A'
-      }
     ]
   };
   // method called every time the sort button is clicked
@@ -174,21 +174,21 @@ export default class TripleCrownTable extends React.Component {
             <table className='text-left'>
               <thead>
                 <tr>
-                  <th> 🌲 Trail Name</th>
+                  <th>Trail Name</th>
                   <th>Year Established</th>
-                  <th> 🗺️ Region</th>
+                  <th>Region</th>
                   <th>
-                    🥾 Distance
+                    Distance (mi)
                     <button onClick={this.onSortChange} aria-label='sort by distance'>
                       <i
                         className={`fas fa-${sortTypeNetWorth[currentSort].class}`}
                       />
                     </button>
                   </th>
-                  <th># of States Entered</th>
-                  <th># Days to Finish</th>
+                  <th># States Entered</th>
+                  <th>Approx. Days to Finish</th>
                   <th>
-                    ⛰️ Elevation Per Mile
+                    Elevation Gain/Mile (ft)
                     <button onClick={this.onSortChangeCock} aria-label='sort by elevation per mile'>
                       <i
                         className={`fas fa-${sortTypeCock[currentSort].class}`}
@@ -200,20 +200,21 @@ export default class TripleCrownTable extends React.Component {
                     Avg. Temp (H/L)
                   </th>
                   <th>
-                    Avg. Rainfall (in.)
+                    Avg. Rainfall (in)
                   </th>
-                  <th>Avg. Distance Between Water Sources</th>
+                  <th>Avg. Dist. Between Water Sources (mi)</th>
                   <th>
-                    Longest Stretch of No Water
+                    Longest No Water Stretch (mi)
                   </th>
-                  <th>Predicted # of Resupplies</th>
+                  <th>Predicted # Resupplies</th>
                   <th>
-                    Avg. Distance Between Resupplies
+                    Avg. Dist. Between Resupplies (mi)
                   </th>
-                  <th>Longest Distance Between Resupplies</th>
+                  <th>Longest Dist. Between Resupplies (mi)</th>
                   <th>
                     Political Breakdown (% D/R)
                   </th>
+                  
 
                 </tr>
               </thead>
@@ -225,17 +226,17 @@ export default class TripleCrownTable extends React.Component {
                       <td>{p.name}</td>
                       <td>{p.year}</td>
                       <td>{p.region}</td>
-                      <td>{p.distance} mi.</td>
+                      <td>{p.distance}</td>
                       <td>{p.totalstates}</td>
                       <td>{p.daysToFinish}</td>
-                      <td>{p.elevationPerMile} ft.</td>
+                      <td>{p.elevationPerMile}</td>
                       <td>{p.highpoint}</td>
                       <td>{p.avgTemp}</td>
                       <td>{p.rainfall}</td>
-                      <td>{p.avgDistanceBetweenResupplies}</td>
+                      <td>{p.avgDistBetweenWaterSources}</td>
                       <td>{p.noWater}</td>
                       <td>{p.predictedResupplies}</td>
-                      <td>{p.avgResupplies}</td>
+                      <td>{p.avgDistBetweenResupplies}</td>
                       <td>{p.longBetweenResupplies}</td>
                       <td>{p.political}</td>
                     </tr>

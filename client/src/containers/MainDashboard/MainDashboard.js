@@ -6,6 +6,7 @@ import PCT from '../../components/PCT/PCT';
 import AT from '../../components/AT/AT';
 import CDT from '../../components/CDT/CDT';
 import JMT from '../../components/JMT/JMT';
+import LT from '../../components/LT/LT';
 import Contact from '../../components/Contact/Contact';
 import Toolbar from '../../components/Navigation/Toolbar';
 import SideDrawer from '../../components/Navigation/SideDrawer/SideDrawer';
@@ -19,40 +20,58 @@ function MainDashboard(props) {
   };
 
   const goToContact = () => {
-      setHeaderTitle('Contact');
+    setHeaderTitle('Contact');
   };
 
   const sideDrawerClosedHandler = () => {
     sideDrawer(false);
-}
+  };
 
   const sideDrawerToggleHandler = () => {
     sideDrawer(!showSideDrawer);
-}
+  };
 
   return (
     <div className={styles.container}>
       <Toolbar drawerToggleClicked={sideDrawerToggleHandler} />
-      <SideDrawer 
+      <SideDrawer
         goToContact={goToContact}
-        closed={sideDrawerClosedHandler} 
-        open={showSideDrawer} />
+        closed={sideDrawerClosedHandler}
+        open={showSideDrawer}
+      />
       <div className={styles.header}>
         <h1 id={styles.headerPrompt}>{headerTitle}</h1>
-        {headerTitle !== 'Contact' && <select onChange={trailSelect} name='select a trail'>
-          <option value='Choose a trail...' label='Compare all trails...' selected='selected'>Compare all trails...</option>
-          <option value='Pacific Crest Trail' label='Pacific Crest Trail'>Pacific Crest Trail 👑</option>
-          <option value='Appalachian Trail' label='Appalachian Trail'>Appalachian Trail 👑</option>
-          <option value='Continental Divide Trail' label='Continental Divide Trail'>
-            Continental Divide Trail 👑
-          </option>
-          <option value='John Muir Trail'>John Muir Trail</option>
-        </select>}
+        {headerTitle !== 'Contact' && (
+          <select onChange={trailSelect} name='select a trail'>
+            <option
+              value='Choose a trail...'
+              label='Compare all trails...'
+              selected='selected'
+            >
+              Compare all trails...
+            </option>
+            <option value='Pacific Crest Trail' label='Pacific Crest Trail'>
+              Pacific Crest Trail
+            </option>
+            <option value='Appalachian Trail' label='Appalachian Trail'>
+              Appalachian Trail
+            </option>
+            <option
+              value='Continental Divide Trail'
+              label='Continental Divide Trail'
+            >
+              Continental Divide Trail
+            </option>
+            <option value='John Muir Trail'>John Muir Trail</option>
+            <option value='Long Trail (VT)'>Long Trail (VT)</option>
+          </select>
+        )}
       </div>
       {headerTitle == 'Pacific Crest Trail' && <PCT />}
       {headerTitle == 'Appalachian Trail' && <AT />}
       {headerTitle == 'Continental Divide Trail' && <CDT />}
       {headerTitle == 'John Muir Trail' && <JMT />}
+      {headerTitle == 'Long Trail (VT)' && <LT />}
       {headerTitle == 'Choose a trail...' && <TripleCrownTable />}
       {headerTitle == 'Choose a trail...' && <TrailTable />}
       {headerTitle == 'Contact' && <Contact />}

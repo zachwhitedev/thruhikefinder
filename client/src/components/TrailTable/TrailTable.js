@@ -24,7 +24,8 @@ export default class TrailTable extends React.Component {
         name: 'Pacific Crest Trail 👑',
         year: 1968,
         distance: 2652,
-        totalstates: 'N/A',
+        totalstates: 3,
+        daysToFinish: 'N/A',
         elevationPerMile: 'N/A',
         region: 'N/A',
         highPoint: 'N/A',
@@ -38,7 +39,8 @@ export default class TrailTable extends React.Component {
         name: 'Continental Divide Trail 👑',
         year: 1978,
         distance: 3100,
-        totalstates: 'N/A',
+        totalstates: 5,
+        daysToFinish: 'N/A',
         elevationPerMile: 'N/A',
         region: 'N/A',
         highPoint: 'N/A',
@@ -53,6 +55,7 @@ export default class TrailTable extends React.Component {
         year: 1923,
         distance: 2189,
         totalstates: 'N/A',
+        daysToFinish: 'N/A',
         elevationPerMile: 'N/A',
         region: 'N/A',
         highPoint: 'N/A',
@@ -66,7 +69,8 @@ export default class TrailTable extends React.Component {
         name: 'Long Trail (VT)',
         year: 1910,
         distance: 273,
-        totalstates: 'N/A',
+        totalstates: 1,
+        daysToFinish: 'N/A',
         elevationPerMile: 'N/A',
         region: 'N/A',
         highPoint: 'N/A',
@@ -81,6 +85,7 @@ export default class TrailTable extends React.Component {
         year: 1915,
         distance: 211,
         totalstates: 1,
+        daysToFinish: 'N/A',
         elevationPerMile: 'N/A',
         region: 'N/A',
         highPoint: 'N/A',
@@ -95,6 +100,7 @@ export default class TrailTable extends React.Component {
         year: 2009,
         distance: 790,
         totalstates: 1,
+        daysToFinish: 'N/A',
         elevationPerMile: 'N/A',
         region: 'N/A',
         highPoint: 'N/A',
@@ -109,6 +115,7 @@ export default class TrailTable extends React.Component {
         year: 1987,
         distance: 483,
         totalstates: 1,
+        daysToFinish: 'N/A',
         elevationPerMile: 'N/A',
         region: 'N/A',
         highPoint: 'N/A',
@@ -123,6 +130,7 @@ export default class TrailTable extends React.Component {
         year: 1977,
         distance: 1200,
         totalstates: 3,
+        daysToFinish: 'N/A',
         elevationPerMile: 'N/A',
         region: 'N/A',
         highPoint: 'N/A',
@@ -137,6 +145,7 @@ export default class TrailTable extends React.Component {
         year: 2005,
         distance: 812,
         totalstates: 2,
+        daysToFinish: 'N/A',
         elevationPerMile: 'N/A',
         region: 'N/A',
         highPoint: 'N/A',
@@ -151,6 +160,7 @@ export default class TrailTable extends React.Component {
         year: 2011,
         distance: 750,
         totalstates: 1,
+        daysToFinish: 'N/A',
         elevationPerMile: 'N/A',
         region: 'N/A',
         highPoint: 'N/A',
@@ -165,6 +175,7 @@ export default class TrailTable extends React.Component {
         year: 1966,
         distance: 1300,
         totalstates: 1,
+        daysToFinish: 'N/A',
         elevationPerMile: 'N/A',
         region: 'N/A',
         highPoint: 'N/A',
@@ -179,6 +190,7 @@ export default class TrailTable extends React.Component {
         year: 1981,
         distance: 350,
         totalstates: 1,
+        daysToFinish: 'N/A',
         elevationPerMile: 'N/A',
         region: 'N/A',
         highPoint: 'N/A',
@@ -305,6 +317,7 @@ export default class TrailTable extends React.Component {
                     </button>
                   </th>
                   <th># of States Entered</th>
+                  <th># Days to Finish</th>
                   <th>Elev. Per Mile</th>
                   <th>Highest Point</th>
                   <th>Avg. Temp (H/L)</th>
@@ -324,6 +337,7 @@ export default class TrailTable extends React.Component {
                       <td>{p.region}</td>
                       <td>{p.distance}mi</td>
                       <td>{p.totalstates}</td>
+                      <td>{p.daysToFinish}</td>
                       <td>{p.elevationPerMile}</td>
                       <td>{p.highPoint}</td>
                       <td>{p.avgTemp}</td>

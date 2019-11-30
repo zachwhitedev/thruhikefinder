@@ -12,6 +12,10 @@
   margin: 0 auto;
 }
 
+.myTable > td {
+  border: 1px solid black;
+}
+
 td:nth-child(1){
   font-weight: bold;
 }

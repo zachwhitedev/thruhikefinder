@@ -7,16 +7,24 @@ export default function KeyFacts() {
       <h2>Key Stats</h2>
       <table className={styles.myTable}>
         <tr>
-          <td>Length</td>
-          <td>2652 miles</td>
+          <td>Length:</td>
+          <td>2650 miles</td>
         </tr>
         <tr>
-          <td>Location</td>
-          <td>CA/OR/WA</td>
+          <td>Location:</td>
+          <td>California - 1689 miles</td>
         </tr>
         <tr>
-          <td>Highest Point</td>
-          <td>Forrester Pass (13,153 ft.)</td>
+          <td></td>
+          <td>Oregon - 455 miles</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>Washington - 504 miles</td>
+        </tr>
+        <tr>
+          <td>Highest Point:</td>
+          <td>Forester Pass - 13,153 ft.</td>
         </tr>
       </table>
     </div>

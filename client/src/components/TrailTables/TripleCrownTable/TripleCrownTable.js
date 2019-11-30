@@ -28,8 +28,7 @@ export default class TripleCrownTable extends React.Component {
         totalstates: 14,
         daysToFinish: 165,
         elevationPerMile: 212,
-        highpoint: 'Clingman\'s Dome (6,643 ft.)',
-        avgTemp: 'N/A',
+        highpoint: '6,643',
         rainfall: 'N/A',
         avgDistBetweenWaterSources: 'N/A',
         noWater: 'N/A',
@@ -46,8 +45,7 @@ export default class TripleCrownTable extends React.Component {
         totalstates: 3,
         daysToFinish: 150,
         elevationPerMile: 184,
-        highpoint: 'Forester Pass (13,153 ft.)',
-        avgTemp: 'N/A',
+        highpoint: '13,153',
         rainfall: 'N/A',
         avgDistBetweenWaterSources: 'N/A',
         noWater: 42,
@@ -64,8 +62,7 @@ export default class TripleCrownTable extends React.Component {
         totalstates: 5,
         daysToFinish: 170,
         elevationPerMile: 172,
-        highpoint: 'Grays Peak (14,278 ft.)',
-        avgTemp: 'N/A',
+        highpoint: '14,278',
         rainfall: 'N/A',
         avgDistBetweenWaterSources: 'N/A',
         noWater: 'N/A',
@@ -76,6 +73,7 @@ export default class TripleCrownTable extends React.Component {
       },
     ]
   };
+
   // method called every time the sort button is clicked
   // it will change the currentSort value to the next one
   onSortChange = () => {
@@ -106,20 +104,21 @@ export default class TripleCrownTable extends React.Component {
       currentSort: nextSort
     });
   };
+
   onSortChangeCock = () => {
     this.setState({
       sortType: {
         up: {
           class: 'sort-down',
-          fn: (a, b) => a.elpermile - b.elpermile
+          fn: (a, b) => a.waterSources - b.waterSources
         },
         down: {
           class: 'sort-up',
-          fn: (a, b) => b.elpermile - a.elpermile
+          fn: (a, b) => b.waterSources - a.waterSources
         },
         default: {
           class: 'sort-down',
-          fn: (a, b) => a.elpermile - b.elpermile
+          fn: (a, b) => a.waterSources - b.waterSources
         }
       }
     });
@@ -154,27 +153,27 @@ export default class TripleCrownTable extends React.Component {
     const sortTypeCock = {
       up: {
         class: 'sort-up',
-        fn: (a, b) => a.elpermile - b.elpermile
+        fn: (a, b) => a.waterSources - b.waterSources
       },
       down: {
         class: 'sort-down',
-        fn: (a, b) => b.elpermile - a.elpermile
+        fn: (a, b) => b.waterSources - a.waterSources
       },
       default: {
         class: 'sort-down',
-        fn: (a, b) => a.elpermile - b.elpermile
+        fn: (a, b) => a.waterSources - b.waterSources
       }
     };
 
     return (
-      <div className={styles.compWrapperCrown}>
+      <div className={styles.compWrapper}>
         <h2>Triple Crown Trails</h2>
-        <div className={styles.tableWrapperCrown}>
+        <div id={styles.AllTrailsTableWrapper}>
           {this.state.tableData.length > 0 && (
-            <table className='text-left'>
+            <table id={styles.AllTrailsTable}>
               <thead>
-                <tr>
-                  <th>Trail Name</th>
+                <tr className={styles.allTrailsTH}>
+                <th>Trail Name</th>
                   <th>Year Established</th>
                   <th>Region</th>
                   <th>
@@ -195,34 +194,25 @@ export default class TripleCrownTable extends React.Component {
                       />
                     </button>
                   </th>
-                  <th>Highest Point</th>
-                  <th>
-                    Avg. Temp (H/L)
-                  </th>
+                  <th>Highest Point (ft)</th>
                   <th>
                     Avg. Rainfall (in)
                   </th>
-                  <th>Avg. Dist. Between Water Sources (mi)</th>
                   <th>
                     Longest No Water Stretch (mi)
                   </th>
                   <th>Predicted # Resupplies</th>
                   <th>
-                    Avg. Dist. Between Resupplies (mi)
+                    Avg. Resupply Distance (mi)
                   </th>
-                  <th>Longest Dist. Between Resupplies (mi)</th>
-                  <th>
-                    Political Breakdown (% D/R)
-                  </th>
-                  
-
+                  <th>Longest Resupply Distance (mi)</th>
                 </tr>
               </thead>
               <tbody>
                 {[...this.state.tableData]
                   .sort(sortType[currentSort].fn)
                   .map(p => (
-                    <tr className={styles.tdcrown}>
+                    <tr className={styles.allTrailsTD}>
                       <td>{p.name}</td>
                       <td>{p.year}</td>
                       <td>{p.region}</td>
@@ -231,14 +221,11 @@ export default class TripleCrownTable extends React.Component {
                       <td>{p.daysToFinish}</td>
                       <td>{p.elevationPerMile}</td>
                       <td>{p.highpoint}</td>
-                      <td>{p.avgTemp}</td>
                       <td>{p.rainfall}</td>
-                      <td>{p.avgDistBetweenWaterSources}</td>
                       <td>{p.noWater}</td>
                       <td>{p.predictedResupplies}</td>
                       <td>{p.avgDistBetweenResupplies}</td>
                       <td>{p.longBetweenResupplies}</td>
-                      <td>{p.political}</td>
                     </tr>
                   ))}
               </tbody>

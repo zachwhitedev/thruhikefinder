@@ -1,7 +1,7 @@
 import React from 'react';
-import styles from './TrailTable.module.css';
+import styles from './AllTrailsTable.module.css';
 
-export default class TrailTable extends React.Component {
+export default class AllTrailsTable extends React.Component {
   // declaring the default state
   state = {
     sortType: {
@@ -28,12 +28,10 @@ export default class TrailTable extends React.Component {
         daysToFinish: 150,
         elevationPerMile: 184,
         region: 'West',
-        highPoint: 'Forester Pass (13,153 ft.)',
-        avgTemp: 'N/A',
+        highPoint: '13,153',
         rainfall: 'N/A',
         predictedResupplies: 26,
-        avgResupplies: 102,
-        political: 'N/A'
+        avgResupplies: 102
       },
       {
         name: 'Continental Divide Trail',
@@ -43,12 +41,10 @@ export default class TrailTable extends React.Component {
         daysToFinish: 170,
         elevationPerMile: 172,
         region: 'Southwest/West',
-        highPoint: 'Grays Peak (14,278 ft.)',
-        avgTemp: 'N/A',
+        highPoint: '14,278',
         rainfall: 'N/A',
         predictedResupplies: 'N/A',
-        avgResupplies: 'N/A',
-        political: 'N/A'
+        avgResupplies: 'N/A'
       },
       {
         name: 'Appalachian Trail',
@@ -58,12 +54,10 @@ export default class TrailTable extends React.Component {
         daysToFinish: 165,
         elevationPerMile: 212,
         region: 'East',
-        highPoint: 'Clingman\'s Dome (6,643 ft.)',
-        avgTemp: 'N/A',
+        highPoint: '6,643',
         rainfall: 'N/A',
         predictedResupplies: 'N/A',
-        avgResupplies: 'N/A',
-        political: 'N/A'
+        avgResupplies: 'N/A'
       },
       {
         name: 'Long Trail (VT)',
@@ -73,12 +67,10 @@ export default class TrailTable extends React.Component {
         daysToFinish: 20,
         elevationPerMile: 239,
         region: 'Northeast',
-        highPoint: 'Mt. Mansfield (4,395 ft.)',
-        avgTemp: 'N/A',
+        highPoint: '4,395',
         rainfall: 'N/A',
         predictedResupplies: 'N/A',
-        avgResupplies: 'N/A',
-        political: 'N/A'
+        avgResupplies: 'N/A'
       },
       {
         name: 'John Muir Trail',
@@ -88,12 +80,10 @@ export default class TrailTable extends React.Component {
         daysToFinish: 20,
         elevationPerMile: 221,
         region: 'West',
-        highPoint: 'Mt. Whitney (14,505 ft.)',
-        avgTemp: 'N/A',
+        highPoint: '14,505',
         rainfall: 'N/A',
         predictedResupplies: 'N/A',
-        avgResupplies: 'N/A',
-        political: 'N/A'
+        avgResupplies: 'N/A'
       },
       {
         name: 'Arizona Trail',
@@ -103,12 +93,10 @@ export default class TrailTable extends React.Component {
         daysToFinish: 40,
         elevationPerMile: 'N/A',
         region: 'Southwest',
-        highPoint: 'Kaibab Plateau (9,148 ft.)',
-        avgTemp: 'N/A',
+        highPoint: '9,148',
         rainfall: 'N/A',
         predictedResupplies: 'N/A',
-        avgResupplies: 'N/A',
-        political: 'N/A'
+        avgResupplies: 'N/A'
       },
       {
         name: 'Colorado Trail',
@@ -118,12 +106,10 @@ export default class TrailTable extends React.Component {
         daysToFinish: 30,
         elevationPerMile: 185,
         region: 'West',
-        highPoint: 'Jarosa Mesa (13,271 ft.)',
-        avgTemp: 'N/A',
+        highPoint: '13,271',
         rainfall: 'N/A',
         predictedResupplies: 'N/A',
-        avgResupplies: 'N/A',
-        political: 'N/A'
+        avgResupplies: 'N/A'
       },
       {
         name: 'Pacific Northwest Trail',
@@ -133,12 +119,10 @@ export default class TrailTable extends React.Component {
         daysToFinish: 60,
         elevationPerMile: 171,
         region: 'West',
-        highPoint: 'Cathedral Pass (7,800 ft.)',
-        avgTemp: 'N/A',
+        highPoint: '7,800',
         rainfall: 'N/A',
         predictedResupplies: 'N/A',
-        avgResupplies: 'N/A',
-        political: 'N/A'
+        avgResupplies: 'N/A'
       },
       {
         name: 'Hayduke Trail',
@@ -148,12 +132,10 @@ export default class TrailTable extends React.Component {
         daysToFinish: 45,
         elevationPerMile: 125,
         region: 'Southwest',
-        highPoint: 'Mt. Ellen (11,419 ft.)',
-        avgTemp: 'N/A',
+        highPoint: '11,419',
         rainfall: 'N/A',
         predictedResupplies: 'N/A',
-        avgResupplies: 'N/A',
-        political: 'N/A'
+        avgResupplies: 'N/A'
       },
       {
         name: 'Oregon Desert Trail',
@@ -164,11 +146,9 @@ export default class TrailTable extends React.Component {
         elevationPerMile: 91,
         region: 'West',
         highPoint: 'N/A',
-        avgTemp: 'N/A',
         rainfall: 'N/A',
         predictedResupplies: 'N/A',
-        avgResupplies: 'N/A',
-        political: 'N/A'
+        avgResupplies: 'N/A'
       },
       {
         name: 'Florida Trail',
@@ -178,12 +158,10 @@ export default class TrailTable extends React.Component {
         daysToFinish: 70,
         elevationPerMile: '< 80',
         region: 'Southeast',
-        highPoint: 'N/A (270 ft.)',
-        avgTemp: 'N/A',
+        highPoint: 'N/A (270)',
         rainfall: 'N/A',
         predictedResupplies: 'N/A',
-        avgResupplies: 'N/A',
-        political: 'N/A'
+        avgResupplies: 'N/A'
       },
       {
         name: 'Ozark Trail',
@@ -193,12 +171,10 @@ export default class TrailTable extends React.Component {
         daysToFinish: 25,
         elevationPerMile: 'N/A',
         region: 'Midwest',
-        highPoint: 'Taum Sauk (1,772 ft.)',
-        avgTemp: 'N/A',
+        highPoint: '1,772',
         rainfall: 'N/A',
         predictedResupplies: 'N/A',
-        avgResupplies: 'N/A',
-        political: 'N/A'
+        avgResupplies: 'N/A'
       }
     ]
   };
@@ -234,34 +210,34 @@ export default class TrailTable extends React.Component {
     });
   };
 
-  // onSortChangeCock = () => {
-  //   this.setState({
-  //     sortType: {
-  //       up: {
-  //         class: 'sort-down',
-  //         fn: (a, b) => a.waterSources - b.waterSources
-  //       },
-  //       down: {
-  //         class: 'sort-up',
-  //         fn: (a, b) => b.waterSources - a.waterSources
-  //       },
-  //       default: {
-  //         class: 'sort-down',
-  //         fn: (a, b) => a.waterSources - b.waterSources
-  //       }
-  //     }
-  //   });
+  onSortChangeCock = () => {
+    this.setState({
+      sortType: {
+        up: {
+          class: 'sort-down',
+          fn: (a, b) => a.waterSources - b.waterSources
+        },
+        down: {
+          class: 'sort-up',
+          fn: (a, b) => b.waterSources - a.waterSources
+        },
+        default: {
+          class: 'sort-down',
+          fn: (a, b) => a.waterSources - b.waterSources
+        }
+      }
+    });
 
-  //   const { currentSort } = this.state;
-  //   let nextSort;
+    const { currentSort } = this.state;
+    let nextSort;
 
-  //   if (currentSort === 'down') nextSort = 'up';
-  //   else nextSort = 'down';
+    if (currentSort === 'down') nextSort = 'up';
+    else nextSort = 'down';
 
-  //   this.setState({
-  //     currentSort: nextSort
-  //   });
-  // };
+    this.setState({
+      currentSort: nextSort
+    });
+  };
 
   render() {
     const { currentSort, sortType } = this.state;
@@ -297,11 +273,11 @@ export default class TrailTable extends React.Component {
     return (
       <div className={styles.compWrapper}>
         <h2>All Thru-Hikes</h2>
-        <div className={styles.tableWrapper}>
+        <div id={styles.AllTrailsTableWrapper}>
           {this.state.tableData.length > 0 && (
-            <table className='text-left'>
+            <table id={styles.AllTrailsTable}>
               <thead>
-                <tr className={styles.th}>
+                <tr className={styles.allTrailsTH}>
                   <th>Trail Name</th>
                   <th>Year Established</th>
                   <th>Region</th>
@@ -317,21 +293,19 @@ export default class TrailTable extends React.Component {
                     </button>
                   </th>
                   <th># States Entered</th>
-                  <th>Approx. Days to Finish</th>
+                  <th>~ Days to Finish</th>
                   <th>Elev. Gain/Mile (ft)</th>
-                  <th>Highest Point</th>
-                  <th>Avg. Temp (H/L)</th>
+                  <th>Highest Point (ft)</th>
                   <th>Avg. Rainfall (in)</th>
                   <th>Predicted # Resupplies</th>
-                  <th>Avg. Dist. Between Resupplies (mi)</th>
-                  <th>Political Breakdown (% D/R)</th>
+                  <th>Avg. Resupply Distance (mi)</th>
                 </tr>
               </thead>
               <tbody>
                 {[...this.state.tableData]
                   .sort(sortType[currentSort].fn)
                   .map(p => (
-                    <tr className={styles.tr}>
+                    <tr className={styles.allTrailsTD}>
                       <td>{p.name}</td>
                       <td>{p.year}</td>
                       <td>{p.region}</td>
@@ -340,11 +314,9 @@ export default class TrailTable extends React.Component {
                       <td>{p.daysToFinish}</td>
                       <td>{p.elevationPerMile}</td>
                       <td>{p.highPoint}</td>
-                      <td>{p.avgTemp}</td>
                       <td>{p.rainfall}</td>
                       <td>{p.predictedResupplies}</td>
                       <td>{p.avgResupplies}</td>
-                      <td>{p.political}</td>
                     </tr>
                   ))}
               </tbody>

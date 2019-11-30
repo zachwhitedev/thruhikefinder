@@ -22,6 +22,7 @@ export default function TrailImage(){
 
     return (
         <div className={styles.map}>
+          <h2>The Long Trail</h2>
         <img src={image} alt='Appalachian Trail Map'/>
         <button onClick={() => easterEgg()} id={styles.easterEggButton}>Click here to expose Luke</button>
       </div>

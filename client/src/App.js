@@ -16,19 +16,21 @@ import {
 } from 'react-router-dom';
 
 function Dropdown() {
+  const[selectedOption, setSelectedOption] = useState('Choose a trail...')
   let history = useHistory();
 
   const handleTrailSelect = e => {
+    e.preventDefault();
+    setSelectedOption(e.target.name);
     history.push(e.target.value);
   };
 
-
   return (
     <div id='the-dropdown-container'>
-        <select id='the-dropdown' onChange={handleTrailSelect}>
-          <option value='/'>Compare all trails...</option>
-          <option value='/pct'>Pacific Crest Trail</option>
-          <option value='/at'>Appalachian Trail</option>
+        <select id='the-dropdown' onChange={handleTrailSelect} name={selectedOption}>
+          <option value='/' name='Compare all trails...'>Choose a trail...</option>
+          <option value='/pct' name='Pacific Crest Trail'>Pacific Crest Trail</option>
+          <option value='/at' name='Appalachian Trail'>Appalachian Trail</option>
         </select>
     </div>
 );

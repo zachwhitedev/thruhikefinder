@@ -1,5 +1,5 @@
 import React from 'react';
-import atmap from '../../../assets/img/atmap.jpeg';
+import atmap from '../../../assets/img/atmap.png';
 import styles from './TrailImage.module.css'
 
 export default function TrailImage(){

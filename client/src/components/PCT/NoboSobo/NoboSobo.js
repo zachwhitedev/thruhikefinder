@@ -18,13 +18,13 @@ export default function NoboSobo() {
         </tr>
         <tr>
           <td>SOCIAL</td>
-          <td>Hike is very social, arguably getting crowded, but fun if you thrive in groups and get energy from others.</td>
-          <td>Hike is less social as you will see less people, but by no means is it isolated - Southbound is getting more popular, and you will still see other hikers most days.</td>
+          <td>Hike is very social, arguably getting crowded, but fun if you are a social person and thrive in groups.</td>
+          <td>Hike is less social as you will see less people, but by no means is it isolated - the southbound hike is getting more popular, and you will still see other hikers most days.</td>
         </tr>
         <tr>
           <td>TIMETABLE</td>
-          <td><p>After completing the desert section in the Spring, many hikers find themselves waiting around for the snow in the Sierra to melt, before entering them some time in June. Though the more adventurous might press on into the snow anyway, many will take 1-3 weeks off from the trail or “flip up” to complete sections of the trail North of the Sierra (often choosing lower elevation trail in Oregon) while they wait for better conditions.</p>
-          <p>The Cascades in Northern Washington can receive hike-ending levels of snowfall as early as  mid-September, so most aim to reach the Northern Terminus by October 1st.</p></td>
+          <td><p>After completing the desert section in the Spring, many northbounders find themselves waiting around for the snow in the Sierra to melt, before entering them some time in June. Though the more adventurous might press on into the snow anyway, many will take 1-3 weeks off from the trail or “flip up” to complete sections of the trail North of the Sierra (often choosing lower elevation trail in Oregon) while they wait for better conditions.</p>
+          <p>The Cascades in Northern Washington can receive hike-ending levels of snowfall as early as mid-September, so most aim to reach the Northern Terminus by October 1st.</p></td>
           <td><p>There is something of a time crunch to get through the Sierra Nevada before mid-October - the standard “deadline” most give themselves to beat the snow (though nature is fickle and the snow can arrive both sooner and much later, depending on the year). Even if you start your hike in late June, you cannot waste too much time if you are serious about hiking the entire trail in one go.</p>
           <p>However, once you reach South Kennedy Meadows, you can relax knowing that you can go as slow as you want for the final 700 miles of the trail (the desert section is hikable throughout the fall/winter months).</p></td>
         </tr>
@@ -35,18 +35,18 @@ export default function NoboSobo() {
         </tr>
         <tr>
           <td>FIRST MILES</td>
-          <td>The desert section in SoCal, being relatively flat,  is a great “warm up” for Northbounders.</td>
-          <td>Starting in Northern Washington, you are thrown right into one of the more rugged sections of the trail.</td>
+          <td>The desert section in SoCal, being relatively flat, is a great “warm up” for Northbounders.</td>
+          <td>Starting in Northern Washington, you are thrown right into one of the most rugged and remote sections of the trail.</td>
         </tr>
         <tr>
           <td>DESERT TEMPS</td>
           <td>Desert temperatures will be hotter - but Nobos get to see the Spring desert flower bloom.</td>
-          <td>Desert temperatures are cooler. No pretty flowers.</td>
+          <td>Desert temperatures are cooler, but no pretty flowers.</td>
         </tr>
         <tr>
           <td>SNOW</td>
           <td>Regardless of how late in June you enter the Sierra, there will likely be snow waiting for you atop the higher passes. Plan accordingly.</td>
-          <td>Starting in Northern Washington in late-June or July means Southbounders get their own stretch of snow, right at the start. Ace axe and spikes in the Cascades can be necessities, depending on the snowpack level. Post-holing and long sections of wet trail are common occurrences.</td>
+          <td>Starting in Northern Washington in late-June or July means southbounders get their own stretch of snow, right at the start. Ace axe and spikes in the Cascades can be necessities, depending on the snowpack level. Post-holing and long sections of wet trail are common occurrences.</td>
         </tr>
         <tr>
           <td>SIERRA</td>
@@ -60,13 +60,13 @@ export default function NoboSobo() {
         </tr>
         <tr>
           <td>Northern Terminus</td>
-          <td>Northbound hikers do not have to do an “out and back” to touch the Northern Terminus, they simply hike straight to it. However, in order to enter Canada after reaching the Northern Terminus, you must obtain a <a>PCT Canada Entry Permit.</a></td>
-          <td>Easier to get permit</td>
+          <td>Northbound hikers do not have to do an “out and back” to touch the Northern Terminus, they simply hike straight to it. However, in order to enter Canada after reaching the Northern Terminus, you must obtain a <a href="https://www.pcta.org/discover-the-trail/permits/canada-pct-entry-permit/" target="_blank">PCT Canada Entry Permit.</a></td>
+          <td>Southbounders must begin their hike within the United States, as it is illegal to enter the United States from Manning Park, Canada. For this reason, most choose to begin their hike at Hart’s Pass, which is roughly 30 miles south of the Northern Terminus. They must hike the 30 miles to the Northern Terminus, and hike the 30 miles back to Hart’s Pass (there are no roads to hitch back, as it is too remote/mountainous).</td>
         </tr>
         <tr>
           <td>Trail Magic</td>
-          <td>Lots of trail magic</td>
-          <td>Far less trail magic</td>
+          <td>Lots of trail magic.</td>
+          <td>Far less trail magic.</td>
         </tr>
       </table>
     </div>

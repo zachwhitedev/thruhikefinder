@@ -12,15 +12,15 @@ export default function KeyFacts() {
         </tr>
         <tr>
           <td>Location:</td>
-          <td>California - 1689 miles</td>
+          <td>California - 1689 miles - 63.7%</td>
         </tr>
         <tr>
           <td></td>
-          <td>Oregon - 455 miles</td>
+          <td>Oregon - 455 miles - 17.1%</td>
         </tr>
         <tr>
           <td></td>
-          <td>Washington - 504 miles</td>
+          <td>Washington - 504 miles - 19.1%</td>
         </tr>
         <tr>
           <td>Highest Point:</td>

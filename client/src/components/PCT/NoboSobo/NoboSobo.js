@@ -1,10 +1,10 @@
 import React from 'react';
-import styles from './FunSection.module.css';
+import styles from './NoboSobo.module.css';
 
-export default function FunSection() {
+export default function NoboSobo() {
   return (
     <div className={styles.container}>
-      <h2>Fun Section</h2>
+      <h2>Nobo vs. Sobo</h2>
       <ul>
         <li>Most Dangerous Wildlife: Venomous snakes, mountain lions</li>
         <li>(add a table: political breakdown of trail by counties crossed)</li>

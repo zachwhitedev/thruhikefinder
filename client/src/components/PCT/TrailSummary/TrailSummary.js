@@ -3,7 +3,7 @@ import styles from './TrailSummary.module.css';
 
 export default function TrailSummary(){
     return (
-        <div className={styles.container}>
+      <div className={styles.container}>
         <h2>Summary</h2>
         <p>
           The Pacific Crest Trail is a 2,650 mile continuous footpath that traverses the length of the West Coast of the United States. It runs from the Mexican border in Southern California and crosses three states to reach its other end at the Canadian border in Washington state. The trail is known for its breathtaking views, varied terrain, and continuously changing climate and landscapes.

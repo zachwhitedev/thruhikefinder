@@ -3,11 +3,12 @@ import TrailImage from './TrailImage/TrailImage';
 import TrailSummary from './TrailSummary/TrailSummary';
 import KeyFacts from './KeyFacts/KeyFacts';
 import GearRec from './GearRec/GearRec';
-import FunSection from './FunSection/FunSection';
-import InDepthStats from './InDepthStats/InDepthStats';
-import EndCard from './EndCard/EndCard';
+import MoreStats from './MoreStats/MoreStats';
+import ExtraCard from './ExtraCard/ExtraCard';
+import NoboSobo from './NoboSobo/NoboSobo';
 import styles from './PCT.module.css';
 import { Helmet } from 'react-helmet';
+import Noteworthy from './Noteworthy/Noteworthy';
 
 export default function PCT() {
   return (
@@ -21,10 +22,11 @@ export default function PCT() {
       <TrailImage />
       <KeyFacts />
       <TrailSummary />
-      <InDepthStats />
-      <FunSection />
+      <MoreStats />
+      <Noteworthy />
       <GearRec />
-      <EndCard />
+      <ExtraCard />
+      <NoboSobo />
     </div>
   );
 }

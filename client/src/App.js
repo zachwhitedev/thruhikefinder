@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import PCT from './components/PCT/PCT';
@@ -15,14 +15,12 @@ import {
   useHistory
 } from 'react-router-dom';
 
-function Dropdown() {
-  const [selectedOption, setSelectedOption] = useState('Choose a trail...');
+function Dropdown(props) {
   let history = useHistory();
 
   const handleTrailSelect = e => {
-    e.preventDefault();
-    setSelectedOption(e.target.name);
     history.push(e.target.value);
+    props.receiveRoute(e.target.value);
   };
 
   return (
@@ -30,24 +28,23 @@ function Dropdown() {
       <select
         id='the-dropdown'
         onChange={handleTrailSelect}
-        name={selectedOption}
       >
-        <option value='/' name='Compare all trails...'>
+        <option value='/' name='Compare all trails...' selected={props.beingViewed == '/'}>
           Choose a trail...
         </option>
-        <option value='/pct' name='Pacific Crest Trail'>
+        <option value='/pct' name='Pacific Crest Trail' selected={props.beingViewed == '/pct'}>
           Pacific Crest Trail
         </option>
-        <option value='/at' name='Appalachian Trail'>
+        <option value='/at' name='Appalachian Trail' selected={props.beingViewed == '/at'}>
           Appalachian Trail
         </option>
-        <option value='/cdt' name='Continental Divide Trail'>
+        <option value='/cdt' name='Continental Divide Trail' selected={props.beingViewed == '/cdt'}>
           Continental Divide Trail
         </option>
-        <option value='/longtrail' name='Long Trail'>
+        <option value='/longtrail' name='Long Trail' selected={props.beingViewed == '/longtrail'}>
           Long Trail
         </option>
-        <option value='/jmt' name='John Muir Trail'>
+        <option value='/jmt' name='John Muir Trail' selected={props.beingViewed == '/jmt'}>
           John Muir Trail
         </option>
       </select>
@@ -55,7 +52,13 @@ function Dropdown() {
   );
 }
 
-function App() {
+function App(props) {
+  const[routeBeingViewed, setRouteBeingViewed] = useState('/');
+
+  const receiveRoute = (route) => {
+    setRouteBeingViewed(route)
+  }
+
   return (
     <Router>
       <Switch>
@@ -63,27 +66,27 @@ function App() {
           <Navbar />
           <main style={{ marginTop: '92px' }}>
             <Route path='/' exact>
-              <Dropdown />
+            <Dropdown beingViewed={routeBeingViewed} receiveRoute={receiveRoute}/>
               <TrailTables />
             </Route>
             <Route path='/pct' exact>
-              <Dropdown />
+            <Dropdown beingViewed={routeBeingViewed} receiveRoute={receiveRoute}/>
               <PCT />
             </Route>
             <Route path='/at' exact>
-              <Dropdown />
+              <Dropdown beingViewed={routeBeingViewed} receiveRoute={receiveRoute}/>
               <AT />
             </Route>
             <Route path='/cdt' exact>
-              <Dropdown />
+              <Dropdown beingViewed={routeBeingViewed} receiveRoute={receiveRoute}/>
               <CDT />
             </Route>
             <Route path='/longtrail' exact>
-              <Dropdown />
+              <Dropdown beingViewed={routeBeingViewed} receiveRoute={receiveRoute}/>
               <LT />
             </Route>
             <Route path='/jmt' exact>
-              <Dropdown />
+              <Dropdown beingViewed={routeBeingViewed} receiveRoute={receiveRoute}/>
               <JMT />
             </Route>
             <Route path='/contact' exact>

@@ -24,7 +24,7 @@ export default class AllTrailsTable extends React.Component {
       {
         name: 'Pacific Crest Trail',
         year: 1968,
-        distance: 2652,
+        distance: 2650,
         totalstates: 3,
         daysToFinish: 150,
         elevationPerMile: 184,

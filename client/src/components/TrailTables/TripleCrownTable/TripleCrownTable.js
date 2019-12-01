@@ -42,7 +42,7 @@ export default class TripleCrownTable extends React.Component {
         name: 'Pacific Crest Trail',
         year: 1968,
         region: 'West',
-        distance: 2652,
+        distance: 2650,
         totalstates: 3,
         daysToFinish: 150,
         elevationPerMile: 184,

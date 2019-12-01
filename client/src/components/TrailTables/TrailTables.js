@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import styles from './TrailTables.module.css';
 import { Helmet } from 'react-helmet';
 import AllTrailsTable from './AllTrailsTable/AllTrailsTable';
 import TripleCrownTable from './TripleCrownTable/TripleCrownTable';
 
 export default function TrailTables(props) {
+    
+  useEffect(() => {
+    props.receiveRoute('/');
+  });
+
   return (
     <div>
       <Helmet>

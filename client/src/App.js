@@ -67,7 +67,7 @@ function App(props) {
           <main style={{ marginTop: '92px' }}>
             <Route path='/' exact>
             <Dropdown beingViewed={routeBeingViewed} receiveRoute={receiveRoute}/>
-              <TrailTables />
+              <TrailTables receiveRoute={receiveRoute}/>
             </Route>
             <Route path='/pct' exact>
             <Dropdown beingViewed={routeBeingViewed} receiveRoute={receiveRoute}/>

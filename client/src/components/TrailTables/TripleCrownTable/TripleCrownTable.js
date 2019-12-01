@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './TripleCrownTable.module.css';
+import { Link } from 'react-router-dom';
 
 export default class TripleCrownTable extends React.Component {
   // declaring the default state
@@ -35,6 +36,7 @@ export default class TripleCrownTable extends React.Component {
         avgDistBetweenResupplies: 'N/A',
         longBetweenResupplies: 100,
         political: 'N/A',
+        route: '/at'
       },
       {
         name: 'Pacific Crest Trail',
@@ -51,6 +53,7 @@ export default class TripleCrownTable extends React.Component {
         avgDistBetweenResupplies: 102,
         longBetweenResupplies: 154,
         political: 'N/A',
+        route: '/pct'
       },
       {
         name: 'Continental Divide Trail',
@@ -67,7 +70,8 @@ export default class TripleCrownTable extends React.Component {
         avgDistBetweenResupplies: 'N/A',
         longBetweenResupplies: 'N/A',
         political: 'N/A',
-      },
+        route: '/cdt'
+      }
     ]
   };
 
@@ -170,12 +174,15 @@ export default class TripleCrownTable extends React.Component {
             <table id={styles.AllTrailsTable}>
               <thead>
                 <tr className={styles.allTrailsTH}>
-                <th>Trail Name</th>
+                  <th>Trail Name</th>
                   <th>Year Established</th>
                   <th>Region</th>
                   <th>
                     Distance (mi)
-                    <button onClick={this.onSortChange} aria-label='sort by distance'>
+                    <button
+                      onClick={this.onSortChange}
+                      aria-label='sort by distance'
+                    >
                       <i
                         className={`fas fa-${sortTypeNetWorth[currentSort].class}`}
                       />
@@ -185,23 +192,20 @@ export default class TripleCrownTable extends React.Component {
                   <th>Approx. Days to Finish</th>
                   <th>
                     Elevation Gain/Mile (ft)
-                    <button onClick={this.onSortChangeCock} aria-label='sort by elevation per mile'>
+                    <button
+                      onClick={this.onSortChangeCock}
+                      aria-label='sort by elevation per mile'
+                    >
                       <i
                         className={`fas fa-${sortTypeCock[currentSort].class}`}
                       />
                     </button>
                   </th>
                   <th>Highest Point (ft)</th>
-                  <th>
-                    Avg. Rainfall (in)
-                  </th>
-                  <th>
-                    Longest No Water Stretch (mi)
-                  </th>
+                  <th>Avg. Rainfall (in)</th>
+                  <th>Longest No Water Stretch (mi)</th>
                   <th>Predicted # Resupplies</th>
-                  <th>
-                    Avg. Resupply Distance (mi)
-                  </th>
+                  <th>Avg. Resupply Distance (mi)</th>
                   <th>Longest Resupply Distance (mi)</th>
                 </tr>
               </thead>
@@ -210,7 +214,18 @@ export default class TripleCrownTable extends React.Component {
                   .sort(sortType[currentSort].fn)
                   .map(p => (
                     <tr className={styles.allTrailsTD}>
-                      <td>{p.name}</td>
+                      <td>
+                        <Link
+                          to={p.route}
+                          style={{
+                            textDecoration: 'none',
+                            color: 'rgb(26, 49, 23)',
+                            cursor: 'pointer'
+                          }}
+                        >
+                          {p.name}
+                        </Link>
+                      </td>
                       <td>{p.year}</td>
                       <td>{p.region}</td>
                       <td>{p.distance}</td>

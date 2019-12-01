@@ -31,17 +31,14 @@
   }
 }
 
-@media(max-width: 400px){
+@media (max-width: 400px) {
   .wrapper {
-  grid-template-columns: 1fr;
-  margin: 0;
-  grid-auto-rows: minmax(60px, auto);
+    grid-template-columns: 1fr;
+    margin: 0;
+    grid-auto-rows: minmax(60px, auto);
   }
 
   .wrapper > div {
     border-radius: 0;
-
   }
-
 }
-

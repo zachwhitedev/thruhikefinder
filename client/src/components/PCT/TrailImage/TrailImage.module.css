@@ -11,4 +11,7 @@
   .map > img {
     max-height: 400px;
   }
+  .map {
+    grid-column: 1;
+  }
 }

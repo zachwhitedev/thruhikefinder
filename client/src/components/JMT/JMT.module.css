@@ -14,6 +14,7 @@
   background: rgb(233, 255, 228);
 }
 
+
 @media(max-width: 850px){
   .wrapper {
     margin: 8px;

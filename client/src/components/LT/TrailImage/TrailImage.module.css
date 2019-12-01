@@ -13,7 +13,7 @@
   margin: 10px auto 10px auto;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 850px) {
   .map > img {
     max-height: 400px;
   }

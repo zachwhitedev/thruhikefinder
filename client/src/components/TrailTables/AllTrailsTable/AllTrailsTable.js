@@ -29,7 +29,7 @@ export default class AllTrailsTable extends React.Component {
         elevationPerMile: 184,
         region: 'West',
         highPoint: '13,153',
-        rainfall: 'N/A',
+        rainfall: 1.15,
         predictedResupplies: 26,
         avgResupplies: 102
       },

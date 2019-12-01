@@ -4,19 +4,22 @@
 }
 
 .saleItems {
-  display: flex;
+  display: inline;
   justify-content: center;
 }
 
 .tentDiv {
   width: 150px;
-  text-align: center;
   padding: 5px;
-  margin: 0 5px;
+  margin: 0 auto;
 }
 
 .tentDiv > h5 {
   display: inline;
+}
+
+.p {
+  text-align: left;
 }
 
 #productImage {
@@ -32,7 +35,7 @@
   text-decoration: none;
   border: 1px solid green;
   text-align: center;
-  width: 65px;
+  width: 75px;
   padding: 5px;
   color: rgb(0, 79, 0);
   background: rgb(197, 255, 146);

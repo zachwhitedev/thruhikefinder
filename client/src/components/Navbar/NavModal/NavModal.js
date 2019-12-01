@@ -17,7 +17,7 @@ function NavModal(props) {
   return (
     <nav className={drawerClasses}>
       <div >
-        <Link onClick={props.click} to='/'>
+        <Link onClick={props.click} to={props.beingViewed}>
           <img src={xout} id='x-out'></img>
         </Link>
       </div>

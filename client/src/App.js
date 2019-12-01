@@ -63,7 +63,7 @@ function App(props) {
     <Router>
       <Switch>
         <div style={{ height: '100%' }}>
-          <Navbar />
+          <Navbar beingViewed={routeBeingViewed}/>
           <main style={{ marginTop: '92px' }}>
             <Route path='/' exact>
             <Dropdown beingViewed={routeBeingViewed} receiveRoute={receiveRoute}/>

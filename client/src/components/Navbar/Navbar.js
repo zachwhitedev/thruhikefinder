@@ -17,7 +17,7 @@ function Navbar(props) {
   return (
     <div>
       <Toolbar hamburgerClickHandler={hamburgerClickHandler} navModelOpen={navModelOpen}/>
-      {navModelOpen && <NavModal show={navModelOpen} click={backgroundClickHandler}/>}      
+      {navModelOpen && <NavModal show={navModelOpen} click={backgroundClickHandler} beingViewed={props.beingViewed}/>}      
       {navModelOpen && <Backdrop backgroundClickHandler={backgroundClickHandler}/>}      
     </div>
   );

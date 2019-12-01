@@ -16,7 +16,7 @@ import {
 } from 'react-router-dom';
 
 function Dropdown() {
-  const[selectedOption, setSelectedOption] = useState('Choose a trail...')
+  const [selectedOption, setSelectedOption] = useState('Choose a trail...');
   let history = useHistory();
 
   const handleTrailSelect = e => {
@@ -27,13 +27,32 @@ function Dropdown() {
 
   return (
     <div id='the-dropdown-container'>
-        <select id='the-dropdown' onChange={handleTrailSelect} name={selectedOption}>
-          <option value='/' name='Compare all trails...'>Choose a trail...</option>
-          <option value='/pct' name='Pacific Crest Trail'>Pacific Crest Trail</option>
-          <option value='/at' name='Appalachian Trail'>Appalachian Trail</option>
-        </select>
+      <select
+        id='the-dropdown'
+        onChange={handleTrailSelect}
+        name={selectedOption}
+      >
+        <option value='/' name='Compare all trails...'>
+          Choose a trail...
+        </option>
+        <option value='/pct' name='Pacific Crest Trail'>
+          Pacific Crest Trail
+        </option>
+        <option value='/at' name='Appalachian Trail'>
+          Appalachian Trail
+        </option>
+        <option value='/cdt' name='Continental Divide Trail'>
+          Continental Divide Trail
+        </option>
+        <option value='/longtrail' name='Long Trail'>
+          Long Trail
+        </option>
+        <option value='/jmt' name='John Muir Trail'>
+          John Muir Trail
+        </option>
+      </select>
     </div>
-);
+  );
 }
 
 function App() {
@@ -56,12 +75,15 @@ function App() {
               <AT />
             </Route>
             <Route path='/cdt' exact>
+              <Dropdown />
               <CDT />
             </Route>
             <Route path='/longtrail' exact>
+              <Dropdown />
               <LT />
             </Route>
             <Route path='/jmt' exact>
+              <Dropdown />
               <JMT />
             </Route>
             <Route path='/contact' exact>

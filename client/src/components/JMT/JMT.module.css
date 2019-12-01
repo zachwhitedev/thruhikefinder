@@ -11,7 +11,7 @@
 .wrapper > div {
   border-radius: 20px;
   padding: 1em;
-  background: rgb(255, 255, 255);
+  background: rgb(233, 255, 228);
 }
 
 @media(max-width: 750px){

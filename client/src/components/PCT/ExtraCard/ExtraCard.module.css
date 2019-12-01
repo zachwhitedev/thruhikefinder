@@ -5,3 +5,8 @@
 .container > p {
     font-size: 13px;
 }
+
+.container > h5 {
+    text-align: center;
+    font-style: italic;
+}

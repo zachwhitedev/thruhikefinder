@@ -24,7 +24,7 @@ export default function KeyFacts() {
         </tr>
         <tr>
           <td>Highest Point:</td>
-          <td>Forester Pass - 13,153 ft.</td>
+          <td>Forester Pass - 13,153 feet</td>
         </tr>
       </table>
     </div>

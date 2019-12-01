@@ -25,7 +25,7 @@ export default function GearRec() {
             Shop Now
           </a>
         </div>
-        <p className={styles.p}>This is truly a “tent for all seasons.” Cheaper than the super expensive cottage brands, but still ultralight at just 1 lb 10 oz. Extremely durable, reliable, and easy/quick to set up - clutch for when you’re exhausted and just want to dive into your sleeping bag. Other UL tents from Zpacks (and others that use DCF as their fabric) trap condensation and drip on you while you sleep - this one won’t. The PCT has a wide variety of campsites, from the outskirts of the Mojave Desert to the High Sierra - having this tent means you are always prepared in any weather or location. We recommend the 2 person version if you are above average height.</p>
+        <p className={styles.p}>This is truly a “tent for all seasons" - cheaper than the super expensive cottage brands, but still ultralight at just 1 lb 10 oz. Extremely durable, reliable, and quick to set up - clutch for when you’re exhausted and just want to dive into your sleeping bag. Other ultralight tents from companies like Zpacks (and others that use DCF as their fabric) trap condensation and drip water on you while you sleep - this one won’t. The PCT has a wide variety of campsites, from the outskirts of the Mojave Desert to the High Sierra - with this tent your pack you are always prepared in any weather or location. We recommend the 2 person version for those on the taller side.</p>
       </div>
     </div>
   );

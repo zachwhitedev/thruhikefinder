@@ -1,3 +1,19 @@
 .container {
     font-family: 'Roboto', sans-serif;
 }
+
+.wildlife {
+    display: flex;
+}
+
+.wildlife > div {
+    margin: 0 auto;
+}
+
+.plants {
+    display: flex;
+}
+
+.plants > div {
+    margin: 0 auto;
+}

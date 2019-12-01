@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import styles from './Contact.module.css';
 import axios from 'axios';
+import { Helmet } from 'react-helmet';
 
 export default function Contact() {
   const [serverState, setServerState] = useState({
@@ -35,15 +36,34 @@ export default function Contact() {
 
   return (
     <div id={styles.contactPageWrapper}>
+      <Helmet>
+        <meta charSet='utf-8' />
+        <title>Contact</title>
+        <meta
+          name='description'
+          content='Contact us at Thru Hike Data.'
+        ></meta>
+        <link rel='canonical' href='https://www.thruhikedata.com/contact' />
+      </Helmet>
       <h4>Any trail data you want to add or change?</h4>
       <div id={styles.contactFormWrapper}>
         <form onSubmit={handleOnSubmit}>
           <div id={styles.firstInput}>
-            <input id={styles.emailInput} type='email' name='email' placeholder='youremail@gmail.com' required />
+            <input
+              id={styles.emailInput}
+              type='email'
+              name='email'
+              placeholder='youremail@gmail.com'
+              required
+            />
           </div>
 
           <div id={styles.secondInput}>
-            <textarea id={styles.messageInput} name='message' placeholder='Hey there, I was just at thruhikedata.com and...'></textarea>
+            <textarea
+              id={styles.messageInput}
+              name='message'
+              placeholder='Hey there, I was just at thruhikedata.com and...'
+            ></textarea>
           </div>
 
           <button

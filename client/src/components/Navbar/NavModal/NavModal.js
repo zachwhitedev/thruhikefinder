@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import xout from './assets/img/xout.png';
 import './NavModal.css';
 
@@ -17,16 +17,16 @@ function NavModal(props) {
   return (
     <nav className={drawerClasses}>
       <div >
-        <a href='/'>
+        <Link onClick={props.click} to='/'>
           <img src={xout} id='x-out'></img>
-        </a>
+        </Link>
       </div>
       <ul>
         <li>
-          <a href='/contact'>Contact</a>
+          <Link onClick={props.click} to='/'>Sources</Link>
         </li>
         <li>
-          <a href='/'>Bibliography</a>
+          <Link onClick={props.click} to='/contact'>Contact</Link>
         </li>
       </ul>
     </nav>

@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './AllTrailsTable.module.css';
+import { Link } from 'react-router-dom';
 
 export default class AllTrailsTable extends React.Component {
   // declaring the default state
@@ -31,7 +32,8 @@ export default class AllTrailsTable extends React.Component {
         highPoint: '13,153',
         rainfall: 1.15,
         predictedResupplies: 26,
-        avgResupplies: 102
+        avgResupplies: 102,
+        route: '/pct'
       },
       {
         name: 'Continental Divide Trail',
@@ -44,7 +46,8 @@ export default class AllTrailsTable extends React.Component {
         highPoint: '14,278',
         rainfall: 'N/A',
         predictedResupplies: 'N/A',
-        avgResupplies: 'N/A'
+        avgResupplies: 'N/A',
+        route: '/cdt'
       },
       {
         name: 'Appalachian Trail',
@@ -57,7 +60,8 @@ export default class AllTrailsTable extends React.Component {
         highPoint: '6,643',
         rainfall: 'N/A',
         predictedResupplies: 'N/A',
-        avgResupplies: 'N/A'
+        avgResupplies: 'N/A',
+        route: '/at'
       },
       {
         name: 'Long Trail (VT)',
@@ -70,7 +74,8 @@ export default class AllTrailsTable extends React.Component {
         highPoint: '4,395',
         rainfall: 'N/A',
         predictedResupplies: 'N/A',
-        avgResupplies: 'N/A'
+        avgResupplies: 'N/A',
+        route: '/longtrail'
       },
       {
         name: 'John Muir Trail',
@@ -83,7 +88,8 @@ export default class AllTrailsTable extends React.Component {
         highPoint: '14,505',
         rainfall: 'N/A',
         predictedResupplies: 'N/A',
-        avgResupplies: 'N/A'
+        avgResupplies: 'N/A',
+        route: '/jmt'
       },
       {
         name: 'Arizona Trail',
@@ -306,7 +312,9 @@ export default class AllTrailsTable extends React.Component {
                   .sort(sortType[currentSort].fn)
                   .map(p => (
                     <tr className={styles.allTrailsTD}>
-                      <td>{p.name}</td>
+                      <td>
+                        <Link to={p.route} style={{ textDecoration: 'none', color: 'rgb(26, 49, 23)', cursor: 'pointer' }}>{p.name}</Link>
+                      </td>
                       <td>{p.year}</td>
                       <td>{p.region}</td>
                       <td>{p.distance}</td>

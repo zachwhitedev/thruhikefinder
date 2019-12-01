@@ -30,6 +30,10 @@
   border-left: 1px solid rgb(149, 175, 151);
 }
 
+Link > td {
+  text-decoration: none;  
+}
+
 .allTrailsTD > td:nth-child(1) {
   min-width: 12em;
   text-align: left;

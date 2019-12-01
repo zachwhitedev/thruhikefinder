@@ -51,7 +51,7 @@ export default function NoboSobo() {
         <tr>
           <td>SIERRA</td>
           <td>In addition to the snow on the ground, the spring snowmelt in the Sierra Nevada translates to mosquitoes and perilous river crossings during this large section of California trail - you will also be sharing the trail with many day-hikers during peak tourist season.</td>
-          <td>For Sobos in the Sierra, there are no perilous river crossings and virtually no bugs whatsoever during this large section of the trail. In the fall, the Sierra will be much less crowded as well.</td>
+          <td>For Sobos in the Sierra, there are no perilous river crossings and virtually no bugs during this large section of the trail. In the fall, the Sierra will be much less crowded as well.</td>
         </tr>
         <tr>
           <td>BITING BUGS</td>

@@ -12,7 +12,7 @@ export default function NoboSobo() {
         <tr>
           <td>PERMIT</td>
           <td>Harder to get permit.</td>
-          <td>Easier to get permit</td>
+          <td>Easier to get permit.</td>
         </tr>
         <tr>
           <td>SOCIAL</td>

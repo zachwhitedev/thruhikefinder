@@ -14,7 +14,7 @@ export default function TrailTables(props) {
     <div>
       <Helmet>
         <meta charSet='utf-8' />
-        <title>Thru Hike Data Tables</title>
+        <title>Thru Hike Data</title>
         <meta
           name='description'
           content='A web page displaying data on all major thru hikes in the United States.'

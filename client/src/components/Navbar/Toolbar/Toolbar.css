@@ -9,13 +9,13 @@
   background: #20500a; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to bottom,
-    #3e650e,
-    #20500a
+    #304b10,
+    #25510f
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to bottom,
-    #446d11,
-    #20500a
+    #2b430e,
+    #1c4a09
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   
 }

@@ -1,31 +1,39 @@
-.keyFacts {
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  .keyFacts > ul {
-    font-size: 18pt;
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  .myTable {
-    width: 350px;
-    margin: 0 auto;
-  }
-  
-  td:nth-child(1){
-    font-weight: bold;
-    padding-left: 5px;
-  }
-  
-  td {
-      padding: 10px 0;
-  }
 
-  @media(max-width: 400px){
-      .myTable {
-          max-width: 300px;
-      }
-  }
-  
+.moreStatsTable {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 450px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  text-align: center;
+  background: rgb(200, 230, 200);
+}
+
+.moreStatsTable td {
+  border: 3px solid rgb(15, 50, 15);
+  margin: 0px;
+  padding: 5px;
+}
+
+.moreStatsTable td:nth-child(1) {
+  min-width: 12em;
+  text-align: left;
+  background-color: rgb(85, 135, 85);
+}
+
+td:nth-child(1){
+  font-weight: bold;
+  padding-left: 5px;
+}
+
+td {
+    padding: 10px 0;
+}
+
+@media(max-width: 400px){
+    .moreStatsTable {
+        max-width: 300px;
+    }
+}
+
   
   

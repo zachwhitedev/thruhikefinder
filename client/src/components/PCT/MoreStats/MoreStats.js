@@ -5,7 +5,7 @@ export default function MoreStats() {
   return (
     <div className={styles.keyFacts}>
       <h2>More Stats</h2>
-      <table className={styles.myTable}>
+      <table className={styles.moreStatsTable}>
         <tr>
           <td>Year Established</td>
           <td>1968</td>

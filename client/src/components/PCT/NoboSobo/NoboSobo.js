@@ -4,13 +4,11 @@ import styles from './NoboSobo.module.css';
 export default function NoboSobo() {
   return (
     <div className={styles.container}>
-      <h2>Nobo vs. Sobo</h2>
+      <h2 className={styles.tableTitle}>Northbound vs. Southbound</h2>
       <table className={styles.noboSoboTable}>
-        <tr>
-          <td></td>
-          <td>Northbound</td>
-          <td>Southbound</td>
-        </tr>
+        <th></th>
+        <th>NOBO</th>
+        <th>SOBO</th>
         <tr>
           <td>PERMIT</td>
           <td>Harder to get permit.</td>

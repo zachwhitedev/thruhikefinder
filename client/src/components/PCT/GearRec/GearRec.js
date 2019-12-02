@@ -12,7 +12,7 @@ export default function GearRec() {
       <h2>Our Gear Recommendation</h2>
       <div className={styles.saleItems}>
         <div className={styles.tentDiv}>
-          <h5>Nemo Hornet</h5>
+          <h3>The Nemo Hornet</h3>
           <a href={tentlink} target="_blank">
             <img
               id={styles.productImage}
@@ -25,7 +25,27 @@ export default function GearRec() {
             Shop Now
           </a>
         </div>
-        <p className={styles.p}>This is truly a “tent for all seasons" - cheaper than the super expensive cottage brands, but still ultralight at just 1 lb 10 oz. Extremely durable, reliable, and quick to set up - clutch for when you’re exhausted and just want to dive into your sleeping bag. Other ultralight tents from companies like Zpacks (and others that use DCF as their fabric) trap condensation and drip water on you while you sleep - this one won’t. The PCT has a wide variety of campsites, from the outskirts of the Mojave Desert to the High Sierra - with this tent in your pack you are always prepared for any weather or location. We recommend the 2 person version for those on the taller side.</p>
+        <div className={styles.p}>
+          <p>
+            This is truly a “tent for all seasons" - cheaper than the super
+            expensive cottage brands, but still ultralight at just 1 lb 10 oz.
+          </p>
+          <p>
+            Extremely durable, reliable, and quick to set up - clutch for when
+            you’re exhausted and just want to dive into your sleeping bag.
+          </p>
+          <p>
+            Other ultralight tents from companies like Zpacks (and others that
+            use DCF as their fabric) trap condensation and drip water on you
+            while you sleep - this one won’t.
+          </p>
+          <p>
+            The PCT has a wide variety of campsites, from the outskirts of the
+            Mojave Desert to the High Sierra - with this tent in your pack you
+            are always prepared.
+          </p>
+          <p>We recommend the 2 person version for those on the taller side.</p>
+        </div>
       </div>
     </div>
   );

@@ -7,17 +7,28 @@
   font-family: 'Helvetica', sans-serif;
 }
 
-.myTable {
-  width: 350px;
+.keyFactsTable {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 450px;
   margin: 0 auto;
+  border-collapse: collapse;
+  text-align: center;
+  background: rgb(200, 230, 200);
 }
 
-.myTable > td {
-  border: 1px solid black;
+.keyFactsTable td {
+  border: 3px solid rgb(15, 50, 15);
 }
 
-td:nth-child(1){
-  font-weight: bold;
+/* .ta tr, td {
+  border: 1px solid #ddd;
+  text-align: center;
+} */
+
+.keyFactsTable td:nth-child(1){
+  max-width: 5em;
+  text-align: left;
+  background-color: rgb(85, 135, 85);
 }
 
 @media(max-width: 400px){

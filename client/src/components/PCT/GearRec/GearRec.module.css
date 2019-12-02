@@ -1,6 +1,12 @@
 .gear {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Helvetica', sans-serif;
   text-align: center;
+}
+
+.gearName {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .saleItems {
@@ -9,13 +15,17 @@
 }
 
 .tentDiv {
-  width: 150px;
-  padding: 5px;
+  width: 220px;
+  padding: 15px;
   margin: 0 auto;
+  border: 2px solid rgb(0, 91, 0);
+  border-radius: 5px;
 }
 
-.tentDiv > h5 {
-  display: inline;
+.ourReview {
+  font-family: 'Odibee Sans', sans-serif;
+  font-size: 22px;
+  text-decoration: underline;
 }
 
 .p {
@@ -39,11 +49,11 @@
   width: 75px;
   padding: 5px;
   color: rgb(0, 79, 0);
-  background: rgb(197, 255, 146);
+  background: rgb(164, 255, 84);
   font-weight: bold;
 }
 
 #tentButton:hover {
   color: rgb(0, 79, 0);
-  background: rgb(235, 255, 133);
+  background: rgb(102, 218, 0);
 }

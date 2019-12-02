@@ -9,10 +9,10 @@ export default function GearRec() {
 
   return (
     <div className={styles.gear}>
-      <h2>Our Gear Recommendation</h2>
+      <h2>Gear Recommendation</h2>
       <div className={styles.saleItems}>
         <div className={styles.tentDiv}>
-          <h3>The Nemo Hornet</h3>
+          <div className={styles.gearName}>The Nemo Hornet</div>
           <a href={tentlink} target="_blank">
             <img
               id={styles.productImage}
@@ -26,6 +26,7 @@ export default function GearRec() {
           </a>
         </div>
         <div className={styles.p}>
+          <div className={styles.ourReview}>Our Review</div>
           <p>
             This is truly a “tent for all seasons" - cheaper than the super
             expensive cottage brands, but still ultralight at just 1 lb 10 oz.

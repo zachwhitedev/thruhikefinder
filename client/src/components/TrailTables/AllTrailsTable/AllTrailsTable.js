@@ -278,7 +278,7 @@ export default class AllTrailsTable extends React.Component {
 
     return (
       <div className={styles.compWrapper}>
-        <h2>All Thru-Hikes</h2>
+        <div className={styles.tableTitle}>All Thru-Hikes</div>
         <div id={styles.AllTrailsTableWrapper}>
           {this.state.tableData.length > 0 && (
             <table id={styles.AllTrailsTable}>

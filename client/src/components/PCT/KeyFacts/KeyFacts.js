@@ -13,9 +13,23 @@ export default function KeyFacts() {
         <tr>
           <td>Location</td>
           <td>
-            <p>California - 1689 miles - 63.7%</p>
-            <p>Oregon - 455 miles - 17.1%</p>
-            <p>Washington - 504 miles - 19.1%</p>
+            <table className={styles.tableInsideTable}>
+              <tr>
+                <td id={styles.California}>California</td>
+                <td>1689 miles</td>
+                <td>63.7%</td>
+              </tr>
+              <tr>
+                <td id={styles.Oregon}>Oregon</td>
+                <td>455 miles</td>
+                <td>17.1%</td>
+              </tr>
+              <tr>
+                <td id={styles.Washington}>Washington</td>
+                <td>504 miles</td>
+                <td>19.1%</td>
+              </tr>
+            </table>
           </td>
         </tr>
         <tr>

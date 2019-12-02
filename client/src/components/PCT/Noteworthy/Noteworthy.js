@@ -31,7 +31,7 @@ export default function Noteworthy() {
           </div>
           <div id={styles.lion}>
             <img src={lion} id={styles.noteicon}></img>
-            <p>Mountain Lions</p>
+            <p>Mountain Lion</p>
           </div>
         </div>
         <h3>Most Hazardous Plants:</h3>

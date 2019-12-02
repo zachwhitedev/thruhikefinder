@@ -3,32 +3,47 @@
 }
 
 .keyFacts > ul {
-  font-size: 18pt;
+  font-size: 18px;
   font-family: 'Helvetica', sans-serif;
 }
 
 .keyFactsTable {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  width: 450px;
+  width: 340px;
   margin: 0 auto;
   border-collapse: collapse;
   text-align: center;
-  background: rgb(200, 230, 200);
+  background-color: rgb(200, 230, 200);
 }
 
 .keyFactsTable td {
   border: 3px solid rgb(15, 50, 15);
 }
 
-/* .ta tr, td {
-  border: 1px solid #ddd;
-  text-align: center;
-} */
-
-.keyFactsTable td:nth-child(1){
-  max-width: 5em;
+.keyFactsTable td:nth-child(1) {
+  min-width: 7.1em;
   text-align: left;
   background-color: rgb(85, 135, 85);
+}
+
+.tableInsideTable td {
+  min-width: 5.6em;
+  border: none;
+}
+
+#California {
+  font-weight: inherit;
+  background-color: rgb(200, 230, 200);
+}
+
+#Oregon {
+  font-weight: inherit;
+  background-color: rgb(200, 230, 200);
+}
+
+#Washington {
+  font-weight: inherit;
+  background-color: rgb(200, 230, 200);
 }
 
 @media(max-width: 400px){

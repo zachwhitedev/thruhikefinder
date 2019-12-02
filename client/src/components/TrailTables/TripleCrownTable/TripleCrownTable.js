@@ -168,7 +168,7 @@ export default class TripleCrownTable extends React.Component {
 
     return (
       <div className={styles.compWrapper}>
-        <h2>Triple Crown Trails</h2>
+        <div className={styles.tableTitle}>Triple Crown Trails</div>
         <div id={styles.AllTrailsTableWrapper}>
           {this.state.tableData.length > 0 && (
             <table id={styles.AllTrailsTable}>

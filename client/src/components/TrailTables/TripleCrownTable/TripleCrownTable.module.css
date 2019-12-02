@@ -3,15 +3,26 @@
   text-align: center;
 }
 
+.tableTitle {
+  font-size: 38px;
+  margin: 26px;
+  font-family: 'Odibee Sans', sans-serif;
+  color: rgb(0, 20, 0);
+}
+
 #AllTrailsTable {
   display: inline-block;
   max-width: 1132px;
   border-collapse: collapse;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(26, 49, 23);
-  background: rgb(247, 255, 241);
+  background: rgb(255, 255, 255);
   border-bottom: 1px solid rgb(149, 175, 151);
   box-shadow: rgba(0, 0, 0, 3);
+}
+
+#AllTrailsTable tr:nth-child(2n) {
+  background-color: rgb(230, 240, 230);
 }
 
 .allTrailsTH > th {
@@ -20,7 +31,7 @@
   border-right: 1px solid rgb(149, 175, 151);
   border-top: 1px solid rgb(149, 175, 151);
   border-bottom: 1px solid rgb(149, 175, 151);
-  background: rgb(245, 255, 110);
+  background: rgb(164, 255, 159);
   font-size: 10px;
   font-size: 10px;
   padding: 1px;

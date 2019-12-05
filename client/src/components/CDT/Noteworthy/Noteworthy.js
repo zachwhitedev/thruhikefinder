@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function FunSection() {
+export default function Noteworthy() {
   return (
     <div>
       <h2>Fun Section</h2>

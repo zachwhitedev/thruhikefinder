@@ -3,9 +3,9 @@ import TrailImage from './TrailImage/TrailImage';
 import TrailSummary from './TrailSummary/TrailSummary';
 import KeyFacts from './KeyFacts/KeyFacts';
 import GearRec from './GearRec/GearRec';
-import FunSection from './FunSection/FunSection';
+import Noteworthy from './Noteworthy/Noteworthy';
 import InDepthStats from './InDepthStats/InDepthStats';
-import EndCard from './EndCard/EndCard';
+import ExtraCard from './ExtraCard/ExtraCard';
 import styles from './LT.module.css';
 import { Helmet } from 'react-helmet'
 
@@ -25,9 +25,9 @@ export default function LT() {
       <KeyFacts />
       <TrailSummary />
       <GearRec />
-      <FunSection />
+      <Noteworthy />
       <InDepthStats />
-      <EndCard />
+      <ExtraCard />
     </div>
   );
 }

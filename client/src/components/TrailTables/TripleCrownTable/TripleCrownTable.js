@@ -49,8 +49,8 @@ export default class TripleCrownTable extends React.Component {
         highpoint: '13,153',
         rainfall: 1.15,
         noWater: 42,
-        predictedResupplies: 26,
-        avgDistBetweenResupplies: 102,
+        predictedResupplies: 27,
+        avgDistBetweenResupplies: 98,
         longBetweenResupplies: 154,
         political: 'N/A',
         route: '/pct'

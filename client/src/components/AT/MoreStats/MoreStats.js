@@ -8,37 +8,38 @@ export default function MoreStats() {
       <table className={styles.moreStatsTable}>
         <tr>
           <td>Year Established</td>
-          <td>1968</td>
+          <td>1923</td>
         </tr>
         <tr>
           <td>Approximate # Days to Complete</td>
-          <td>150 days</td>
+          <td>165 days</td>
         </tr>
         <tr>
           <td>Avg. Elevation Gain per Mile</td>
-          <td>184 feet</td>
+          <td>212 feet</td>
         </tr>
         <tr>
           <td>Average Monthly Rainfall</td>
-          <td>1.15 inches</td>
+          <td>N/A</td>
         </tr>
         <tr>
           <td>Longest Stretch of No Water</td>
-          <td>42 miles</td>
+          <td>N/A</td>
         </tr>
         <tr>
           <td>Predicted # of Resupplies</td>
-          <td>27</td>
+          <td>69</td>
         </tr>
         <tr>
           <td>Avg. Distance Between Resupplies</td>
-          <td>98 miles</td>
+          <td>32 miles</td>
         </tr>
         <tr>
           <td>Longest Resupply Distance</td>
-          <td>154 miles</td>
+          <td>100 miles</td>
         </tr>
       </table>
     </div>   
   );
 }
+

@@ -3,9 +3,9 @@ import TrailImage from './TrailImage/TrailImage';
 import TrailSummary from './TrailSummary/TrailSummary';
 import KeyFacts from './KeyFacts/KeyFacts';
 import GearRec from './GearRec/GearRec';
-import FunSection from './FunSection/FunSection';
-import InDepthStats from './InDepthStats/InDepthStats';
-import EndCard from './EndCard/EndCard';
+import Noteworthy from './Noteworthy/Noteworthy';
+import MoreStats from './MoreStats/MoreStats';
+import ExtraCard from './ExtraCard/ExtraCard';
 import styles from './AT.module.css';
 import { Helmet } from 'react-helmet';
 
@@ -22,12 +22,12 @@ export default function AT() {
         <link rel='canonical' href='https://www.thruhikedata.com/at' />
       </Helmet>
       <TrailImage />
-      <KeyFacts />
       <TrailSummary />
+      <KeyFacts />
+      <MoreStats />
+      <Noteworthy />
       <GearRec />
-      <FunSection />
-      <InDepthStats />
-      <EndCard />
+      <ExtraCard />
     </div>
   );
 }

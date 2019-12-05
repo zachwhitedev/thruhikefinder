@@ -1,6 +1,7 @@
 import React from 'react';
+import styles from './Noteworthy.module.css';
 
-export default function FunSection() {
+export default function Noteworthy() {
   return (
     <div>
       <h2>Fun Section</h2>

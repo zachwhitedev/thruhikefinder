@@ -14,7 +14,7 @@ export default function AT() {
     <div className={styles.wrapper}>
       <Helmet>
         <meta charSet='utf-8' />
-        <title>The Long Trail</title>
+        <title>The Appalachian Trail</title>
         <meta
           name='description'
           content='A web page displaying data on the Appalachian Trail of the United States.'
@@ -24,8 +24,8 @@ export default function AT() {
       <TrailImage />
       <TrailSummary />
       <KeyFacts />
-      <MoreStats />
       <Noteworthy />
+      <MoreStats />
       <GearRec />
       <ExtraCard />
     </div>

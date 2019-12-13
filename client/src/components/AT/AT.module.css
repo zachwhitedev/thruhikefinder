@@ -12,12 +12,12 @@
 .wrapper > div {
   border-radius: 10px;
   padding: 1em;
-  background: rgb(255, 255, 255);
+  background:white;
   color: rgb(0, 3, 0);
   border: 3px solid green;
 }
 
-@media(max-width: 850px) {
+@media(max-width: 850px){
   .wrapper {
     margin: 8px;
     grid-template-columns: 1fr;
@@ -25,7 +25,24 @@
     grid-auto-rows: minmax(80px, auto);
   }
 
+  .wrapper > div {
+    border-radius: 0;
+  }
+
   .map > img {
     max-height: 400px;
+  }
+}
+
+@media (max-width: 400px) {
+  .wrapper {
+    width: 100%;
+    grid-template-columns: 1fr;
+    margin: 5px 0 0 0;
+    grid-auto-rows: minmax(60px, auto);
+  }
+
+  .wrapper > div {
+    border-radius: 0;
   }
 }

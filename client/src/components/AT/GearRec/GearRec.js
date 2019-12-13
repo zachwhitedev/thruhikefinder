@@ -12,12 +12,12 @@ export default function GearRec() {
       <h2>Gear Recommendation</h2>
       <div className={styles.saleItems}>
         <div className={styles.tentDiv}>
-          <div className={styles.gearName}>The Nemo Hornet</div>
+          <div className={styles.gearName}>Rain Jacket: Outdoor Research Helium II</div>
           <a href={tentlink} target="_blank">
             <img
               id={styles.productImage}
               src={tentimage}
-              alt="tent for hiker"
+              alt="rain jacket for hiker"
             />
           </a>
 
@@ -28,26 +28,12 @@ export default function GearRec() {
         <div className={styles.p}>
           <div className={styles.ourReview}>Our Review</div>
           <p>
-            This is truly a “tent for all seasons" - cheaper than the super
-            expensive cottage brands, but still ultralight at just 1 lb 10 oz.
+            As much as I love Frogg Toggs, I absolutely do not recommend them for the Appalachian Trail. That is because of the three triple crown hikes, the AT is by far the wettest. It will probably rain every week. And though Frogg Toggs jackets are great if you only need to break yours out a few times per hike, their downsides are that they rip very easily and they have little to no breathability. There are lots of branches and brush on the AT that will rip Frogg Toggs to shreds before too long, and you will be wearing them so much that you will soon tire of how sweaty you get underneath. That is why I make an exception for the Appalachian Trail, and highly recommend you get a legitimate ultralight rain jacket for your trip.</p>
+            <p>The Outdoor Research Helium II is a popular choice, and for good reason: it is among the most ultralight jackets at just 6.4 oz. It is breathable, and it packs down to the size of a sandwich. Unlike similar jackets made by Patagonia and Montbell, you will not go bankrupt buying it - it is cheaper than these brands, and on top of this fact, it is often on sale.
           </p>
-          <p>
-            Extremely durable, reliable, and quick to set up - clutch for when
-            you’re exhausted and just want to dive into your sleeping bag.
-          </p>
-          <p>
-            Other ultralight tents from companies like Zpacks (and others that
-            use DCF as their fabric) trap condensation and drip water on you
-            while you sleep - this one won’t.
-          </p>
-          <p>
-            The PCT has a wide variety of campsites, from the outskirts of the
-            Mojave Desert to the High Sierra - with this tent in your pack you
-            are always prepared.
-          </p>
-          <p>We recommend the 2 person version for those on the taller side.</p>
         </div>
       </div>
     </div>
   );
 }
+

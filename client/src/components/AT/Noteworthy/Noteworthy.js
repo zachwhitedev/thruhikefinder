@@ -6,8 +6,10 @@ export default function Noteworthy() {
     <div>
       <h2>Noteworthy</h2>
       <ul>
-        <li>Most Dangerous Wildlife: Venomous snakes, mountain lions</li>
-        <li>(add a table: political breakdown of trail by counties crossed)</li>
+        <li>Notable Wildlife: Black bears, mice</li>
+        <li>Mooning the Cog</li>
+        <li>Hundred Mile Wilderness</li>
+        <li>Civil War Battlefied</li>
       </ul>
     </div>
   );

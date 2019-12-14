@@ -22,8 +22,8 @@ export default function JMT() {
         <link rel='canonical' href='https://www.thruhikedata.com/jmt' />
       </Helmet>
       <TrailImage />
-      <KeyFacts />
       <TrailSummary />
+      <KeyFacts />
       <GearRec />
       <Noteworthy />
       <InDepthStats />

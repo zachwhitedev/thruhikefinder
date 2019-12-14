@@ -6,9 +6,9 @@ export default function KeyFacts(){
         <div className={styles.keyFacts}>
         <h2>Key Stats</h2>
         <ul>
-          <li>Length: 2189 miles</li>
-          <li>Location: East Coast</li>
-          <li>Highest Point: Clingman's Dome (6,643 ft.)</li>
+          <li>Length: 211 miles</li>
+          <li>Location: Central California</li>
+          <li>Highest Point: Mount Whitney - 14,505 feet</li>
         </ul>
       </div>
     )

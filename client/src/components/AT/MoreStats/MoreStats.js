@@ -7,6 +7,14 @@ export default function MoreStats() {
       <h2>More Stats</h2>
       <table className={styles.moreStatsTable}>
         <tr>
+          <td>Length</td>
+          <td>2189 miles</td>
+        </tr>
+        <tr>
+          <td>Highest Point</td>
+          <td>Clingman's Dome (NC) - 6,643 feet</td>
+        </tr>
+        <tr>
           <td>Year Established</td>
           <td>1923</td>
         </tr>

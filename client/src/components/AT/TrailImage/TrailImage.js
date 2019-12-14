@@ -33,7 +33,7 @@ export default function TrailImage(){
                 <td>Tennessee</td>
                 <td>287.9</td>
                 <td>13.2%</td>
-                <td>Clingman's Dome</td>
+                <td>The Smoky Mountains</td>
               </tr>
               <tr>
                 <td>Virginia</td>

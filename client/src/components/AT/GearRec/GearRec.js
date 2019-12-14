@@ -2,10 +2,10 @@ import React from "react";
 import styles from "./GearRec.module.css";
 
 export default function GearRec() {
-  const tentimage =
-    "https://images-na.ssl-images-amazon.com/images/I/41fc3313RVL._SL250_.jpg";
-  const tentlink =
-    "https://www.amazon.com/gp/product/B07MTSM7ZL/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B07MTSM7ZL&linkCode=as2&tag=nelsonshepher-20&linkId=8476d7d82c5b613b58dc9ccc9c47cde1";
+  const jacketimage =
+    "https://images-na.ssl-images-amazon.com/images/I/81xJobvlj3L._AC_UX569_.jpg";
+  const jacketlink =
+    "https://amzn.to/38zN7oQ";
 
   return (
     <div className={styles.gear}>
@@ -13,15 +13,15 @@ export default function GearRec() {
       <div className={styles.saleItems}>
         <div className={styles.tentDiv}>
           <div className={styles.gearName}>Rain Jacket: Outdoor Research Helium II</div>
-          <a href={tentlink} target="_blank">
+          <a href={jacketlink} target="_blank">
             <img
               id={styles.productImage}
-              src={tentimage}
+              src={jacketimage}
               alt="rain jacket for hiker"
             />
           </a>
 
-          <a id={styles.tentButton} href={tentlink} target="_blank">
+          <a id={styles.jacketButton} href={jacketlink} target="_blank">
             Shop Now
           </a>
         </div>

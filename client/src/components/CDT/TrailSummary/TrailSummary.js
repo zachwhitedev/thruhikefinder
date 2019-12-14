@@ -3,21 +3,15 @@ import styles from './TrailSummary.module.css';
 
 export default function TrailSummary(){
     return (
-        <div>
-        <h2>Summary</h2>
-        <p>
-          The Pacific Crest Trail is a 2,652 mile continous footpath that runs
-          the entire length of the west coast of the United States. It starts at
-          the Mexican border in Southern California, and cross three states to
-          where it ends at the Canadian border in Washington. The trail is known
-          for its breath-taking views, varied terrain, and continuosly changing
-          climate and landscapes.
-        </p>
-        <p>
-          In completing the trail, you will have crossed through the desert of
-          Southern California, the grandiose Sierra Nevada mountain range, and
-          the wilderness of the Cascades in Northern Washington.
-        </p>
-      </div>
+        <div className={styles.trailSummary}>
+          <h2>Summary</h2>
+          <p>
+          The Continental Divide Trail is a designated National Scenic Trail that runs from the Mexican border in New Mexico to the Canadian border in Northern Montana, passing through Colorado, Wyoming, and Idaho along the way. The trail is over 3,000 miles long, making it the longest of the Triple Crown Trails. It is also the least-travelled - far more hikers attempt the AT and PCT each season than the CDT. This is largely because the CDT is considered by many to be the most challenging of the three due to its length, remoteness, and lack of a clear trail in many parts.
+          </p>
+          <p>
+          However, because we have recently entered the "Guthooks era" of thru-hiking, with reliable, crowd-sourced GPS apps to guide hikers every step of the way, expect to see far more people attempting and completing the CDT in the coming years. Thanks to these mobile apps, lack of waypoint knowledge (water sources, campsites, etc.) and any fears of getting lost have all but been eliminated. Thru-hiking the CDT, though still a massive undertaking, is now far more accessible from a logistical perspective.
+          </p>
+          <p>But the end of the day, these apps can't hike the trail for you. Should you walk the CDT in its entirety, you will have passed over the long, flat, open deserts of New Mexico, conquered the towering Colorado Rocky Mountains, experienced the rich landscape of Wyoming and Yellowstone National Park, skirted over the rugged eastern border of Idaho, and experienced the famously untamed Montana wilderness.</p>
+        </div>
     )
 }

@@ -11,7 +11,7 @@ export default function KeyFacts() {
           <td>2650 miles</td>
         </tr>
         <tr>
-          <td>Location</td>
+          <td>States</td>
           <td>
             <table className={styles.tableInsideTable}>
               <tr>

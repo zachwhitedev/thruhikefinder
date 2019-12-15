@@ -59,7 +59,7 @@ export default class TripleCrownTable extends React.Component {
         name: 'Continental Divide Trail',
         year: 1978,
         region: 'Southwest/West',
-        distance: 3100,
+        distance: 3019,
         totalstates: 5,
         daysToFinish: 170,
         elevationPerMile: 172,

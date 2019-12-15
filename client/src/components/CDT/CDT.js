@@ -22,10 +22,10 @@ export default function CDT() {
         <link rel='canonical' href='https://www.thruhikedata.com/cdt' />
       </Helmet>
       <TrailImage />
-      <KeyFacts />
       <TrailSummary />
-      <GearRec />
+      <KeyFacts />
       <Noteworthy />
+      <GearRec />
       <InDepthStats />
       <ExtraCard />
     </div>

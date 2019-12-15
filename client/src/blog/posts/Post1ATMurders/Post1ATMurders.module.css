@@ -4,11 +4,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   background: white;
-  height: 100vh;
+  height: 100%;
 }
 
 .postContent {
   grid-column: 4/10;
+  height: auto;
 }
 
 .postContent > p {
@@ -98,9 +99,17 @@
 }
 @media (max-width: 400px) {
   .postContent {
-    width: 300px;
+    width: 350px;
   }
   .postContent > p {
-    width: 300px;
+    width: 350px;
+  }
+}
+@media (max-width: 350px) {
+  .postContent {
+    width: 325px;
+  }
+  .postContent > p {
+    width: 325px;
   }
 }

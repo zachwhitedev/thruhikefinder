@@ -8,6 +8,7 @@ import CDT from './components/CDT/CDT';
 import LT from './components/LT/LT';
 import TrailTables from './components/TrailTables/TrailTables';
 import Contact from './components/Contact/Contact';
+import BlogMain from './blog/BlogMain';
 import {
   BrowserRouter as Router,
   Switch,
@@ -91,6 +92,9 @@ function App(props) {
             </Route>
             <Route path='/contact' exact>
               <Contact />
+            </Route>
+            <Route path='/blog' exact>
+              <BlogMain />
             </Route>
           </main>
         </div>

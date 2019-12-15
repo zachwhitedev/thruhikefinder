@@ -24,10 +24,10 @@ export default function LT() {
       <TrailImage />
       <KeyFacts />
       <TrailSummary />
-      <GearRec />
+      {/* <GearRec />
       <Noteworthy />
       <InDepthStats />
-      <ExtraCard />
+      <ExtraCard /> */}
     </div>
   );
 }

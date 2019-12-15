@@ -9,7 +9,7 @@ import LT from './components/LT/LT';
 import TrailTables from './components/TrailTables/TrailTables';
 import Contact from './components/Contact/Contact';
 import BlogMain from './blog/BlogMain';
-import Post1ATMurders from './blog/posts/Post1ATMurders/Post1ATMurders';
+import Post1ATghosts from './blog/posts/Post1ATMurders/Post1ATMurders';
 import {
   BrowserRouter as Router,
   Switch,
@@ -27,26 +27,47 @@ function Dropdown(props) {
 
   return (
     <div id='the-dropdown-container'>
-      <select
-        id='the-dropdown'
-        onChange={handleTrailSelect}
-      >
-        <option value='/' name='Compare all trails...' selected={props.beingViewed == '/'}>
+      <select id='the-dropdown' onChange={handleTrailSelect}>
+        <option
+          value='/'
+          name='Compare all trails...'
+          selected={props.beingViewed == '/'}
+        >
           Choose a trail...
         </option>
-        <option value='/pct' name='Pacific Crest Trail' selected={props.beingViewed == '/pct'}>
+        <option
+          value='/pct'
+          name='Pacific Crest Trail'
+          selected={props.beingViewed == '/pct'}
+        >
           Pacific Crest Trail
         </option>
-        <option value='/at' name='Appalachian Trail' selected={props.beingViewed == '/at'}>
+        <option
+          value='/at'
+          name='Appalachian Trail'
+          selected={props.beingViewed == '/at'}
+        >
           Appalachian Trail
         </option>
-        <option value='/cdt' name='Continental Divide Trail' selected={props.beingViewed == '/cdt'}>
+        <option
+          value='/cdt'
+          name='Continental Divide Trail'
+          selected={props.beingViewed == '/cdt'}
+        >
           Continental Divide Trail
         </option>
-        <option value='/longtrail' name='Long Trail' selected={props.beingViewed == '/longtrail'}>
+        <option
+          value='/longtrail'
+          name='Long Trail'
+          selected={props.beingViewed == '/longtrail'}
+        >
           Long Trail
         </option>
-        <option value='/jmt' name='John Muir Trail' selected={props.beingViewed == '/jmt'}>
+        <option
+          value='/jmt'
+          name='John Muir Trail'
+          selected={props.beingViewed == '/jmt'}
+        >
           John Muir Trail
         </option>
       </select>
@@ -55,40 +76,58 @@ function Dropdown(props) {
 }
 
 function App(props) {
-  const[routeBeingViewed, setRouteBeingViewed] = useState('/');
+  const [routeBeingViewed, setRouteBeingViewed] = useState('/');
 
-  const receiveRoute = (route) => {
-    setRouteBeingViewed(route)
-  }
+  const receiveRoute = route => {
+    setRouteBeingViewed(route);
+  };
 
   return (
     <Router>
       <Switch>
         <div style={{ height: '100%' }}>
-          <Navbar beingViewed={routeBeingViewed}/>
+          <Navbar beingViewed={routeBeingViewed} />
           <main style={{ marginTop: '92px' }}>
             <Route path='/' exact>
-            <Dropdown beingViewed={routeBeingViewed} receiveRoute={receiveRoute}/>
-              <TrailTables receiveRoute={receiveRoute}/>
+              <Dropdown
+                beingViewed={routeBeingViewed}
+                receiveRoute={receiveRoute}
+              />
+              <TrailTables receiveRoute={receiveRoute} />
             </Route>
             <Route path='/pct' exact>
-            <Dropdown beingViewed={routeBeingViewed} receiveRoute={receiveRoute}/>
+              <Dropdown
+                beingViewed={routeBeingViewed}
+                receiveRoute={receiveRoute}
+              />
               <PCT />
             </Route>
             <Route path='/at' exact>
-              <Dropdown beingViewed={routeBeingViewed} receiveRoute={receiveRoute}/>
+              <Dropdown
+                beingViewed={routeBeingViewed}
+                receiveRoute={receiveRoute}
+              />
               <AT />
             </Route>
             <Route path='/cdt' exact>
-              <Dropdown beingViewed={routeBeingViewed} receiveRoute={receiveRoute}/>
+              <Dropdown
+                beingViewed={routeBeingViewed}
+                receiveRoute={receiveRoute}
+              />
               <CDT />
             </Route>
             <Route path='/longtrail' exact>
-              <Dropdown beingViewed={routeBeingViewed} receiveRoute={receiveRoute}/>
+              <Dropdown
+                beingViewed={routeBeingViewed}
+                receiveRoute={receiveRoute}
+              />
               <LT />
             </Route>
             <Route path='/jmt' exact>
-              <Dropdown beingViewed={routeBeingViewed} receiveRoute={receiveRoute}/>
+              <Dropdown
+                beingViewed={routeBeingViewed}
+                receiveRoute={receiveRoute}
+              />
               <JMT />
             </Route>
             <Route path='/contact' exact>
@@ -97,8 +136,8 @@ function App(props) {
             <Route path='/blog' exact>
               <BlogMain />
             </Route>
-            <Route path='/blog/at-murders' exact>
-              <Post1ATMurders />
+            <Route path='/blog/at-ghosts' exact>
+              <Post1ATghosts />
             </Route>
           </main>
         </div>

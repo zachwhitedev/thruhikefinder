@@ -16,6 +16,12 @@ const toolbar = props => (
       <div className='toolbar-navigation-items'>
         <ul>
           <li>
+            <Link to='/blog'>Blog</Link>
+          </li>
+          {/* <li>
+            <Link to='/'>Newsletter</Link>
+          </li> */}
+          <li>
             <Link to='/'>Sources</Link>
           </li>
           <li>

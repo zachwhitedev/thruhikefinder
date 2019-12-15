@@ -1,0 +1,27 @@
+.animals {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 100%;
+}
+
+.wildTitle {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.blackBearTitle {
+    padding-left: 4px;
+}
+
+.mooseTitle {
+    padding-left: 18px;
+}
+
+.blackBear > img {
+    max-width: 80px;
+}
+
+.moose > img {
+    max-width: 80px;
+}

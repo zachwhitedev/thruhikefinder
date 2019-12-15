@@ -24,10 +24,10 @@ export default function JMT() {
       <TrailImage />
       <TrailSummary />
       <KeyFacts />
-      <GearRec />
+      {/* <GearRec />
       <Noteworthy />
       <InDepthStats />
-      <ExtraCard />
+      <ExtraCard /> */}
     </div>
   );
 }

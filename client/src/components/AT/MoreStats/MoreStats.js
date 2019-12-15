@@ -4,7 +4,7 @@ import styles from './MoreStats.module.css';
 export default function MoreStats() {
   return (
     <div className={styles.keyFacts}>
-      <h2>More Stats</h2>
+      <h2>Key Stats</h2>
       <table className={styles.moreStatsTable}>
         <tr>
           <td>Length</td>

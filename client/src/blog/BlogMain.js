@@ -19,7 +19,7 @@ export default function BlogMain() {
     <div className={styles.blogcontainer}>
       <Helmet>
         <meta charSet='utf-8' />
-        <title>THru Hike Data - Blog</title>
+        <title>Thru Hike Data - Blog</title>
         <meta
           name='description'
           content='Articles about thru-hikes in the United States.'

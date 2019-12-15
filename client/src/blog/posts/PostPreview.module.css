@@ -34,6 +34,24 @@
     font-weight: 400;
 }
 
+.routerLink {
+    text-decoration: none;
+    color: rgb(0, 31, 0);
+}
+
+.routerLink:hover {
+    color: rgb(0, 161, 62);
+}
+
+.routerLink:visited {
+    color: rgb(0, 161, 62);
+}
+
+.imgDiv:hover{
+    cursor: pointer;
+    filter: brightness(120%);
+}
+
 @media(max-width: 500px){
     .postblock {
         display: flex;
@@ -51,7 +69,7 @@
     }
     
     .authorplusdate {
-        width: 130px;
+        width: 150px;
     }
 
 }

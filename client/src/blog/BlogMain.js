@@ -8,7 +8,8 @@ const postPreviewsInfo = [
     author: 'Peter White',
     date: 'Dec 14th, 2019',
     description: 'This is an example of a description for this blog post.',
-    image: 'lion.png'
+    image: 'lion.png',
+    route: '/blog/at-murders'
   }
 ];
 
@@ -23,6 +24,7 @@ export default function BlogMain() {
             date={preview.date}
             description={preview.description}
             image={preview.image}
+            route={preview.route}
           />
         )}
       </div>

@@ -23,6 +23,9 @@ function NavModal(props) {
       </div>
       <ul>
         <li>
+          <Link onClick={props.click} to='/blog'>Blog</Link>
+        </li>
+        <li>
           <Link onClick={props.click} to='/'>Sources</Link>
         </li>
         <li>

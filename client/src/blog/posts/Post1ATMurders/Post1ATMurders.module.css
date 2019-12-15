@@ -12,6 +12,7 @@
 }
 
 .postContent > p {
+  background: white;
   font-size: 16pt;
   width: 35em;
 }

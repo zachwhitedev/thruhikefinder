@@ -1,9 +1,19 @@
 import React from 'react';
 import styles from './Post1ATMurders.module.css';
+import { Helmet } from 'react-helmet';
 
 export default function Post1ATMurders() {
   return (
     <div className={styles.postContainer}>
+        <Helmet>
+        <meta charSet='utf-8' />
+        <title>Murders of the Appalachian Trail</title>
+        <meta
+          name='description'
+          content='An article discussing the history of murder that haunts the Appalachian trail.'
+        ></meta>
+        <link rel='canonical' href='https://www.thruhikedata.com/blog/at-murders' />
+      </Helmet>
       <div className={styles.postContent}>
         <h1 className={styles.postTitle}>Murders of the Appalachian Trail</h1>  
         <p>

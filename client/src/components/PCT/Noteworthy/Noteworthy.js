@@ -8,8 +8,8 @@ import bushtree from '../../../assets/icons/bushtree.png'
 export default function Noteworthy() {
   return (
     <div className={styles.container}>
+        <h2 id={styles.noteworthyTitle}>Noteworthy</h2>
       <div className={styles.noteworthy}>
-        <h2>Noteworthy</h2>
         <h3>Highlights & Landmarks:</h3>
         <ul>
           <li>Sierra Nevada Mountain Range</li>

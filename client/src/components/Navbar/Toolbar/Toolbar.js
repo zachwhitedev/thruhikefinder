@@ -18,9 +18,9 @@ const toolbar = props => (
           <li>
             <Link to='/blog'>Blog</Link>
           </li>
-          <li>
+          {/* <li>
             <Link to='/'>Newsletter</Link>
-          </li>
+          </li> */}
           <li>
             <Link to='/'>Sources</Link>
           </li>

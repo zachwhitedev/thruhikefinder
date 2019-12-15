@@ -9,6 +9,7 @@ import LT from './components/LT/LT';
 import TrailTables from './components/TrailTables/TrailTables';
 import Contact from './components/Contact/Contact';
 import BlogMain from './blog/BlogMain';
+import Post1ATMurders from './blog/posts/Post1ATMurders/Post1ATMurders';
 import {
   BrowserRouter as Router,
   Switch,
@@ -95,6 +96,9 @@ function App(props) {
             </Route>
             <Route path='/blog' exact>
               <BlogMain />
+            </Route>
+            <Route path='/blog/at-murders' exact>
+              <Post1ATMurders />
             </Route>
           </main>
         </div>

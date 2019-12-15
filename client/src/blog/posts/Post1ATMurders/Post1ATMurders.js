@@ -7,6 +7,9 @@ export default function Post1ATMurders() {
       <div className={styles.postContent}>
         <h1 className={styles.postTitle}>Murders of the Appalachian Trail</h1>  
         <p>
+            This article is coming soon! Enjoy the random text below.
+        </p>
+        <p>
           There are five known copies of the speech in Lincoln's handwriting,
           each with a slightly different text, and named for the people who
           first received them: Nicolay, Hay, Everett, Bancroft and Bliss. Two

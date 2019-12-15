@@ -2,23 +2,24 @@ import React from 'react';
 import styles from './Post1ATMurders.module.css';
 import { Helmet } from 'react-helmet';
 
-export default function Post1ATMurders() {
+export default function Post1ATghosts() {
   return (
     <div className={styles.postContainer}>
-        <Helmet>
+      <Helmet>
         <meta charSet='utf-8' />
-        <title>Murders of the Appalachian Trail</title>
+        <title>Ghosts of the Appalachian Trail</title>
         <meta
           name='description'
           content='An article discussing the history of murder that haunts the Appalachian trail.'
         ></meta>
-        <link rel='canonical' href='https://www.thruhikedata.com/blog/at-murders' />
+        <link
+          rel='canonical'
+          href='https://www.thruhikedata.com/blog/at-ghosts'
+        />
       </Helmet>
       <div className={styles.postContent}>
-        <h1 className={styles.postTitle}>Murders of the Appalachian Trail</h1>  
-        <p>
-            This article is coming soon! Enjoy the random text below.
-        </p>
+        <h1 className={styles.postTitle}>Ghosts of the Appalachian Trail</h1>
+        <p>This article is coming soon! Enjoy the random text below.</p>
         <p>
           There are five known copies of the speech in Lincoln's handwriting,
           each with a slightly different text, and named for the people who

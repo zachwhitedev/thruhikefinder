@@ -1,5 +1,5 @@
 .toolbar {
-  font-family: 'Odibee Sans';
+  font-family: 'Montserrat';
   position: fixed;
   top: 0;
   left: 0;
@@ -34,6 +34,7 @@
 
 .toolbar-logo {
   margin-left: 0.5rem;
+  font-family: 'Odibee Sans', sans-serif;
 }
 
 .toolbar-logo a {

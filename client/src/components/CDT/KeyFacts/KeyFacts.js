@@ -44,7 +44,7 @@ export default function KeyFacts() {
         </tr>
         <tr>
           <td>Highest Point</td>
-          <td>Grays Peak - 14,278 feet</td>
+          <td>Grays Peak (CO) - 14,278 feet</td>
         </tr>
       </table>
     </div>

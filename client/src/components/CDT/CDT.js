@@ -24,10 +24,10 @@ export default function CDT() {
       <TrailImage />
       <TrailSummary />
       <KeyFacts />
-      <Noteworthy />
+      {/* <Noteworthy />
       <GearRec />
       <InDepthStats />
-      <ExtraCard />
+      <ExtraCard /> */}
     </div>
   );
 }

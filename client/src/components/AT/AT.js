@@ -25,9 +25,9 @@ export default function AT() {
       <TrailSummary />
       <MoreStats />
       <Noteworthy />
-      <KeyFacts />
+      {/* <KeyFacts /> */}
       <GearRec />
-      <ExtraCard />
+      {/* <ExtraCard /> */}
     </div>
   );
 }

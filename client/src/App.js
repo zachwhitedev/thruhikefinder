@@ -7,6 +7,7 @@ import JMT from './components/JMT/JMT';
 import CDT from './components/CDT/CDT';
 import LT from './components/LT/LT';
 import TrailTables from './components/TrailTables/TrailTables';
+import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import BlogMain from './blog/BlogMain';
 import Post1ATghosts from './blog/posts/Post1ATMurders/Post1ATMurders';
@@ -129,6 +130,9 @@ function App(props) {
                 receiveRoute={receiveRoute}
               />
               <JMT />
+            </Route>
+            <Route path='/about' exact>
+              <About />
             </Route>
             <Route path='/contact' exact>
               <Contact />

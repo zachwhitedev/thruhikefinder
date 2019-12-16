@@ -29,6 +29,9 @@ function NavModal(props) {
           <Link onClick={props.click} to='/'>Sources</Link>
         </li>
         <li>
+          <Link onClick={props.click} to='/about'>About</Link>
+        </li>
+        <li>
           <Link onClick={props.click} to='/contact'>Contact</Link>
         </li>
       </ul>

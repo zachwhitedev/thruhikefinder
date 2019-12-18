@@ -8,7 +8,7 @@ export default function MoreStats() {
       <table className={styles.moreStatsTable}>
         <tr>
           <td>Length</td>
-          <td>2189 miles</td>
+          <td>2192 miles</td>
         </tr>
         <tr>
           <td>Highest Point</td>
@@ -28,10 +28,6 @@ export default function MoreStats() {
         </tr>
         <tr>
           <td>Average Monthly Rainfall</td>
-          <td>N/A</td>
-        </tr>
-        <tr>
-          <td>Longest Stretch of No Water</td>
           <td>N/A</td>
         </tr>
         <tr>

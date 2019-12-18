@@ -52,7 +52,7 @@ export default class AllTrailsTable extends React.Component {
       {
         name: 'Appalachian Trail',
         year: 1923,
-        distance: 2189,
+        distance: 2192,
         totalstates: 14,
         daysToFinish: 165,
         elevationPerMile: 212,

@@ -25,7 +25,7 @@ export default class TripleCrownTable extends React.Component {
         name: 'Appalachian Trail',
         year: 1923,
         region: 'East',
-        distance: 2189,
+        distance: 2192,
         totalstates: 14,
         daysToFinish: 165,
         elevationPerMile: 212,

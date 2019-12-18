@@ -29,7 +29,7 @@ export default function NoboSobo() {
         <tr>
           <td>RESUPPLIES</td>
           <td>More resupply options in the Sierra Nevada.</td>
-          <td>Less resupply options in the Sierra, as some places close for the season. For example, the Tuolmne Meadows campground in Yosemite NP will be closed if you do not get there by the last few days of September.</td>
+          <td>Less resupply options in the Sierra, as some places close for the season. For example, the Tuolmne Meadows campground in Yosemite NP will be closed if you do not arrive by the last few days of September.</td>
         </tr>
         <tr>
           <td>FIRST MILES</td>

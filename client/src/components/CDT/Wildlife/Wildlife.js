@@ -14,7 +14,7 @@ import bison from '../../../assets/icons/bison.png'
 export default function Noteworthy() {
   return (
     <div>
-      <h2>Noteworthy Wildlife</h2>
+      <h2>Notable Wildlife</h2>
         <div className={styles.allAnimals}>
             <div className={styles.grizzly}>
                 <h4>Grizzly Bear</h4>

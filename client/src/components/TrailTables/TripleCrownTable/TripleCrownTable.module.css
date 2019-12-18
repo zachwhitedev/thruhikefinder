@@ -112,6 +112,7 @@ i {
     border: 2px solid green;
     overflow-x: scroll;
     overflow-y: scroll;
+    margin-bottom: 70px;
   }
   .allTrailsTH > th {
     font-size: 8px;
@@ -119,5 +120,5 @@ i {
   
   .allTrailsTD > td {
     font-size: 8px;
-  }  
+  }
 }

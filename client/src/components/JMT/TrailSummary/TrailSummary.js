@@ -15,7 +15,7 @@ export default function TrailSummary(){
           Frankly, the JMT is probably the most majestic thru-hike on a per mile basis in the United States. Nearly every mile feels like walking across the cover of a National Geogrpahic magazine. The entire hike is essentially a continuous greatest-hits reel - it almost feels like cheating.
         </p>
         <p>
-          Not everyone can afford to take off the several months required to hike one of the Triple Crown trails, so the JMT, which takes most people just three weeks to finish, is a perfect compromise. We highly recomment you add it to the bucket list. However, many have the same idea, and so getting a permit for the JMT that fits your schedule might be a challenge. 
+          Not everyone can afford to take off the several months required to hike one of the Triple Crown trails, so the JMT, which takes most hikers around three weeks to finish, is a perfect compromise. We highly recommend you add it to the bucket list. However, many have the same idea, so getting a permit for the JMT that fits a specific schedule can sometimes be a challenge.
         </p>
       </div>
     )

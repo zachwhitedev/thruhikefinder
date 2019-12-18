@@ -5,6 +5,7 @@ import KeyFacts from './KeyFacts/KeyFacts';
 import GearRec from './GearRec/GearRec';
 import Noteworthy from './Noteworthy/Noteworthy';
 import InDepthStats from './InDepthStats/InDepthStats';
+import Wildlife from './Wildlife/Wildlife';
 import ExtraCard from './ExtraCard/ExtraCard';
 import styles from './CDT.module.css';
 import { Helmet } from 'react-helmet';
@@ -24,6 +25,7 @@ export default function CDT() {
       <TrailImage />
       <TrailSummary />
       <KeyFacts />
+      <Wildlife />
       {/* <Noteworthy />
       <GearRec />
       <InDepthStats />

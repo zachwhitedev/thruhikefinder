@@ -15,7 +15,7 @@ export default function Noteworthy() {
         </p>
         <p>Though it is not truly personal and all in good fun (at least for the hikers), it has become a decades-long tradition to turn around, drop your shorts, and “moon the Cog” as it passes over the trail near the top of the mountain. However, we do not recommend you join in - several hikers have been arrested over the years as undercover police occasionally board the train.</p>
         <div className={styles.wildLifeContainer}>
-          <h4 className={styles.wildTitle}>Wildlife</h4>
+          <h4 className={styles.wildTitle}>Notable Wildlife</h4>
           <div className={styles.animals}>
             <div className={styles.blackBear}>
               <h5 className={styles.blackBearTitle}>Black Bear</h5>

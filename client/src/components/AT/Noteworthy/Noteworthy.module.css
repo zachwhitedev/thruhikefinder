@@ -10,18 +10,18 @@
     padding-bottom: 0;
 }
 
+.moose {
+    text-align: center;
+}
+
+.blackBear {
+    text-align: center;
+}
+
 .blackBearTitle {
     padding-left: 4px;
 }
 
-.mooseTitle {
-    padding-left: 18px;
-}
-
-.blackBear > img {
-    max-width: 80px;
-}
-
 .moose > img {
-    max-width: 80px;
+    max-width: 90px;
 }

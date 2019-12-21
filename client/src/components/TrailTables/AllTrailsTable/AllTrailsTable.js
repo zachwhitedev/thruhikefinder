@@ -16,7 +16,7 @@ export default class AllTrailsTable extends React.Component {
       },
       default: {
         class: 'sort',
-        fn: (a, b) => a.distance - b.distance
+        fn: (a, b) => a.alphabetical - b.alphabetical
       }
     },
     currentSort: 'default',
@@ -33,7 +33,8 @@ export default class AllTrailsTable extends React.Component {
         rainfall: 1.15,
         predictedResupplies: 27,
         avgResupplies: 98,
-        route: '/pct'
+        route: '/pct',
+        alphabetical: 11
       },
       {
         name: 'Continental Divide Trail',
@@ -47,7 +48,8 @@ export default class AllTrailsTable extends React.Component {
         rainfall: 'N/A',
         predictedResupplies: 'N/A',
         avgResupplies: 'N/A',
-        route: '/cdt'
+        route: '/cdt',
+        alphabetical: 4
       },
       {
         name: 'Appalachian Trail',
@@ -61,7 +63,8 @@ export default class AllTrailsTable extends React.Component {
         rainfall: 'N/A',
         predictedResupplies: 'N/A',
         avgResupplies: 'N/A',
-        route: '/at'
+        route: '/at',
+        alphabetical: 2
       },
       {
         name: 'Long Trail (VT)',
@@ -75,7 +78,8 @@ export default class AllTrailsTable extends React.Component {
         rainfall: 'N/A',
         predictedResupplies: 'N/A',
         avgResupplies: 'N/A',
-        route: '/longtrail'
+        route: '/longtrail',
+        alphabetical: 8
       },
       {
         name: 'John Muir Trail',
@@ -89,7 +93,8 @@ export default class AllTrailsTable extends React.Component {
         rainfall: 'N/A',
         predictedResupplies: 'N/A',
         avgResupplies: 'N/A',
-        route: '/jmt'
+        route: '/jmt',
+        alphabetical: 7
       },
       {
         name: 'Arizona Trail',
@@ -102,7 +107,8 @@ export default class AllTrailsTable extends React.Component {
         highPoint: 9148,
         rainfall: 'N/A',
         predictedResupplies: 'N/A',
-        avgResupplies: 'N/A'
+        avgResupplies: 'N/A',
+        alphabetical: 1
       },
       {
         name: 'Colorado Trail',
@@ -115,7 +121,8 @@ export default class AllTrailsTable extends React.Component {
         highPoint: 13271,
         rainfall: 'N/A',
         predictedResupplies: 'N/A',
-        avgResupplies: 'N/A'
+        avgResupplies: 'N/A',
+        alphabetical: 3
       },
       {
         name: 'Pacific Northwest Trail',
@@ -128,7 +135,8 @@ export default class AllTrailsTable extends React.Component {
         highPoint: 7800,
         rainfall: 'N/A',
         predictedResupplies: 'N/A',
-        avgResupplies: 'N/A'
+        avgResupplies: 'N/A',
+        alphabetical: 12
       },
       {
         name: 'Hayduke Trail',
@@ -141,7 +149,8 @@ export default class AllTrailsTable extends React.Component {
         highPoint: 11419,
         rainfall: 'N/A',
         predictedResupplies: 'N/A',
-        avgResupplies: 'N/A'
+        avgResupplies: 'N/A',
+        alphabetical: 6
       },
       {
         name: 'Oregon Desert Trail',
@@ -154,7 +163,8 @@ export default class AllTrailsTable extends React.Component {
         highPoint: 'N/A',
         rainfall: 'N/A',
         predictedResupplies: 'N/A',
-        avgResupplies: 'N/A'
+        avgResupplies: 'N/A',
+        alphabetical: 9
       },
       {
         name: 'Florida Trail',
@@ -167,7 +177,8 @@ export default class AllTrailsTable extends React.Component {
         highPoint: 'N/A (270)',
         rainfall: 'N/A',
         predictedResupplies: 'N/A',
-        avgResupplies: 'N/A'
+        avgResupplies: 'N/A',
+        alphabetical: 5
       },
       {
         name: 'Ozark Trail',
@@ -180,7 +191,8 @@ export default class AllTrailsTable extends React.Component {
         highPoint: 1772,
         rainfall: 'N/A',
         predictedResupplies: 'N/A',
-        avgResupplies: 'N/A'
+        avgResupplies: 'N/A',
+        alphabetical: 10
       }
     ]
   };

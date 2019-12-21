@@ -90,7 +90,7 @@ export default class TripleCrownTable extends React.Component {
           },
           down: {
             class: 'sort',
-            fn: (a, b) => a.distance - b.distance
+            fn: (a, b) => b.distance - a.distance
           },
           default: {
             class: 'sort',

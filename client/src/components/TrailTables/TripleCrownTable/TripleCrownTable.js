@@ -32,8 +32,8 @@ export default class TripleCrownTable extends React.Component {
         highpoint: '6,643',
         rainfall: 'N/A',
         noWater: 'N/A',
-        predictedResupplies: 'N/A',
-        avgDistBetweenResupplies: 'N/A',
+        predictedResupplies: 69,
+        avgDistBetweenResupplies: 32,
         longBetweenResupplies: 100,
         political: 'N/A',
         route: '/at'
@@ -66,9 +66,9 @@ export default class TripleCrownTable extends React.Component {
         highpoint: '14,278',
         rainfall: 'N/A',
         noWater: 'N/A',
-        predictedResupplies: 'N/A',
-        avgDistBetweenResupplies: 'N/A',
-        longBetweenResupplies: 'N/A',
+        predictedResupplies: 29,
+        avgDistBetweenResupplies: 104,
+        longBetweenResupplies: 155,
         political: 'N/A',
         route: '/cdt'
       }

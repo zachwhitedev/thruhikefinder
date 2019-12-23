@@ -3,6 +3,7 @@ import styles from './TrailTables.module.css';
 import { Helmet } from 'react-helmet';
 import AllTrailsTable from './AllTrailsTable/AllTrailsTable';
 import TripleCrownTable from './TripleCrownTable/TripleCrownTable';
+import AdComponent from '../../ads/AdComponent';
 
 export default function TrailTables(props) {
     
@@ -23,6 +24,7 @@ export default function TrailTables(props) {
       </Helmet>
       <TripleCrownTable />
       <AllTrailsTable />
+      <AdComponent />
     </div>
   );
 }

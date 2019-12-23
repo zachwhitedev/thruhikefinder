@@ -61,8 +61,8 @@ export default class AllTrailsTable extends React.Component {
         region: 'East',
         highPoint: 6643,
         rainfall: 'N/A',
-        predictedResupplies: 69,
-        avgResupplies: 32,
+        predictedResupplies: 66,
+        avgResupplies: 33,
         route: '/at',
         alphabetical: 2
       },
@@ -76,8 +76,8 @@ export default class AllTrailsTable extends React.Component {
         region: 'Northeast',
         highPoint: 4395,
         rainfall: 'N/A',
-        predictedResupplies: 'N/A',
-        avgResupplies: 'N/A',
+        predictedResupplies: 5,
+        avgResupplies: 55,
         route: '/longtrail',
         alphabetical: 8
       },
@@ -91,8 +91,8 @@ export default class AllTrailsTable extends React.Component {
         region: 'West',
         highPoint: 14505,
         rainfall: 'N/A',
-        predictedResupplies: 'N/A',
-        avgResupplies: 'N/A',
+        predictedResupplies: 5,
+        avgResupplies: 42,
         route: '/jmt',
         alphabetical: 7
       },
@@ -106,8 +106,8 @@ export default class AllTrailsTable extends React.Component {
         region: 'Southwest',
         highPoint: 9148,
         rainfall: 'N/A',
-        predictedResupplies: 'N/A',
-        avgResupplies: 'N/A',
+        predictedResupplies: 12,
+        avgResupplies: 66,
         alphabetical: 1
       },
       {
@@ -120,8 +120,8 @@ export default class AllTrailsTable extends React.Component {
         region: 'West',
         highPoint: 13271,
         rainfall: 'N/A',
-        predictedResupplies: 'N/A',
-        avgResupplies: 'N/A',
+        predictedResupplies: 12,
+        avgResupplies: 40,
         alphabetical: 3
       },
       {
@@ -134,8 +134,8 @@ export default class AllTrailsTable extends React.Component {
         region: 'West',
         highPoint: 7800,
         rainfall: 'N/A',
-        predictedResupplies: 'N/A',
-        avgResupplies: 'N/A',
+        predictedResupplies: 23,
+        avgResupplies: 52,
         alphabetical: 12
       },
       {
@@ -172,12 +172,12 @@ export default class AllTrailsTable extends React.Component {
         distance: 1300,
         totalstates: 1,
         daysToFinish: 70,
-        elevationPerMile: '< 80',
+        elevationPerMile: 'N/A',
         region: 'Southeast',
-        highPoint: 'N/A (270)',
+        highPoint: 'N/A',
         rainfall: 'N/A',
-        predictedResupplies: 'N/A',
-        avgResupplies: 'N/A',
+        predictedResupplies: 20,
+        avgResupplies: 65,
         alphabetical: 5
       },
       {
